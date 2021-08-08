@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public static class connection
+public static class InternetConnection
 {
-    public static IEnumerator checkInternet(Action<bool> action = null)
+    public static IEnumerator check(Action<bool> action = null)
     {
         WWW www = new WWW("http://google.com");
         yield return www;
         if (www.error != null)
         {
 
-            ErrorManager.instance.ShowError("No Internet cooection");
+            ErrorManager.instance.ShowError("No Internet connection");
 
             if (action != null) action(false);
         }

@@ -11,7 +11,7 @@ public class mail : MonoBehaviour
 {
     public void email_send()
     {
-        StartCoroutine(connection.checkInternet((isConnected) =>
+        StartCoroutine(InternetConnection.check((isConnected) =>
         {
             if (isConnected)
             {

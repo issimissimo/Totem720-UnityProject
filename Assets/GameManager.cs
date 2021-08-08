@@ -11,12 +11,14 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        /// 1st check
+        /// Check for video path exist
         if (!FileManager.CheckDirectory(defVideoPath, true))
             return;
 
         FileManager.defPath = defVideoPath;
-        connection.checkInternet();
+
+        /// Check for Internet available
+        StartCoroutine(InternetConnection.check());
 
     }
 

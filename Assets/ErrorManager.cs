@@ -29,5 +29,4 @@ public class ErrorManager : MonoBehaviour
     {
         panelError.SetActive(false);
     }
-
 }
