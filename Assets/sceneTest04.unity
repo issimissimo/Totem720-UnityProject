@@ -3243,7 +3243,7 @@ GameObject:
   - component: {fileID: 2077567151}
   - component: {fileID: 2077567150}
   m_Layer: 0
-  m_Name: Listener
+  m_Name: UDP Listener
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3258,9 +3258,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2077567149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d28fb56ab4fd6045af2d2483b264d0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a6ed70c7db3f7c41b419742726a33a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  port: 0
+  lastReceivedUDPPacket: 
+  allReceivedUDPPackets: 
 --- !u!4 &2077567151
 Transform:
   m_ObjectHideFlags: 0
