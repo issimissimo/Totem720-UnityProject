@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileCounter: 0
-  screenshotKey: 0
+  screenshotKey: 32
 --- !u!4 &218385973
 Transform:
   m_ObjectHideFlags: 0
