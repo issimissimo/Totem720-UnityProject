@@ -19,6 +19,12 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        /// TEST FOR ERROR MANAGER!!!!!!
+        ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "pippo");
+        ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "pluto");
+        ////
+        
+        
         /// Check for video path exist (blocking)
         if (!FileManager.CheckDirectory(defVideoPath, true))
             return;

@@ -64,6 +64,6 @@ public class ButtonBase : MonoBehaviour
 
     public virtual void onClick()
     {
-        Debug.Log(gameObject.name);
+        Debug.Log("CLICK ON: " + gameObject.name);
     }
 }
