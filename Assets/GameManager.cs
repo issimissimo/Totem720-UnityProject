@@ -8,9 +8,9 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    [SerializeField] FileManager fileManager;
-    [SerializeField] UiManager uiManager;
-    [SerializeField] VideoManager videoManager;
+    public FileManager fileManager;
+    public UiManager uiManager;
+    public VideoManager videoManager;
 
     private void Awake() {
         if (instance != null) Destroy(instance);

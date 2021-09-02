@@ -1,28 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 public class UiManager : MonoBehaviour
 {
-    // [SerializeField] GameObject[] panels;
-    [SerializeField] Transform Ui_panel_container;
-    private List<GameObject> Ui_panels = new List<GameObject>();
+    public GraphicRaycaster ui_raycaster; /// Don't delete! It's used by buttons!!!
+    [SerializeField] Transform ui_panels_container;
+    private List<GameObject> ui_panels = new List<GameObject>();
     private GameObject main_panel;
 
 
     private void Awake()
     {
-        foreach (Transform child in Ui_panel_container)
+        foreach (Transform child in ui_panels_container)
         {
-            Ui_panels.Add(child.gameObject);
+            ui_panels.Add(child.gameObject);
         }
-        main_panel = Ui_panels[Ui_panels.Count - 1];
+        main_panel = ui_panels[ui_panels.Count - 1];
     }
 
     private void HideAllUiPanels(Action callback = null)
     {
-        foreach (GameObject go in Ui_panels)
+        foreach (GameObject go in ui_panels)
         {
             go.SetActive(false);
         }

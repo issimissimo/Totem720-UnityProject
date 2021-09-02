@@ -20,10 +20,10 @@ public class takeScreenshot : MonoBehaviour
  
     private void LateUpdate()
     {
-        if (Input.GetKeyDown(screenshotKey))
-        {
-            Capture();
-        }
+        // if (Input.GetKeyDown(screenshotKey))
+        // {
+        //     Capture();
+        // }
     }
  
     public void Capture()

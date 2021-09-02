@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonShowPanel : MonoBehaviour
+public class ButtonShowPanel : ButtonBase
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] GameObject panelToShow;
+    public override void onClick()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        base.onClick();
+        GameManager.instance.uiManager.ShowPanel(panelToShow);
     }
 }
