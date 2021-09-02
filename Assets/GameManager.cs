@@ -6,8 +6,16 @@ public class GameManager : MonoBehaviour
 {
     public static string defVideoPath = "C:/Users/Daniele/Desktop/Video per Totem";
 
+    public static GameManager instance;
+
     [SerializeField] FileManager fileManager;
     [SerializeField] UiManager uiManager;
+    [SerializeField] VideoManager videoManager;
+
+    private void Awake() {
+        if (instance != null) Destroy(instance);
+        instance = this;
+    }
 
     void Start()
     {
@@ -18,7 +26,6 @@ public class GameManager : MonoBehaviour
         FileManager.defPath = defVideoPath;
 
         /// Check for Internet available (not blocking)
-        // StartCoroutine(InternetConnection.check());
         InternetConnection.newCheck();
 
         /// show main UI
@@ -26,8 +33,17 @@ public class GameManager : MonoBehaviour
     }
 
 
-    void GoToMainUi(){
+    public void GoToMainUi(){
         uiManager.ShowMainPanel();
+    }
+
+    public void StartGameSession(Globals.Scenario scenario, Globals.Squadra squadra, int videoNumber){
+
+        /// play webcam
+
+        /// play video
+        string videoUrl = fileManager.GetFile(scenario, squadra, videoNumber);
+        videoManager.Play(videoUrl);
     }
 
 

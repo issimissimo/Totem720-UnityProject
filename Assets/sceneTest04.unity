@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 38030968}
   - component: {fileID: 38030970}
   - component: {fileID: 38030969}
+  - component: {fileID: 38030971}
   m_Layer: 5
   m_Name: Panel COPPE MILAN
   m_TagString: Untagged
@@ -334,6 +335,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38030967}
   m_CullTransparentMesh: 0
+--- !u!114 &38030971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38030967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49366337fb8704d40a620a0507da8ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 1
 --- !u!1 &159232906
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +439,7 @@ GameObject:
   - component: {fileID: 175018738}
   - component: {fileID: 175018740}
   - component: {fileID: 175018739}
+  - component: {fileID: 175018741}
   m_Layer: 5
   m_Name: Panel CALCIATORI INTER
   m_TagString: Untagged
@@ -492,6 +508,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175018737}
   m_CullTransparentMesh: 0
+--- !u!114 &175018741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175018737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49366337fb8704d40a620a0507da8ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 0
 --- !u!1 &213334382
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,7 +723,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &218912434
 GameObject:
@@ -707,6 +737,7 @@ GameObject:
   - component: {fileID: 218912438}
   - component: {fileID: 218912437}
   - component: {fileID: 218912436}
+  - component: {fileID: 218912439}
   m_Layer: 5
   m_Name: Button COPPE-C
   m_TagString: Untagged
@@ -815,6 +846,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218912434}
   m_CullTransparentMesh: 0
+--- !u!114 &218912439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218912434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 2
+  videoNumber: 2
 --- !u!1 &261266413
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,6 +873,7 @@ GameObject:
   - component: {fileID: 261266417}
   - component: {fileID: 261266416}
   - component: {fileID: 261266415}
+  - component: {fileID: 261266418}
   m_Layer: 5
   m_Name: Button COPPE-C
   m_TagString: Untagged
@@ -935,6 +982,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261266413}
   m_CullTransparentMesh: 0
+--- !u!114 &261266418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261266413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 1
+  videoNumber: 2
 --- !u!1 &268522612
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +1698,7 @@ GameObject:
   - component: {fileID: 405969163}
   - component: {fileID: 405969162}
   - component: {fileID: 405969161}
+  - component: {fileID: 405969164}
   m_Layer: 5
   m_Name: Button COPPE-C
   m_TagString: Untagged
@@ -1744,6 +1807,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405969159}
   m_CullTransparentMesh: 0
+--- !u!114 &405969164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405969159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 0
+  videoNumber: 2
 --- !u!1 &413146709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,7 +1942,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &432020125
 GameObject:
@@ -1878,6 +1956,7 @@ GameObject:
   - component: {fileID: 432020129}
   - component: {fileID: 432020128}
   - component: {fileID: 432020127}
+  - component: {fileID: 432020130}
   m_Layer: 5
   m_Name: Button COPPE-B
   m_TagString: Untagged
@@ -1986,6 +2065,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432020125}
   m_CullTransparentMesh: 0
+--- !u!114 &432020130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432020125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 1
+  videoNumber: 1
 --- !u!1 &441492153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,7 +2144,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &466734819
 GameObject:
@@ -2382,6 +2476,7 @@ GameObject:
   - component: {fileID: 519465776}
   - component: {fileID: 519465775}
   - component: {fileID: 519465774}
+  - component: {fileID: 519465777}
   m_Layer: 5
   m_Name: Button CALCIATORI-C
   m_TagString: Untagged
@@ -2490,6 +2585,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519465772}
   m_CullTransparentMesh: 0
+--- !u!114 &519465777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519465772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 2
+  videoNumber: 2
 --- !u!1 &527100866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,9 +2794,9 @@ VideoPlayer:
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 1
+  m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -2765,7 +2875,7 @@ Transform:
   m_LocalScale: {x: 11.01125, y: 19.66279, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &536170254
 GameObject:
@@ -3020,7 +3130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -3094,7 +3204,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &784460112
 GameObject:
@@ -3186,6 +3296,7 @@ GameObject:
   - component: {fileID: 794953840}
   - component: {fileID: 794953842}
   - component: {fileID: 794953841}
+  - component: {fileID: 794953843}
   m_Layer: 5
   m_Name: Panel CALCIATORI MILAN
   m_TagString: Untagged
@@ -3254,6 +3365,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794953839}
   m_CullTransparentMesh: 0
+--- !u!114 &794953843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794953839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49366337fb8704d40a620a0507da8ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 1
 --- !u!1 &806703404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,6 +3830,7 @@ GameObject:
   - component: {fileID: 931672431}
   - component: {fileID: 931672430}
   - component: {fileID: 931672429}
+  - component: {fileID: 931672432}
   m_Layer: 5
   m_Name: Button COPPE-A
   m_TagString: Untagged
@@ -3813,6 +3939,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931672427}
   m_CullTransparentMesh: 0
+--- !u!114 &931672432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931672427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 0
+  videoNumber: 0
 --- !u!1 &950412123
 GameObject:
   m_ObjectHideFlags: 0
@@ -4201,7 +4342,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -4239,6 +4380,7 @@ GameObject:
   - component: {fileID: 967461788}
   - component: {fileID: 967461787}
   - component: {fileID: 967461786}
+  - component: {fileID: 967461789}
   m_Layer: 5
   m_Name: Button CALCIATORI-C
   m_TagString: Untagged
@@ -4347,6 +4489,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967461784}
   m_CullTransparentMesh: 0
+--- !u!114 &967461789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967461784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 1
+  videoNumber: 2
 --- !u!1 &1005781012
 GameObject:
   m_ObjectHideFlags: 0
@@ -4666,7 +4823,7 @@ Transform:
   m_LocalScale: {x: 3.9675, y: 3.9675, z: 3.9675}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1103347321
 GameObject:
@@ -4679,6 +4836,7 @@ GameObject:
   - component: {fileID: 1103347322}
   - component: {fileID: 1103347324}
   - component: {fileID: 1103347323}
+  - component: {fileID: 1103347325}
   m_Layer: 5
   m_Name: Panel COPPE M+I
   m_TagString: Untagged
@@ -4747,6 +4905,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103347321}
   m_CullTransparentMesh: 0
+--- !u!114 &1103347325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103347321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49366337fb8704d40a620a0507da8ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 2
 --- !u!1 &1138173838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4838,6 +5010,7 @@ GameObject:
   - component: {fileID: 1162947495}
   - component: {fileID: 1162947494}
   - component: {fileID: 1162947493}
+  - component: {fileID: 1162947496}
   m_Layer: 5
   m_Name: Button COPPE-B
   m_TagString: Untagged
@@ -4946,6 +5119,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162947491}
   m_CullTransparentMesh: 0
+--- !u!114 &1162947496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162947491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 2
+  videoNumber: 1
 --- !u!1 &1173097310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5116,6 +5304,7 @@ GameObject:
   - component: {fileID: 1229526680}
   - component: {fileID: 1229526679}
   - component: {fileID: 1229526678}
+  - component: {fileID: 1229526681}
   m_Layer: 5
   m_Name: Button COPPE-A
   m_TagString: Untagged
@@ -5224,6 +5413,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229526676}
   m_CullTransparentMesh: 0
+--- !u!114 &1229526681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229526676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 2
+  videoNumber: 0
 --- !u!114 &1245368951 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6426071470702802625, guid: 3625a298342b5644dbc6c7d57f2185c5, type: 3}
@@ -5330,7 +5534,7 @@ Transform:
   m_LocalScale: {x: 1.9662793, y: 0.5747, z: 1.1011252}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!114 &1253704653
 MonoBehaviour:
@@ -5344,6 +5548,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63e989a2b8ffded49a43285bf9a2beb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1321775285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1321775286}
+  - component: {fileID: 1321775287}
+  m_Layer: 0
+  m_Name: VideoManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1321775286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321775285}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1982431616}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1321775287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321775285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ebac76996851544bb1d57a0e934b6ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 533730465}
 --- !u!1 &1329387893
 GameObject:
   m_ObjectHideFlags: 0
@@ -5512,6 +5760,7 @@ GameObject:
   - component: {fileID: 1366923426}
   - component: {fileID: 1366923425}
   - component: {fileID: 1366923424}
+  - component: {fileID: 1366923427}
   m_Layer: 5
   m_Name: Button CALCIATORI-B
   m_TagString: Untagged
@@ -5620,6 +5869,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366923422}
   m_CullTransparentMesh: 0
+--- !u!114 &1366923427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366923422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 0
+  videoNumber: 1
 --- !u!1 &1375866518
 GameObject:
   m_ObjectHideFlags: 0
@@ -5790,6 +6054,7 @@ GameObject:
   - component: {fileID: 1404816410}
   - component: {fileID: 1404816409}
   - component: {fileID: 1404816408}
+  - component: {fileID: 1404816411}
   m_Layer: 5
   m_Name: Button COPPE-A
   m_TagString: Untagged
@@ -5898,6 +6163,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404816406}
   m_CullTransparentMesh: 0
+--- !u!114 &1404816411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404816406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 1
+  videoNumber: 0
 --- !u!1 &1405783661
 GameObject:
   m_ObjectHideFlags: 0
@@ -6099,6 +6379,7 @@ GameObject:
   - component: {fileID: 1442527295}
   - component: {fileID: 1442527297}
   - component: {fileID: 1442527296}
+  - component: {fileID: 1442527298}
   m_Layer: 5
   m_Name: Panel CALCIATORI M+I
   m_TagString: Untagged
@@ -6167,6 +6448,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442527294}
   m_CullTransparentMesh: 0
+--- !u!114 &1442527298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442527294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49366337fb8704d40a620a0507da8ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 2
 --- !u!1001 &1458495375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6448,6 +6743,7 @@ GameObject:
   - component: {fileID: 1466720072}
   - component: {fileID: 1466720071}
   - component: {fileID: 1466720070}
+  - component: {fileID: 1466720073}
   m_Layer: 5
   m_Name: Button CALCIATORI-B
   m_TagString: Untagged
@@ -6556,6 +6852,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466720068}
   m_CullTransparentMesh: 0
+--- !u!114 &1466720073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466720068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 1
+  videoNumber: 1
 --- !u!1 &1477754746
 GameObject:
   m_ObjectHideFlags: 0
@@ -6800,7 +7111,7 @@ RectTransform:
   - {fileID: 2082912523}
   - {fileID: 1348880108}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6900,6 +7211,7 @@ GameObject:
   - component: {fileID: 1552025607}
   - component: {fileID: 1552025606}
   - component: {fileID: 1552025605}
+  - component: {fileID: 1552025608}
   m_Layer: 5
   m_Name: Button CALCIATORI-B
   m_TagString: Untagged
@@ -7008,6 +7320,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552025603}
   m_CullTransparentMesh: 0
+--- !u!114 &1552025608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552025603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 2
+  videoNumber: 1
 --- !u!1 &1594701505
 GameObject:
   m_ObjectHideFlags: 0
@@ -7052,7 +7379,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!850595691 &1626722510
 LightingSettings:
@@ -7428,6 +7755,7 @@ GameObject:
   - component: {fileID: 1817467352}
   - component: {fileID: 1817467351}
   - component: {fileID: 1817467350}
+  - component: {fileID: 1817467353}
   m_Layer: 5
   m_Name: Button COPPE-B
   m_TagString: Untagged
@@ -7536,6 +7864,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817467348}
   m_CullTransparentMesh: 0
+--- !u!114 &1817467353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817467348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 0
+  videoNumber: 1
 --- !u!1001 &1844489753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7880,6 +8223,7 @@ GameObject:
   - component: {fileID: 1930837285}
   - component: {fileID: 1930837287}
   - component: {fileID: 1930837286}
+  - component: {fileID: 1930837288}
   m_Layer: 5
   m_Name: Panel COPPE INTER
   m_TagString: Untagged
@@ -7948,6 +8292,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930837284}
   m_CullTransparentMesh: 0
+--- !u!114 &1930837288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930837284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49366337fb8704d40a620a0507da8ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 0
+  squadra: 0
 --- !u!1 &1959166611
 GameObject:
   m_ObjectHideFlags: 0
@@ -8039,6 +8397,7 @@ GameObject:
   - component: {fileID: 1980927569}
   - component: {fileID: 1980927568}
   - component: {fileID: 1980927567}
+  - component: {fileID: 1980927570}
   m_Layer: 5
   m_Name: Button CALCIATORI-C
   m_TagString: Untagged
@@ -8147,6 +8506,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980927565}
   m_CullTransparentMesh: 0
+--- !u!114 &1980927570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980927565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 0
+  videoNumber: 2
 --- !u!1 &1982431614
 GameObject:
   m_ObjectHideFlags: 0
@@ -8178,6 +8552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fileManager: {fileID: 1405783662}
   uiManager: {fileID: 1989218024}
+  videoManager: {fileID: 1321775287}
 --- !u!4 &1982431616
 Transform:
   m_ObjectHideFlags: 0
@@ -8191,8 +8566,9 @@ Transform:
   m_Children:
   - {fileID: 1405783663}
   - {fileID: 1989218023}
+  - {fileID: 1321775286}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1985698916
 GameObject:
@@ -8329,6 +8705,7 @@ GameObject:
   - component: {fileID: 1989284314}
   - component: {fileID: 1989284313}
   - component: {fileID: 1989284312}
+  - component: {fileID: 1989284315}
   m_Layer: 5
   m_Name: Button CALCIATORI-A
   m_TagString: Untagged
@@ -8437,6 +8814,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989284310}
   m_CullTransparentMesh: 0
+--- !u!114 &1989284315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989284310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 1
+  videoNumber: 0
 --- !u!1 &2021732426
 GameObject:
   m_ObjectHideFlags: 0
@@ -8754,6 +9146,7 @@ GameObject:
   - component: {fileID: 2047769826}
   - component: {fileID: 2047769825}
   - component: {fileID: 2047769824}
+  - component: {fileID: 2047769827}
   m_Layer: 5
   m_Name: Button CALCIATORI-A
   m_TagString: Untagged
@@ -8862,6 +9255,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047769822}
   m_CullTransparentMesh: 0
+--- !u!114 &2047769827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047769822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 0
+  videoNumber: 0
 --- !u!1 &2067622295
 GameObject:
   m_ObjectHideFlags: 0
@@ -8874,6 +9282,7 @@ GameObject:
   - component: {fileID: 2067622299}
   - component: {fileID: 2067622298}
   - component: {fileID: 2067622297}
+  - component: {fileID: 2067622300}
   m_Layer: 5
   m_Name: Button CALCIATORI-A
   m_TagString: Untagged
@@ -8982,6 +9391,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067622295}
   m_CullTransparentMesh: 0
+--- !u!114 &2067622300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067622295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bb5db3814ae34eb3c3635d109478d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenario: 1
+  squadra: 2
+  videoNumber: 0
 --- !u!1 &2077567149
 GameObject:
   m_ObjectHideFlags: 0
@@ -9043,7 +9467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2082912523
 RectTransform:
   m_ObjectHideFlags: 0
