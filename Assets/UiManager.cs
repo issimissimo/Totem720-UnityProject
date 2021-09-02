@@ -6,26 +6,65 @@ using System;
 public class UiManager : MonoBehaviour
 {
     // [SerializeField] GameObject[] panels;
+    [SerializeField] Transform Ui_panel_container;
+    private List<GameObject> Ui_panels = new List<GameObject>();
+    private GameObject main_panel;
 
-    private int panelNumber = 0;
 
-    [Serializable]
-    public class PanelList
+    private void Awake()
     {
-        public GameObject[] panels;
+        foreach (Transform child in Ui_panel_container)
+        {
+            Ui_panels.Add(child.gameObject);
+        }
+        main_panel = Ui_panels[Ui_panels.Count - 1];
+    }
+
+    private void HideAllUiPanels(Action callback = null)
+    {
+        foreach (GameObject go in Ui_panels)
+        {
+            go.SetActive(false);
+        }
+        if (callback != null) callback();
     }
 
 
-    [SerializeField] GameObject mainPanel;
-
-
-    [Serializable]
-    public class SuperList
+    public void ShowPanel(GameObject panel)
     {
-        public PanelList[] panelLists;
+        HideAllUiPanels(() =>
+        {
+            panel.SetActive(true);
+        });
     }
 
-    [SerializeField] SuperList[] superlist;
+
+    public void ShowMainPanel()
+    {
+        ShowPanel(main_panel);
+    }
+
+
+
+    // private int panelNumber = 0;
+
+    // [Serializable]
+    // public class PanelList
+    // {
+    //     public GameObject[] panels;
+    // }
+
+
+    // [SerializeField] GameObject mainPanel;
+
+
+    // [Serializable]
+    // public class SuperList
+    // {
+    //     public PanelList[] panelLists;
+    // }
+
+    // [SerializeField] SuperList[] superlist;
 
 
 

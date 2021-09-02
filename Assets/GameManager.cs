@@ -18,9 +18,18 @@ public class GameManager : MonoBehaviour
         FileManager.defPath = defVideoPath;
 
         /// Check for Internet available (not blocking)
-        StartCoroutine(InternetConnection.check());
+        // StartCoroutine(InternetConnection.check());
+        InternetConnection.newCheck();
 
+        /// show main UI
+        GoToMainUi();
     }
+
+
+    void GoToMainUi(){
+        uiManager.ShowMainPanel();
+    }
+
 
     void StartPhotoSession(){
 
