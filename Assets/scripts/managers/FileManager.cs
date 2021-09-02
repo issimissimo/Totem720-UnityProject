@@ -9,10 +9,11 @@ public class FileManager : MonoBehaviour
     public static string defPath;
     private string fileExtension = ".mp4";
 
-    public string GetFile(Globals.Scenario scenario, Globals.Squadra squadra, int videoNumber){
+    public string GetFile(Globals.Scenario scenario, Globals.Squadra squadra, int videoNumber)
+    {
 
 
-        
+
         return null;
     }
 
@@ -37,17 +38,16 @@ public class FileManager : MonoBehaviour
     }
 
 
-
-    public static bool CheckDirectory(string path, bool isBlocking = false)
+    public static void CheckDirectory(string path, ErrorManager.TYPE errorType, Action<bool> result = null)
     {
         if (Directory.Exists(path))
         {
-            return true;
+            if (result != null) result(true);
         }
         else
         {
-            ErrorManager.instance.ShowError(path + " don't exist", isBlocking);
-            return false;
+            ErrorManager.instance.ShowError(errorType, "La cartella \n" +  path + "\n non esiste");
+            if (result != null) result(false);
         }
     }
 
@@ -61,7 +61,7 @@ public class FileManager : MonoBehaviour
 
             if (info.Length == 0)
             {
-                ErrorManager.instance.ShowError("Folder is empty");
+                ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Folder is empty");
             }
             else
             {

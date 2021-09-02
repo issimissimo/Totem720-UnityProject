@@ -19,20 +19,19 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        /// TEST FOR ERROR MANAGER!!!!!!
-        ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "pippo");
-        ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "pluto");
-        ////
+        // // /// TEST FOR ERROR MANAGER!!!!!!
+        // ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "pluto");
+        // ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "pippo");
+        // // ////
         
         
-        /// Check for video path exist (blocking)
-        if (!FileManager.CheckDirectory(defVideoPath, true))
-            return;
+        /// Check for video path exist
+        FileManager.CheckDirectory(defVideoPath, ErrorManager.TYPE.WARNING);
 
         FileManager.defPath = defVideoPath;
 
-        /// Check for Internet available (not blocking)
-        InternetConnection.newCheck();
+        /// Check for Internet available
+        InternetConnection.instance.Check(ErrorManager.TYPE.WARNING);
 
         /// show main UI
         GoToMainUi();
