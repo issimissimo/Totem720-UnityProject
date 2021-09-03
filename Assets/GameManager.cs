@@ -12,21 +12,16 @@ public class GameManager : MonoBehaviour
     public UiManager uiManager;
     public VideoManager videoManager;
 
-    private void Awake() {
+    private void Awake()
+    {
         if (instance != null) Destroy(instance);
         instance = this;
     }
 
     void Start()
     {
-        // // /// TEST FOR ERROR MANAGER!!!!!!
-        // ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "pluto");
-        // ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "pippo");
-        // // ////
-        
-        
         /// Check for video path exist
-        FileManager.CheckDirectory(defVideoPath, ErrorManager.TYPE.WARNING);
+        bool dir = FileManager.CheckDirectory(defVideoPath, ErrorManager.TYPE.WARNING);
 
         FileManager.defPath = defVideoPath;
 
@@ -38,25 +33,33 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void GoToMainUi(){
+    public void GoToMainUi()
+    {
         uiManager.ShowMainPanel();
     }
 
-    public void StartGameSession(Globals.Scenario scenario, Globals.Squadra squadra, int videoNumber){
-
-        /// play webcam
-
-        /// play video
+    public void StartGameSession(Globals.Scenario scenario, Globals.Squadra squadra, int videoNumber)
+    {
         string videoUrl = fileManager.GetFile(scenario, squadra, videoNumber);
-        videoManager.Play(videoUrl);
+        if (videoUrl != null)
+        {
+            /// play video
+            Debug.Log("LANCIO VIDEO: " + videoUrl);
+            // videoManager.Play(videoUrl);
+
+            /// play webcam
+        }
+
     }
 
 
-    void StartPhotoSession(){
+    void StartPhotoSession()
+    {
 
     }
 
-    void StartMailSession(){
+    void StartMailSession()
+    {
 
     }
 
