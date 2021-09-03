@@ -6,7 +6,7 @@ using System.IO;
 
 public class GameManager : MonoBehaviour
 {
-    public static string defVideoPath = "C:/Users/Daniele/Desktop/Video per Totem2";
+    public static string defVideoPath = "C:/Users/Daniele/Desktop/Video per Totem";
 
     public static GameManager instance;
 

@@ -12,28 +12,37 @@ public class EmailHandler : MonoBehaviour
         {
             if (result == true)
             {
-                Debug.Log("Sending email...");
+                try
+                {
+                    Debug.Log("Sending email...");
 
-                MailMessage mail = new MailMessage();
-                SmtpClient SmtpServer = new SmtpClient("mail.issimissimo.com");
-                mail.From = new MailAddress("d.suppo@issimissimo.com");
-                mail.To.Add("danielesuppo@gmail.com");
-                mail.Subject = "PROVOLONE";
-                mail.Body = "mail with attachment";
+                    MailMessage mail = new MailMessage();
+                    SmtpClient SmtpServer = new SmtpClient("mail.issimissimo.com");
+                    mail.From = new MailAddress("d.suppo@issimissimo.com");
+                    mail.To.Add("danielesuppo@gmail.com");
+                    mail.Subject = "PROVOLONE";
+                    mail.Body = "mail with attachment";
 
-                System.Net.Mail.Attachment attachment;
-                attachment = new System.Net.Mail.Attachment(filePath);
-                mail.Attachments.Add(attachment);
+                    System.Net.Mail.Attachment attachment;
+                    attachment = new System.Net.Mail.Attachment(filePath);
+                    mail.Attachments.Add(attachment);
 
-                SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("d.suppo@issimissimo.com", "cx$eGM#OQuW0");
-                SmtpServer.EnableSsl = true;
+                    SmtpServer.Port = 587;
+                    // SmtpServer.Credentials = new System.Net.NetworkCredential("d.suppo@issimissimo.com", "cx$eGM#OQuW0");
+                    SmtpServer.Credentials = new System.Net.NetworkCredential("d.suppo@issimissimo.com", "ckasdadsx$eGM#OQuW0");
+                    SmtpServer.EnableSsl = true;
 
-                SmtpServer.SendMailAsync(mail);
+                    SmtpServer.SendMailAsync(mail);
 
-                Debug.Log("DONE");
+                    Debug.Log("DONE");
+                }
+                catch (Exception e)
+                {
+                    Debug.Log("Error!!!: " + e.ToString());
+                }
             }
-            else{
+            else
+            {
                 ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Non è possibile inviare la mail");
             }
         });
