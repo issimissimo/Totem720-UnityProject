@@ -1,17 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using System.Net;
 using System.Net.Mail;
 using System;
 
 
-
 public class EmailHandler : MonoBehaviour
 {
-    public void email_send()
+    public void Send(string filePath)
     {
-        InternetConnection.instance.Check(ErrorManager.TYPE.ERROR, (result) =>
+        InternetConnection.instance.Check(ErrorManager.TYPE.WARNING, (result) =>
         {
             if (result == true)
             {
@@ -25,7 +22,7 @@ public class EmailHandler : MonoBehaviour
                 mail.Body = "mail with attachment";
 
                 System.Net.Mail.Attachment attachment;
-                attachment = new System.Net.Mail.Attachment("c:/test.jpg");
+                attachment = new System.Net.Mail.Attachment(filePath);
                 mail.Attachments.Add(attachment);
 
                 SmtpServer.Port = 587;
@@ -37,7 +34,7 @@ public class EmailHandler : MonoBehaviour
                 Debug.Log("DONE");
             }
             else{
-                ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Non è possibile inviare la mail");
+                ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Non è possibile inviare la mail");
             }
         });
 

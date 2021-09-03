@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
-    public static string defVideoPath = "C:/Users/Daniele/Desktop/Video per Totem";
+    public static string defVideoPath = "C:/Users/Daniele/Desktop/Video per Totem2";
 
     public static GameManager instance;
 
@@ -25,7 +26,12 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         /// Check for video path exist
-        bool dir = FileManager.CheckDirectory(defVideoPath, ErrorManager.TYPE.WARNING);
+        if (!FileManager.CheckDirectory(defVideoPath, ErrorManager.TYPE.WARNING))
+        {
+            /// create folder if doesn't exist
+            Directory.CreateDirectory(defVideoPath);
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.INFO, "La cartella è stata appena creata. Si prega di chiudere l'applicazione ed caricare i video nella cartella");
+        }
 
         FileManager.defPath = defVideoPath;
 
@@ -91,7 +97,7 @@ public class GameManager : MonoBehaviour
                         /// return to main UI
                         ShowMain();
 
-                        emailHandler.email_send();
+                        emailHandler.Send(screenshotFullName);
 
                         Debug.Log(screenshotFullName);
                     });

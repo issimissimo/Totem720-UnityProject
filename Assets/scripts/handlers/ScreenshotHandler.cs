@@ -30,9 +30,7 @@ public class ScreenshotHandler : MonoBehaviour
             Rect rect = new Rect(0, 0, renderTexture.width, renderTexture.height);
             renderResult.ReadPixels(rect, 0, 0);
 
-            // byte[] byteArray = renderResult.EncodeToPNG();
-            byte[] byteArray = renderResult.EncodeToJPG();
-            // System.IO.File.WriteAllBytes(Application.dataPath + "/CameraScreenshot.png", byteArray);
+            byte[] byteArray = renderResult.EncodeToJPG(100);
 
             if (byteArray.Length > 0)
             {

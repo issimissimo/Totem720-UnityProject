@@ -8,7 +8,7 @@ public class ErrorManager : MonoBehaviour
     [SerializeField] GameObject panelError;
     [SerializeField] GameObject prefab;
 
-    public enum TYPE { WARNING, ERROR };
+    public enum TYPE { WARNING, ERROR, INFO };
 
     private int totalPrefabsNumber = 0;
 

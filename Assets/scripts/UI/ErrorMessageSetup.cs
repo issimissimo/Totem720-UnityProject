@@ -7,6 +7,7 @@ public class ErrorMessageSetup : MonoBehaviour
     [SerializeField] GameObject closeButton;
     [SerializeField] Color colorError;
     [SerializeField] Color colorWarning;
+    [SerializeField] Color colorInfo;
 
 
     private int prefabNumber;
@@ -21,8 +22,11 @@ public class ErrorMessageSetup : MonoBehaviour
 
         /// set backgound color
         Image img = gameObject.GetComponent<Image>();
-        Color clr = type == ErrorManager.TYPE.ERROR ? colorError : colorWarning;
-        img.color = clr;
+        Color color = colorError;
+        if (type == ErrorManager.TYPE.ERROR) color = colorError;
+        if (type == ErrorManager.TYPE.WARNING) color = colorWarning;
+        if (type == ErrorManager.TYPE.INFO) color = colorInfo;
+        img.color = color;
 
         prefabNumber = _prefabNumber;
     }

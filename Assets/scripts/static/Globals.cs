@@ -1,16 +1,14 @@
-﻿public static class Globals
+﻿using System.Collections.Generic;
+
+public static class Globals
 {
     public enum Scenario { Coppe, Calciatori }
 
     public enum Squadra
     { Inter, Milan, Inter_Milan }
 
-
     private static Scenario _scenario;
     private static Squadra _squadra;
-    public static bool scenarioIsDefined;
-    public static bool squadraIsDefined;
-
 
     public static Scenario _SCENARIO
     {
@@ -22,7 +20,6 @@
         }
     }
 
-
     public static Squadra _SQUADRA
     {
         get { return _squadra; }
@@ -33,6 +30,10 @@
         }
     }
 
+    public static bool scenarioIsDefined;
+    public static bool squadraIsDefined;
+
+    public static Dictionary<string, string> emailCredentials = new Dictionary<string, string>();
 
 }
 

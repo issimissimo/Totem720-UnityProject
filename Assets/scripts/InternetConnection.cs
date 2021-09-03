@@ -23,7 +23,7 @@ public class InternetConnection : MonoBehaviour
 
     private IEnumerator TryToCheckDefaultUrl(ErrorManager.TYPE errorType, Action<bool> result)
     {
-        UnityWebRequest request = UnityWebRequest.Get("http://unity3d.com/");
+        UnityWebRequest request = UnityWebRequest.Get("http://google.it/");
         {
             yield return request.SendWebRequest();
 
