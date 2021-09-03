@@ -59,9 +59,9 @@ public class GameManager : MonoBehaviour
                 /// wait for end of video
                 videoManager.WaitForEnd(() =>
                 {
-                    // webcamManager.Pause();
+                    webcamManager.Pause();
 
-                    // screenshotHandler.TakeScreenshot();
+                    screenshotHandler.TakeScreenshot(1080, 1920, defVideoPath);
                 });
             });
 

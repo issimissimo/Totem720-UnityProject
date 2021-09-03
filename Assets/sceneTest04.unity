@@ -4085,7 +4085,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194230}
   - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
@@ -4169,18 +4168,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06fffcc4ef8899e4787bc2c6ced264a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &963194230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 752a50fe08628504790620a6663ef798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &967461784
@@ -7893,7 +7880,7 @@ MonoBehaviour:
   uiManager: {fileID: 1989218024}
   videoManager: {fileID: 1321775287}
   webcamManager: {fileID: 1804514267}
-  screenshotHandler: {fileID: 0}
+  screenshotHandler: {fileID: 963194229}
 --- !u!4 &1982431616
 Transform:
   m_ObjectHideFlags: 0

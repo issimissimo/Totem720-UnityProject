@@ -21,6 +21,8 @@ public class ScreenshotHandler : MonoBehaviour {
     private Camera myCamera;
     private bool takeScreenshotOnNextFrame;
 
+    private string filePath;
+
     private void Awake() {
         instance = this;
         myCamera = gameObject.GetComponent<Camera>();
@@ -36,21 +38,22 @@ public class ScreenshotHandler : MonoBehaviour {
             renderResult.ReadPixels(rect, 0, 0);
 
             byte[] byteArray = renderResult.EncodeToPNG();
-            System.IO.File.WriteAllBytes(Application.dataPath + "/CameraScreenshot.png", byteArray);
+            // System.IO.File.WriteAllBytes(Application.dataPath + "/CameraScreenshot.png", byteArray);
+            System.IO.File.WriteAllBytes(filePath + "/CameraScreenshot.png", byteArray);
             Debug.Log("Saved CameraScreenshot.png");
-            Debug.Log(Application.dataPath);
 
             RenderTexture.ReleaseTemporary(renderTexture);
             myCamera.targetTexture = null;
         }
     }
 
-    private void TakeScreenshot(int width, int height) {
+    public void TakeScreenshot(int width, int height, string path) {
+        filePath = path;
         myCamera.targetTexture = RenderTexture.GetTemporary(width, height, 16);
         takeScreenshotOnNextFrame = true;
     }
 
-    public static void TakeScreenshot_Static(int width, int height) {
-        instance.TakeScreenshot(width, height);
-    }
+    // public static void TakeScreenshot_Static(int width, int height) {
+    //     instance.TakeScreenshot(width, height);
+    // }
 }
