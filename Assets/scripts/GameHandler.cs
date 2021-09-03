@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 public class GameHandler : MonoBehaviour
@@ -18,5 +19,10 @@ public class GameHandler : MonoBehaviour
         //     Debug.Log("aaaaa");
         //     ScreenshotHandler.TakeScreenshot_Static(1080,1920);
         // }
+
+        if (Keyboard.current[Key.Space].wasPressedThisFrame){
+            Debug.Log("aaaaa");
+            ScreenshotHandler.TakeScreenshot_Static(1080,1920);
+        }
     }
 }

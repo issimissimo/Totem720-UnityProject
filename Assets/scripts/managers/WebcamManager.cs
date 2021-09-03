@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class webcam : MonoBehaviour
+public class WebcamManager : MonoBehaviour
 {
+    public GameObject webcam;
+    
     private WebCamTexture webcamTexture;
 
-    void Start()
+    IEnumerator Start()
     {
         Application.targetFrameRate = 60;
         
@@ -15,23 +17,25 @@ public class webcam : MonoBehaviour
         Debug.Log(webcamTexture.width);
         Debug.Log(webcamTexture.height);
         
-        Renderer rend = GetComponent<Renderer>();
+        Renderer rend = webcam.GetComponent<Renderer>();
         rend.material.mainTexture = webcamTexture;
 
-        // webcamTexture.Play();
         webcamTexture.requestedHeight = 1080;
         webcamTexture.requestedWidth = 1920;
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // /// init webcam
+        Play();
+        yield return new WaitForSeconds(2);
+        Pause();
     }
 
     public void Play(){
         webcamTexture.Play();
-        Debug.Log(webcamTexture.width + " - " + webcamTexture.height);
+        // Debug.Log(webcamTexture.width + " - " + webcamTexture.height);
+    }
+
+     public void Pause(){
+        webcamTexture.Pause();
     }
 
     public void Stop(){

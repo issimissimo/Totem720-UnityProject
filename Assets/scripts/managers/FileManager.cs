@@ -52,21 +52,6 @@ public class FileManager : MonoBehaviour
     }
 
 
-
-
-    // public static void CheckDirectory(string path, ErrorManager.TYPE errorType, Action<bool> result = null)
-    // {
-    //     if (Directory.Exists(path))
-    //     {
-    //         if (result != null) result(true);
-    //     }
-    //     else
-    //     {
-    //         ErrorManager.instance.ShowError(errorType, "La cartella \n" + path + "\n non esiste");
-    //         if (result != null) result(false);
-    //     }
-    // }
-
     public static bool CheckDirectory(string path, ErrorManager.TYPE errorType)
     {
         if (Directory.Exists(path))

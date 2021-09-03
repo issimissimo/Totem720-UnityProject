@@ -9,5 +9,11 @@ public class ButtonShowPanel : ButtonBase
     {
         base.onClick();
         GameManager.instance.uiManager.ShowPanel(panelToShow);
+
+        PanelType panelType = panelToShow.GetComponent<PanelType>();
+        if (panelType != null){
+            Globals._SCENARIO = panelType.scenario;
+            Globals._SQUADRA = panelType.squadra;
+        }
     }
 }

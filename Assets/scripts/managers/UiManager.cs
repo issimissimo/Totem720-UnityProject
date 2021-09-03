@@ -40,56 +40,37 @@ public class UiManager : MonoBehaviour
     }
 
 
-    public void ShowMainPanel()
-    {
-        ShowPanel(main_panel);
+    public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra){
+        foreach (GameObject panel in ui_panels){
+            PanelType panelType = panel.GetComponent<PanelType>();
+            if (panelType != null){
+                if (panelType.scenario == scenario && panelType.squadra == squadra){
+                    ShowPanel(panel);
+                }
+            }
+        }
     }
 
 
+    public void ShowInitPanel()
+    {
+        ShowPanel(main_panel);
+        ShowUiContainer();
+    }
+
+
+    /// Hide the container for all the UI panels
     public void HideUiContainer()
     {
         ui_panels_container.SetActive(false);
     }
 
+    /// Show the container for all the UI panels
     public void ShowUiContainer()
     {
         ui_panels_container.SetActive(true);
     }
 
-
-
-    // private int panelNumber = 0;
-
-    // [Serializable]
-    // public class PanelList
-    // {
-    //     public GameObject[] panels;
-    // }
-
-
-    // [SerializeField] GameObject mainPanel;
-
-
-    // [Serializable]
-    // public class SuperList
-    // {
-    //     public PanelList[] panelLists;
-    // }
-
-    // [SerializeField] SuperList[] superlist;
-
-
-
-
-
-    // void Start()
-    // {
-    //     for (int i = 0; i < panels.Length; i++)
-    //     {
-    //         if (i == 0) panels[i].SetActive(true);
-    //         else panels[i].SetActive(false);
-    //     }
-    // }
 
     public void ShowPreviousPanel()
     {

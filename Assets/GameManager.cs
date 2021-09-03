@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public FileManager fileManager;
     public UiManager uiManager;
     public VideoManager videoManager;
+    public WebcamManager webcamManager;
+    public ScreenshotHandler screenshotHandler;
 
     private void Awake()
     {
@@ -29,25 +31,42 @@ public class GameManager : MonoBehaviour
         InternetConnection.instance.Check(ErrorManager.TYPE.WARNING);
 
         /// show main UI
-        GoToMainUi();
+        Init();
     }
 
 
-    public void GoToMainUi()
+    public void Init()
     {
-        uiManager.ShowMainPanel();
+        uiManager.ShowInitPanel();
     }
 
-    public void StartGameSession(Globals.Scenario scenario, Globals.Squadra squadra, int videoNumber)
+    public void StartGameSession(int videoNumber)
     {
-        string videoUrl = fileManager.GetFile(scenario, squadra, videoNumber);
+        ///get video url
+        string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoNumber);
         if (videoUrl != null)
         {
+            /// play webcam
+            webcamManager.Play();
+
             /// play video
             Debug.Log("LANCIO VIDEO: " + videoUrl);
-            // videoManager.Play(videoUrl);
+            videoManager.Play(videoUrl, () =>
+            {
+                /// hide UI panels
+                uiManager.HideUiContainer();
 
-            /// play webcam
+                /// wait for end of video
+                videoManager.WaitForEnd(() =>
+                {
+                    // webcamManager.Pause();
+
+                    // screenshotHandler.TakeScreenshot();
+                });
+            });
+
+
+
         }
 
     }
