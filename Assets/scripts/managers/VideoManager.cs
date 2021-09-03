@@ -8,7 +8,7 @@ public class VideoManager : MonoBehaviour
 {
     [SerializeField] VideoPlayer videoPlayer;
 
-    [HideInInspector] double videoDuration;
+    [HideInInspector] public double videoDuration;
 
     public void Play(string fileUrl, Action callback = null)
     {

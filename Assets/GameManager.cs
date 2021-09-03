@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     public VideoManager videoManager;
     public WebcamManager webcamManager;
     public ScreenshotHandler screenshotHandler;
+    public EmailHandler emailHandler;
 
     private void Awake()
     {
@@ -31,15 +33,36 @@ public class GameManager : MonoBehaviour
         InternetConnection.instance.Check(ErrorManager.TYPE.WARNING);
 
         /// show main UI
-        Init();
+        ShowMain();
     }
 
+    // private void Update() {
+    //     if ( Keyboard.current[Key.Space].wasPressedThisFrame){
+    //         screenshotHandler.TakeScreenshot(1080, 1920, defVideoPath);
+    //     }
+    // }
 
-    public void Init()
+
+    public void ShowMain()
     {
-        uiManager.ShowInitPanel();
+        /// hide UI panels
+        uiManager.ShowUiContainer();
+
+        if (Globals.scenarioIsDefined && Globals.squadraIsDefined)
+        {
+            uiManager.ShowPanelByType(Globals._SCENARIO, Globals._SQUADRA);
+        }
+        else
+        {
+            uiManager.ShowInitPanel();
+        }
     }
 
+
+
+    //////////////////////////////////////////
+    /// Start game
+    //////////////////////////////////////////
     public void StartGameSession(int videoNumber)
     {
         ///get video url
@@ -54,21 +77,27 @@ public class GameManager : MonoBehaviour
             videoManager.Play(videoUrl, () =>
             {
                 /// hide UI panels
-                uiManager.HideUiContainer();
+                uiManager.ShowGame(videoManager.videoDuration);
 
                 /// wait for end of video
                 videoManager.WaitForEnd(() =>
                 {
+                    /// pause webcam
                     webcamManager.Pause();
 
-                    screenshotHandler.TakeScreenshot(1080, 1920, defVideoPath);
+                    /// take screenshot
+                    screenshotHandler.TakeScreenshot(1080, 1920, defVideoPath, (screenshotFullName) =>
+                    {
+                        /// return to main UI
+                        ShowMain();
+
+                        emailHandler.email_send();
+
+                        Debug.Log(screenshotFullName);
+                    });
                 });
             });
-
-
-
         }
-
     }
 
 

@@ -8,19 +8,29 @@
 
     private static Scenario _scenario;
     private static Squadra _squadra;
+    public static bool scenarioIsDefined;
+    public static bool squadraIsDefined;
 
 
     public static Scenario _SCENARIO
     {
         get { return _scenario; }
-        set { _scenario = value; }
+        set
+        {
+            _scenario = value;
+            scenarioIsDefined = true;
+        }
     }
 
 
     public static Squadra _SQUADRA
     {
         get { return _squadra; }
-        set { _squadra = value; }
+        set
+        {
+            _squadra = value;
+            squadraIsDefined = true;
+        }
     }
 
 

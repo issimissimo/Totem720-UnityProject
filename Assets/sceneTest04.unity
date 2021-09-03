@@ -5036,6 +5036,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!1 &1288683441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1288683442}
+  - component: {fileID: 1288683443}
+  m_Layer: 0
+  m_Name: EmailHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1288683442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288683441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1982431616}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1288683443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288683441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459136896a6896d45ad5b40d4e3cbe2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1321775285
 GameObject:
   m_ObjectHideFlags: 0
@@ -5080,6 +5123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 533730465}
+  videoDuration: 0
 --- !u!1 &1329387893
 GameObject:
   m_ObjectHideFlags: 0
@@ -6972,7 +7016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1698086689
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7003,7 +7047,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698086688}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ffb9dbb23360cc34fa99bab43e444f6c, type: 2}
   m_CullingMode: 0
@@ -7014,22 +7058,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &1698086691
-Animation:
+--- !u!114 &1698086691
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698086688}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 692b0522391c5f24ab234961b382aaa3, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 692b0522391c5f24ab234961b382aaa3, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b2c06a6dfdec34a97435c5f7a3786d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1782503740
 GameObject:
   m_ObjectHideFlags: 0
@@ -7881,6 +7921,7 @@ MonoBehaviour:
   videoManager: {fileID: 1321775287}
   webcamManager: {fileID: 1804514267}
   screenshotHandler: {fileID: 963194229}
+  emailHandler: {fileID: 1288683443}
 --- !u!4 &1982431616
 Transform:
   m_ObjectHideFlags: 0
@@ -7896,6 +7937,7 @@ Transform:
   - {fileID: 1989218023}
   - {fileID: 1321775286}
   - {fileID: 1804514266}
+  - {fileID: 1288683442}
   m_Father: {fileID: 569563579}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8023,6 +8065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui_raycaster: {fileID: 1517488405}
   ui_panels_container: {fileID: 2082912522}
+  countdown: {fileID: 1698086691}
 --- !u!1 &1989284310
 GameObject:
   m_ObjectHideFlags: 0

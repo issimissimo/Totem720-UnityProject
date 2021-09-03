@@ -7,7 +7,7 @@ using System;
 
 
 
-public class mail : MonoBehaviour
+public class EmailHandler : MonoBehaviour
 {
     public void email_send()
     {
@@ -29,12 +29,15 @@ public class mail : MonoBehaviour
                 mail.Attachments.Add(attachment);
 
                 SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("d.suppo@issimissimo.com", "yXQfBD!BCBXv");
+                SmtpServer.Credentials = new System.Net.NetworkCredential("d.suppo@issimissimo.com", "cx$eGM#OQuW0");
                 SmtpServer.EnableSsl = true;
 
                 SmtpServer.SendMailAsync(mail);
 
                 Debug.Log("DONE");
+            }
+            else{
+                ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Non è possibile inviare la mail");
             }
         });
 

@@ -8,6 +8,7 @@ public class UiManager : MonoBehaviour
 {
     public GraphicRaycaster ui_raycaster; /// Don't delete! It's used by buttons!!!
     [SerializeField] GameObject ui_panels_container;
+    [SerializeField] Countdown countdown;
     private List<GameObject> ui_panels = new List<GameObject>();
     private GameObject main_panel;
 
@@ -40,11 +41,15 @@ public class UiManager : MonoBehaviour
     }
 
 
-    public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra){
-        foreach (GameObject panel in ui_panels){
+    public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)
+    {
+        foreach (GameObject panel in ui_panels)
+        {
             PanelType panelType = panel.GetComponent<PanelType>();
-            if (panelType != null){
-                if (panelType.scenario == scenario && panelType.squadra == squadra){
+            if (panelType != null)
+            {
+                if (panelType.scenario == scenario && panelType.squadra == squadra)
+                {
                     ShowPanel(panel);
                 }
             }
@@ -52,10 +57,10 @@ public class UiManager : MonoBehaviour
     }
 
 
+    /// Show the very 1st panel (scelta SCENARIO)
     public void ShowInitPanel()
     {
         ShowPanel(main_panel);
-        ShowUiContainer();
     }
 
 
@@ -81,4 +86,13 @@ public class UiManager : MonoBehaviour
         //     panels[panelNumber].SetActive(true);
         // }
     }
+
+    public void ShowGame(double videoDuration)
+    {
+        HideUiContainer();
+
+        countdown.Play(videoDuration);
+    }
+
+   
 }
