@@ -22,17 +22,23 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        /// Check for video path exist
-        fileManager.CkeckDefaultPath();
-
         /// Check for config file exist
-        fileManager.CheckConfigFile();
+        fileManager.CheckConfigFile((result) =>
+        {
+            if (result)
+            {
+                /// Check for video path specified
+                /// in the config file exist
+                fileManager.CkeckDefaultPath();
 
-        /// Check for Internet available
-        InternetConnection.instance.Check(ErrorManager.TYPE.WARNING);
 
-        /// show main UI
-        ShowMain();
+                /// Check for Internet available
+                InternetConnection.instance.Check(ErrorManager.TYPE.WARNING);
+
+                /// show main UI
+                ShowMain();
+            }
+        });
     }
 
     // private void Update() {
@@ -44,9 +50,6 @@ public class GameManager : MonoBehaviour
 
     public void ShowMain()
     {
-        /// hide UI panels
-        uiManager.ShowUiContainer();
-
         if (Globals.scenarioIsDefined && Globals.squadraIsDefined)
         {
             uiManager.ShowPanelByType(Globals._SCENARIO, Globals._SQUADRA);

@@ -34,24 +34,28 @@ public class FileManager : MonoBehaviour
 
 
 
-    public void CheckConfigFile()
+    public void CheckConfigFile(Action<bool> callback)
     {
-        if (!File.Exists(Application.dataPath + "/config.xml"))
-        {
-            print(Application.dataPath);
-            print("NON ESISTE!!!");
-            XmlDocument doc = new XmlDocument();
-            XmlElement el = (XmlElement)doc.AppendChild(doc.CreateElement("Foo"));
-            el.SetAttribute("Bar", "some & value");
-            el.AppendChild(doc.CreateElement("Nested")).InnerText = "data";
-            print(doc.OuterXml);
+        string configFileName = "config.json";
 
-            // string fileName = Application.dataPath + "config.xml";
-            // FileStream stream = new FileStream(fileName, FileMode.Create);
+        /// save the congig file with empty values
+        if (!File.Exists(Application.dataPath + "/" + configFileName))
+        {
+            Globals.MainData mainData = new Globals.MainData();
+            string configFile = JsonUtility.ToJson(mainData, true);
+            System.IO.File.WriteAllText(Application.dataPath + "/" + configFileName, configFile);
+
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Il file di configurazione config.json non esisteva, ed è stato creato nella cartella " + Application.dataPath +
+            ". Si prega di completarlo con tutti i parametri e riavviare l'applicazione");
+
+            callback(false);
         }
+        /// load the config file
         else
         {
             print("ESISTE");
+
+            callback(true);
 
         }
     }

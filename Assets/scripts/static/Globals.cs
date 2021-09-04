@@ -36,29 +36,39 @@ public static class Globals
 
     public static Dictionary<string, string> emailCredentials = new Dictionary<string, string>();
 
+
+
+
+    /////////////////////////////////
+    /// main
+    /////////////////////////////////
+    [Serializable]
+    public class MainData
+    {
+        public string videoFolder;
+        public Email email = new Email();
+    }
+
+
+
+
+    /////////////////////////////////
+    /// email
+    /////////////////////////////////
+    [Serializable]
+    public class Email
+    {
+        public string da;
+        public string soggetto;
+        public string descrizione;
+        public string SMTP;
+        public string password;
+    }
 }
 
 
 
 
-[Serializable]
-public class MainData
-{
-    public string videoFolder;
-    public Email email = new Email();
-}
 
-
-
-
-[Serializable]
-public class Email
-{
-    public string da;
-    public string soggetto;
-    public string descrizione;
-    public string SMTP;
-    public string password;
-}
 
 

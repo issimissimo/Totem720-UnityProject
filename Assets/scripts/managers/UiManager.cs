@@ -20,6 +20,9 @@ public class UiManager : MonoBehaviour
             ui_panels.Add(child.gameObject);
         }
         main_panel = ui_panels[ui_panels.Count - 1];
+
+        /// hide panels at start
+        HideUiContainer();
     }
 
     private void HideAllUiPanels(Action callback = null)
@@ -43,6 +46,8 @@ public class UiManager : MonoBehaviour
 
     public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)
     {
+        ShowUiContainer();
+        
         foreach (GameObject panel in ui_panels)
         {
             PanelType panelType = panel.GetComponent<PanelType>();
@@ -60,6 +65,8 @@ public class UiManager : MonoBehaviour
     /// Show the very 1st panel (scelta SCENARIO)
     public void ShowInitPanel()
     {
+        ShowUiContainer();
+        
         ShowPanel(main_panel);
     }
 
