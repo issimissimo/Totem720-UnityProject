@@ -25,7 +25,6 @@ using System.Threading;
 
 public class UDPReceive : MonoBehaviour
 {
-
     // receiving Thread
     Thread receiveThread;
 
@@ -34,11 +33,30 @@ public class UDPReceive : MonoBehaviour
 
     // public
     // public string IP = "127.0.0.1"; default local
-    public int port; // define > init
+    public int port = 8051; // define > init
 
     // infos
     public string lastReceivedUDPPacket = "";
     public string allReceivedUDPPackets = ""; // clean up this from time to time!
+
+
+    private void Update()
+    {
+        if (lastReceivedUDPPacket != "")
+        {
+            ShowPanelOnMessageReceived(lastReceivedUDPPacket);
+            lastReceivedUDPPacket = "";
+        }
+    }
+
+
+    private void ShowPanelOnMessageReceived(string msg)
+    {
+        string[] array = msg.Split(' ');
+
+        // GameManager.instance.ShowMain();
+    }
+
 
 
     // start from shell
@@ -59,6 +77,7 @@ public class UDPReceive : MonoBehaviour
     {
 
         init();
+
     }
 
     // OnGUI
@@ -81,7 +100,7 @@ public class UDPReceive : MonoBehaviour
         print("UDPSend.init()");
 
         // define port
-        port = 8051;
+        // port = 8051;
 
         // status
         print("Sending to 127.0.0.1 : " + port);
@@ -119,6 +138,7 @@ public class UDPReceive : MonoBehaviour
 
                 // Den abgerufenen Text anzeigen.
                 print(">> " + text);
+
 
                 // latest UDPpacket
                 lastReceivedUDPPacket = text;

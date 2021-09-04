@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.IO;
+
 
 public class GameManager : MonoBehaviour
 {
-    public static string defVideoPath = "C:/Users/Daniele/Desktop/Video per Totem";
-
     public static GameManager instance;
-
     public FileManager fileManager;
     public UiManager uiManager;
     public VideoManager videoManager;
@@ -26,14 +23,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         /// Check for video path exist
-        if (!FileManager.CheckDirectory(defVideoPath, ErrorManager.TYPE.WARNING))
-        {
-            /// create folder if doesn't exist
-            Directory.CreateDirectory(defVideoPath);
-            ErrorManager.instance.ShowError(ErrorManager.TYPE.INFO, "La cartella è stata appena creata. Si prega di chiudere l'applicazione ed caricare i video nella cartella");
-        }
+        fileManager.CkeckDefaultPath();
 
-        FileManager.defPath = defVideoPath;
+        /// Check for config file exist
+        fileManager.CheckConfigFile();
 
         /// Check for Internet available
         InternetConnection.instance.Check(ErrorManager.TYPE.WARNING);
@@ -82,7 +75,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("LANCIO VIDEO: " + videoUrl);
             videoManager.Play(videoUrl, () =>
             {
-                /// hide UI panels
+                /// show game UI
                 uiManager.ShowGame(videoManager.videoDuration);
 
                 /// wait for end of video
@@ -92,7 +85,7 @@ public class GameManager : MonoBehaviour
                     webcamManager.Pause();
 
                     /// take screenshot
-                    screenshotHandler.TakeScreenshot(1080, 1920, defVideoPath, (screenshotFullName) =>
+                    screenshotHandler.TakeScreenshot(1080, 1920, FileManager.defPath, (screenshotFullName) =>
                     {
                         /// return to main UI
                         ShowMain();
@@ -104,17 +97,6 @@ public class GameManager : MonoBehaviour
                 });
             });
         }
-    }
-
-
-    void StartPhotoSession()
-    {
-
-    }
-
-    void StartMailSession()
-    {
-
     }
 
 

@@ -2,6 +2,7 @@
 using System.Net;
 using System.Net.Mail;
 using System;
+// using System.DirectoryServices.AccountManagement;
 
 
 public class EmailHandler : MonoBehaviour
@@ -14,22 +15,38 @@ public class EmailHandler : MonoBehaviour
             {
                 try
                 {
+                    string from = "d.suppo@issimissimo.com";
+                    string to = "danielesuppo@gmail.com";
+                    string title = "Immagine da App del totem";
+                    string body = "test";
+                    string password = "cx$eGM#OQuW0";
+                    string smtpServer = "mail.issimissimo.com";
+                    
+
+                    // /// validate credentials
+                    // bool valid = false;
+                    // using (PrincipalContext context = new PrincipalContext(ContextType.Domain))
+                    // {
+                    //     valid = context.ValidateCredentials(from, password);
+                    // }
+
+
+
                     Debug.Log("Sending email...");
 
                     MailMessage mail = new MailMessage();
-                    SmtpClient SmtpServer = new SmtpClient("mail.issimissimo.com");
-                    mail.From = new MailAddress("d.suppo@issimissimo.com");
-                    mail.To.Add("danielesuppo@gmail.com");
-                    mail.Subject = "PROVOLONE";
-                    mail.Body = "mail with attachment";
+                    SmtpClient SmtpServer = new SmtpClient(smtpServer);
+                    mail.From = new MailAddress(from);
+                    mail.To.Add(to);
+                    mail.Subject = title;
+                    mail.Body = body;
 
                     System.Net.Mail.Attachment attachment;
                     attachment = new System.Net.Mail.Attachment(filePath);
                     mail.Attachments.Add(attachment);
 
                     SmtpServer.Port = 587;
-                    // SmtpServer.Credentials = new System.Net.NetworkCredential("d.suppo@issimissimo.com", "cx$eGM#OQuW0");
-                    SmtpServer.Credentials = new System.Net.NetworkCredential("d.suppo@issimissimo.com", "ckasdadsx$eGM#OQuW0");
+                    SmtpServer.Credentials = new NetworkCredential(from, password);
                     SmtpServer.EnableSsl = true;
 
                     SmtpServer.SendMailAsync(mail);
@@ -39,6 +56,7 @@ public class EmailHandler : MonoBehaviour
                 catch (Exception e)
                 {
                     Debug.Log("Error!!!: " + e.ToString());
+                    ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, e.ToString());
                 }
             }
             else
