@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System;
 
 public static class Globals
 {
@@ -35,6 +36,29 @@ public static class Globals
 
     public static Dictionary<string, string> emailCredentials = new Dictionary<string, string>();
 
+}
+
+
+
+
+[Serializable]
+public class MainData
+{
+    public string videoFolder;
+    public Email email = new Email();
+}
+
+
+
+
+[Serializable]
+public class Email
+{
+    public string da;
+    public string soggetto;
+    public string descrizione;
+    public string SMTP;
+    public string password;
 }
 
 

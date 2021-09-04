@@ -9,7 +9,7 @@ public class FileManager : MonoBehaviour
 {
     Dictionary<Globals.Scenario, string> url_scenario = new Dictionary<Globals.Scenario, string>();
     Dictionary<Globals.Squadra, string> url_squadra = new Dictionary<Globals.Squadra, string>();
-    public static string defPath = "C:/Users/Daniele/Desktop/Video per Totem2";
+    public static string defPath = "C:/Users/Daniele/Desktop/Video per Totem";
     private string fileExtension = ".webm";
 
 
@@ -23,34 +23,40 @@ public class FileManager : MonoBehaviour
     }
 
 
-    public void CkeckDefaultPath(){
-        if (!CheckDirectory(defPath, ErrorManager.TYPE.WARNING)){
+    public void CkeckDefaultPath()
+    {
+        if (!CheckDirectory(defPath, ErrorManager.TYPE.WARNING))
+        {
             StartCoroutine(CreateDefaultDirectories());
         }
     }
 
 
-    public void CheckConfigFile(){
-        
-    }
 
 
-    private IEnumerator CreateDefaultDirectories()
+    public void CheckConfigFile()
     {
-        Directory.CreateDirectory(defPath);
-        yield return new WaitForSeconds(0.5f);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori]);
-        yield return new WaitForSeconds(0.5f);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Inter]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Milan]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Inter_Milan]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Inter]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Milan]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Inter_Milan]);
+        if (!File.Exists(Application.dataPath + "/config.xml"))
+        {
+            print(Application.dataPath);
+            print("NON ESISTE!!!");
+            XmlDocument doc = new XmlDocument();
+            XmlElement el = (XmlElement)doc.AppendChild(doc.CreateElement("Foo"));
+            el.SetAttribute("Bar", "some & value");
+            el.AppendChild(doc.CreateElement("Nested")).InnerText = "data";
+            print(doc.OuterXml);
 
-        ErrorManager.instance.ShowError(ErrorManager.TYPE.INFO, "La cartella è stata appena creata. Si prega di chiudere l'applicazione e caricare i video nelle cartelle specifiche");
+            // string fileName = Application.dataPath + "config.xml";
+            // FileStream stream = new FileStream(fileName, FileMode.Create);
+        }
+        else
+        {
+            print("ESISTE");
+
+        }
     }
+
+
 
 
     public string GetFile(Globals.Scenario scenario, Globals.Squadra squadra, int videoNumber)
@@ -84,6 +90,9 @@ public class FileManager : MonoBehaviour
     }
 
 
+
+
+
     public static bool CheckDirectory(string path, ErrorManager.TYPE errorType)
     {
         if (Directory.Exists(path))
@@ -96,6 +105,9 @@ public class FileManager : MonoBehaviour
             return false;
         }
     }
+
+
+
 
 
     private List<string> GetFilesInFolder(string path)
@@ -121,5 +133,24 @@ public class FileManager : MonoBehaviour
 
             return videos;
         }
+    }
+
+
+
+    private IEnumerator CreateDefaultDirectories()
+    {
+        Directory.CreateDirectory(defPath);
+        yield return new WaitForSeconds(0.5f);
+        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe]);
+        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori]);
+        yield return new WaitForSeconds(0.5f);
+        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Inter]);
+        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Milan]);
+        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Inter_Milan]);
+        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Inter]);
+        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Milan]);
+        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Inter_Milan]);
+
+        ErrorManager.instance.ShowError(ErrorManager.TYPE.INFO, "La cartella è stata appena creata. Si prega di chiudere l'applicazione e caricare i video nelle cartelle specifiche");
     }
 }
