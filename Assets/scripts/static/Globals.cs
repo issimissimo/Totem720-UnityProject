@@ -18,6 +18,7 @@ public static class Globals
         {
             _scenario = value;
             scenarioIsDefined = true;
+            data.scenario = value.ToString();
         }
     }
 
@@ -28,6 +29,7 @@ public static class Globals
         {
             _squadra = value;
             squadraIsDefined = true;
+            data.squadra = value.ToString();
         }
     }
 
@@ -35,7 +37,7 @@ public static class Globals
     public static bool squadraIsDefined;
 
 
-    public static MainData data; 
+    public static MainData data;
 
 
     /////////////////////////////////
@@ -45,6 +47,8 @@ public static class Globals
     public class MainData
     {
         public string videoFolder;
+        public string scenario;
+        public string squadra;
         public Email email = new Email();
     }
 

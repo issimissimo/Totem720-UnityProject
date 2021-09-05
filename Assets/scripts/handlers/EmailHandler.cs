@@ -57,17 +57,16 @@ public class EmailHandler : MonoBehaviour
                     }
                     catch (Exception e)
                     {
-                        Debug.Log("Error!!!: " + e.ToString());
                         ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, e.ToString());
                     }
                 }
                 else{
-                    ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Non sono presenti alcuni dati della mail nel file di configurazione");
+                    ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Non sono presenti alcuni dati della mail nel file di configurazione\n\n Non è stato possibile inviare la mail");
                 }
             }
             else
             {
-                ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Non è possibile inviare la mail");
+                ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Non è stato possibile inviare la mail");
             }
         });
     }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ButtonShowPanel : ButtonBase
 {
@@ -8,12 +6,16 @@ public class ButtonShowPanel : ButtonBase
     public override void onClick()
     {
         base.onClick();
-        GameManager.instance.uiManager.ShowPanel(panelToShow);
 
+        /// If this button open "squadra" panel...
         PanelType panelType = panelToShow.GetComponent<PanelType>();
         if (panelType != null){
-            Globals._SCENARIO = panelType.scenario;
-            Globals._SQUADRA = panelType.squadra;
+            GameManager.instance.ShowPanelByType(panelType.scenario, panelType.squadra);
+        }
+        
+        /// If this button open "scenario" panel...
+        else{
+            GameManager.instance.uiManager.ShowPanel(panelToShow);
         }
     }
 }

@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System;
+using System.Diagnostics;
 
 public class FileManager : MonoBehaviour
 {
     // Dictionary<Globals.Scenario, string> url_scenario = new Dictionary<Globals.Scenario, string>();
     // Dictionary<Globals.Squadra, string> url_squadra = new Dictionary<Globals.Squadra, string>();
     private string fileExtension = ".webm";
+    private string configFileName = "config.json";
 
 
     // private void Awake()
@@ -36,8 +38,9 @@ public class FileManager : MonoBehaviour
                 StartCoroutine(CreateDefaultDirectories());
             }
         }
-        else{
-            ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Nel file config.json non è stata specificata la cartella in cui ci sono i video");
+        else
+        {
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Nel file di configurazione non è stata specificata la cartella in cui ci sono i video");
         }
     }
 
@@ -46,35 +49,75 @@ public class FileManager : MonoBehaviour
 
     public void CheckConfigFile(Action<bool> callback)
     {
-        string configFileName = "config.json";
-
-        /// save the congig file with empty values
+        ///
+        /// save the config file with empty values
+        ///
         if (!File.Exists(Application.persistentDataPath + "/" + configFileName))
         {
             Globals.MainData mainData = new Globals.MainData();
             string configFile = JsonUtility.ToJson(mainData, true);
+            print(configFile);
             System.IO.File.WriteAllText(Application.persistentDataPath + "/" + configFileName, configFile);
 
-            ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Il file di configurazione config.json non esisteva, ed è stato creato nella cartella " + Application.persistentDataPath +
-            ". Si prega di completarlo con tutti i parametri e riavviare l'applicazione");
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Il file di configurazione non esiste\n\n E' stato creato nella cartella\n" + Application.persistentDataPath +
+            "\n\n Si prega di completarlo con tutti i parametri e riavviare l'applicazione");
 
+            OpenFileForEdit(configFileName);
             callback(false);
         }
+        ///
         /// load the config file
+        ///
         else
         {
             string filePath = System.IO.Path.Combine(Application.persistentDataPath, configFileName);
             string data = System.IO.File.ReadAllText(filePath);
 
-            Globals.MainData mainData = JsonUtility.FromJson<Globals.MainData>(data);
-            Globals.data = mainData;
-            Debug.Log(Globals.data.videoFolder);
+            try
+            {
+                Globals.MainData mainData = JsonUtility.FromJson<Globals.MainData>(data);
+                Globals.data = mainData;
 
-            callback(true);
+                if (Utils.ValidateString(Globals.data.scenario) && Utils.ValidateString(Globals.data.squadra))
+                {
+                    try
+                    {
+                        Globals._SCENARIO = (Globals.Scenario)System.Enum.Parse(typeof(Globals.Scenario), Globals.data.scenario);
+                        Globals._SQUADRA = (Globals.Squadra)System.Enum.Parse(typeof(Globals.Squadra), Globals.data.squadra);
+
+                        GameManager.instance.ShowInit();
+                    }
+                    catch (Exception e)
+                    {
+                        ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Lo scenario e la squadra definiti nel file di configurazione non sono stati riconosciuti");
+                    }
+                }
+
+                callback(true);
+            }
+
+
+            catch (Exception e)
+            {
+                ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, e.ToString());
+                callback(false);
+            }
         }
     }
 
 
+    public void UpdateConfigFile(){
+        print("----------- UPDATE CONFIG FILE!!!!!!!!!!!! ---------");
+        string configFile = JsonUtility.ToJson(Globals.data, true);
+        print(configFile);
+        System.IO.File.WriteAllText(Application.persistentDataPath + "/" + configFileName, configFile);
+    }
+
+
+    public void OpenFileForEdit(string fileName)
+    {
+        StartCoroutine(_OpenFileForEdit(fileName));
+    }
 
 
     public string GetFile(Globals.Scenario scenario, Globals.Squadra squadra, int videoNumber)
@@ -181,5 +224,12 @@ public class FileManager : MonoBehaviour
         Directory.CreateDirectory(Globals.data.videoFolder + "/" + Globals.Scenario.Calciatori.ToString() + "/" + Globals.Squadra.Inter_Milan.ToString());
 
         ErrorManager.instance.ShowError(ErrorManager.TYPE.INFO, "La cartella è stata appena creata. Si prega di chiudere l'applicazione e caricare i video nelle cartelle specifiche");
+    }
+
+
+    private IEnumerator _OpenFileForEdit(string fileName)
+    {
+        yield return new WaitForSeconds(0.5f);
+        System.Diagnostics.Process.Start("notepad.exe", Application.persistentDataPath + "\\" + fileName);
     }
 }

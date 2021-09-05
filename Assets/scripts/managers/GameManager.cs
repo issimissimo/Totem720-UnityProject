@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
                 InternetConnection.instance.Check(ErrorManager.TYPE.WARNING);
 
                 /// show main UI
-                ShowMain();
+                ShowInit();
             }
         });
     }
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     // }
 
 
-    public void ShowMain()
+    public void ShowInit()
     {
         if (Globals.scenarioIsDefined && Globals.squadraIsDefined)
         {
@@ -59,6 +59,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+    public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra){
+
+        /// if inputs are different from the stored ones,
+        /// write them in the config.json 
+        if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA){
+            Globals._SCENARIO = scenario;
+            Globals._SQUADRA = squadra;
+            fileManager.UpdateConfigFile();
+        }
+
+        ShowInit();
+    }
 
 
     //////////////////////////////////////////
@@ -90,7 +103,7 @@ public class GameManager : MonoBehaviour
                     screenshotHandler.TakeScreenshot(1080, 1920, Globals.data.videoFolder, (screenshotFullName) =>
                     {
                         /// return to main UI
-                        ShowMain();
+                        ShowInit();
 
                         emailHandler.Send(screenshotFullName);
 
