@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System;
-using System.Xml;
 
 public class FileManager : MonoBehaviour
 {
     Dictionary<Globals.Scenario, string> url_scenario = new Dictionary<Globals.Scenario, string>();
     Dictionary<Globals.Squadra, string> url_squadra = new Dictionary<Globals.Squadra, string>();
-    // public static string defPath = "C:/Users/Daniele/Desktop/Video per Totem";
     private string fileExtension = ".webm";
 
 

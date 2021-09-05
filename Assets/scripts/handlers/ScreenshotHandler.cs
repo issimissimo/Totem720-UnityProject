@@ -69,8 +69,4 @@ public class ScreenshotHandler : MonoBehaviour
         myCamera.targetTexture = RenderTexture.GetTemporary(width, height, 16);
         takeScreenshotOnNextFrame = true;
     }
-
-    // public static void TakeScreenshot_Static(int width, int height) {
-    //     instance.TakeScreenshot(width, height);
-    // }
 }

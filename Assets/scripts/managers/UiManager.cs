@@ -84,16 +84,6 @@ public class UiManager : MonoBehaviour
     }
 
 
-    public void ShowPreviousPanel()
-    {
-        // if (panelNumber > 0)
-        // {
-        //     panels[panelNumber].SetActive(false);
-        //     panelNumber--;
-        //     panels[panelNumber].SetActive(true);
-        // }
-    }
-
     public void ShowGame(double videoDuration)
     {
         HideUiContainer();
