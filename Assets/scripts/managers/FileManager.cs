@@ -39,13 +39,13 @@ public class FileManager : MonoBehaviour
         string configFileName = "config.json";
 
         /// save the congig file with empty values
-        if (!File.Exists(Application.dataPath + "/" + configFileName))
+        if (!File.Exists(Application.persistentDataPath + "/" + configFileName))
         {
             Globals.MainData mainData = new Globals.MainData();
             string configFile = JsonUtility.ToJson(mainData, true);
-            System.IO.File.WriteAllText(Application.dataPath + "/" + configFileName, configFile);
+            System.IO.File.WriteAllText(Application.persistentDataPath + "/" + configFileName, configFile);
 
-            ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Il file di configurazione config.json non esisteva, ed è stato creato nella cartella " + Application.dataPath +
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Il file di configurazione config.json non esisteva, ed è stato creato nella cartella " + Application.persistentDataPath +
             ". Si prega di completarlo con tutti i parametri e riavviare l'applicazione");
 
             callback(false);
@@ -53,10 +53,14 @@ public class FileManager : MonoBehaviour
         /// load the config file
         else
         {
-            print("ESISTE");
+            string filePath = System.IO.Path.Combine(Application.persistentDataPath, configFileName);
+            string data = System.IO.File.ReadAllText(filePath);
+
+            Globals.MainData mainData = JsonUtility.FromJson<Globals.MainData>(data);
+            Globals.data = mainData;
+            Debug.Log(Globals.data.videoFolder);
 
             callback(true);
-
         }
     }
 

@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
                 /// in the config file exist
                 fileManager.CkeckDefaultPath();
 
-
                 /// Check for Internet available
                 InternetConnection.instance.Check(ErrorManager.TYPE.WARNING);
 

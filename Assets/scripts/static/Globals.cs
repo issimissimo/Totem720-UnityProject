@@ -34,9 +34,8 @@ public static class Globals
     public static bool scenarioIsDefined;
     public static bool squadraIsDefined;
 
-    public static Dictionary<string, string> emailCredentials = new Dictionary<string, string>();
 
-
+    public static MainData data; 
 
 
     /////////////////////////////////
