@@ -9,7 +9,7 @@ public class FileManager : MonoBehaviour
 {
     Dictionary<Globals.Scenario, string> url_scenario = new Dictionary<Globals.Scenario, string>();
     Dictionary<Globals.Squadra, string> url_squadra = new Dictionary<Globals.Squadra, string>();
-    public static string defPath = "C:/Users/Daniele/Desktop/Video per Totem";
+    // public static string defPath = "C:/Users/Daniele/Desktop/Video per Totem";
     private string fileExtension = ".webm";
 
 
@@ -25,9 +25,15 @@ public class FileManager : MonoBehaviour
 
     public void CkeckDefaultPath()
     {
-        if (!CheckDirectory(defPath, ErrorManager.TYPE.WARNING))
+        if (Globals.data.videoFolder != "" && Globals.data.videoFolder != null)
         {
-            StartCoroutine(CreateDefaultDirectories());
+            if (!CheckDirectory(Globals.data.videoFolder, ErrorManager.TYPE.WARNING))
+            {
+                StartCoroutine(CreateDefaultDirectories());
+            }
+        }
+        else{
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Nel file config.json non è stata specificata la cartella in cui ci sono i video");
         }
     }
 
@@ -69,7 +75,7 @@ public class FileManager : MonoBehaviour
 
     public string GetFile(Globals.Scenario scenario, Globals.Squadra squadra, int videoNumber)
     {
-        string path = defPath + "/" + url_scenario[scenario] + "/" + url_squadra[squadra];
+        string path = Globals.data.videoFolder + "/" + url_scenario[scenario] + "/" + url_squadra[squadra];
 
         if (CheckDirectory(path, ErrorManager.TYPE.ERROR))
         {
@@ -147,17 +153,17 @@ public class FileManager : MonoBehaviour
 
     private IEnumerator CreateDefaultDirectories()
     {
-        Directory.CreateDirectory(defPath);
+        Directory.CreateDirectory(Globals.data.videoFolder);
         yield return new WaitForSeconds(0.5f);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori]);
+        Directory.CreateDirectory(Globals.data.videoFolder + "/" + url_scenario[Globals.Scenario.Coppe]);
+        Directory.CreateDirectory(Globals.data.videoFolder + "/" + url_scenario[Globals.Scenario.Calciatori]);
         yield return new WaitForSeconds(0.5f);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Inter]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Milan]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Inter_Milan]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Inter]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Milan]);
-        Directory.CreateDirectory(defPath + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Inter_Milan]);
+        Directory.CreateDirectory(Globals.data.videoFolder + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Inter]);
+        Directory.CreateDirectory(Globals.data.videoFolder + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Milan]);
+        Directory.CreateDirectory(Globals.data.videoFolder + "/" + url_scenario[Globals.Scenario.Coppe] + "/" + url_squadra[Globals.Squadra.Inter_Milan]);
+        Directory.CreateDirectory(Globals.data.videoFolder + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Inter]);
+        Directory.CreateDirectory(Globals.data.videoFolder + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Milan]);
+        Directory.CreateDirectory(Globals.data.videoFolder + "/" + url_scenario[Globals.Scenario.Calciatori] + "/" + url_squadra[Globals.Squadra.Inter_Milan]);
 
         ErrorManager.instance.ShowError(ErrorManager.TYPE.INFO, "La cartella è stata appena creata. Si prega di chiudere l'applicazione e caricare i video nelle cartelle specifiche");
     }

@@ -15,12 +15,18 @@ public class EmailHandler : MonoBehaviour
             {
                 try
                 {
-                    string from = "d.suppo@issimissimo.com";
+                    // string from = "d.suppo@issimissimo.com";
+                    // string to = "danielesuppo@gmail.com";
+                    // string title = "Immagine da App del totem";
+                    // string body = "test";
+                    // string password = "cx$eGM#OQuW0";
+                    // string smtpServer = "mail.issimissimo.com";
+                    string from = Globals.data.email.da;
                     string to = "danielesuppo@gmail.com";
-                    string title = "Immagine da App del totem";
-                    string body = "test";
-                    string password = "cx$eGM#OQuW0";
-                    string smtpServer = "mail.issimissimo.com";
+                    string title = Globals.data.email.soggetto;
+                    string body = Globals.data.email.descrizione;
+                    string password = Globals.data.email.password;
+                    string smtpServer = Globals.data.email.SMTP;
                     
 
                     // /// validate credentials

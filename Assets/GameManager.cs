@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour
                     webcamManager.Pause();
 
                     /// take screenshot
-                    screenshotHandler.TakeScreenshot(1080, 1920, FileManager.defPath, (screenshotFullName) =>
+                    screenshotHandler.TakeScreenshot(1080, 1920, Globals.data.videoFolder, (screenshotFullName) =>
                     {
                         /// return to main UI
                         ShowMain();
