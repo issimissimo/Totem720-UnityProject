@@ -9,57 +9,65 @@ public class EmailHandler : MonoBehaviour
 {
     public void Send(string filePath)
     {
-        InternetConnection.instance.Check(ErrorManager.TYPE.WARNING, (result) =>
+        InternetConnection.instance.Check(ErrorManager.TYPE.ERROR, (result) =>
         {
             if (result == true)
             {
-                try
+                if (Utils.ValidateString(Globals.data.email.da) || Utils.ValidateString(Globals.data.email.soggetto)
+                    || Utils.ValidateString(Globals.data.email.da) || Utils.ValidateString(Globals.data.email.SMTP) || Utils.ValidateString(Globals.data.email.password))
                 {
-                    string from = Globals.data.email.da;
-                    string to = "danielesuppo@gmail.com";
-                    string title = Globals.data.email.soggetto;
-                    string body = Globals.data.email.descrizione;
-                    string password = Globals.data.email.password;
-                    string smtpServer = Globals.data.email.SMTP;
-                    
+                    try
+                    {
+                        // string from = Globals.data.email.da;
+                        string to = "danielesuppo@gmail.com";
+                        // string title = Globals.data.email.soggetto;
+                        // string body = Globals.data.email.descrizione;
+                        // string password = Globals.data.email.password;
+                        // string smtpServer = Globals.data.email.SMTP;
 
-                    // /// validate credentials
-                    // bool valid = false;
-                    // using (PrincipalContext context = new PrincipalContext(ContextType.Domain))
-                    // {
-                    //     valid = context.ValidateCredentials(from, password);
-                    // }
 
-                    Debug.Log("Sending email...");
 
-                    MailMessage mail = new MailMessage();
-                    SmtpClient SmtpServer = new SmtpClient(smtpServer);
-                    mail.From = new MailAddress(from);
-                    mail.To.Add(to);
-                    mail.Subject = title;
-                    mail.Body = body;
+                        // /// validate credentials
+                        // bool valid = false;
+                        // using (PrincipalContext context = new PrincipalContext(ContextType.Domain))
+                        // {
+                        //     valid = context.ValidateCredentials(from, password);
+                        // }
 
-                    System.Net.Mail.Attachment attachment;
-                    attachment = new System.Net.Mail.Attachment(filePath);
-                    mail.Attachments.Add(attachment);
+                        Debug.Log("Sending email...");
 
-                    SmtpServer.Port = 587;
-                    SmtpServer.Credentials = new NetworkCredential(from, password);
-                    SmtpServer.EnableSsl = true;
+                        MailMessage mail = new MailMessage();
+                        SmtpClient SmtpServer = new SmtpClient(Globals.data.email.SMTP);
+                        mail.From = new MailAddress(Globals.data.email.da);
+                        mail.To.Add(to);
+                        mail.Subject = Globals.data.email.soggetto;
+                        mail.Body = Globals.data.email.descrizione;
 
-                    SmtpServer.SendMailAsync(mail);
+                        System.Net.Mail.Attachment attachment;
+                        attachment = new System.Net.Mail.Attachment(filePath);
+                        mail.Attachments.Add(attachment);
 
-                    Debug.Log("DONE");
+                        SmtpServer.Port = 587;
+                        SmtpServer.Credentials = new NetworkCredential(Globals.data.email.da, Globals.data.email.password);
+                        SmtpServer.EnableSsl = true;
+
+                        SmtpServer.SendMailAsync(mail);
+
+                        Debug.Log("DONE");
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.Log("Error!!!: " + e.ToString());
+                        ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, e.ToString());
+                    }
                 }
-                catch (Exception e)
-                {
-                    Debug.Log("Error!!!: " + e.ToString());
-                    ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, e.ToString());
+                else{
+                    ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Non sono presenti alcuni dati della mail nel file di configurazione");
                 }
             }
             else
             {
-                ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Non è possibile inviare la mail");
+                ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Non è possibile inviare la mail");
             }
         });
     }
