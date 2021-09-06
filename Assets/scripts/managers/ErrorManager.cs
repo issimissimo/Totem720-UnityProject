@@ -8,7 +8,7 @@ public class ErrorManager : MonoBehaviour
     [SerializeField] GameObject panelError;
     [SerializeField] GameObject prefab;
 
-    public enum TYPE { WARNING, ERROR, INFO };
+    public enum TYPE { WARNING, ERROR, INFO, NONE };
 
     private int totalPrefabsNumber = 0;
 
@@ -28,20 +28,21 @@ public class ErrorManager : MonoBehaviour
 
     public void ShowError(TYPE type, string msg)
     {
-        panelError.SetActive(true);
+        if (type != TYPE.NONE)
+        {
+            panelError.SetActive(true);
 
-        Debug.Log(type.ToString());
+            GameObject go = Instantiate(prefab, panelError.transform);
+            prefabs.Add(go);
 
-        GameObject go = Instantiate(prefab, panelError.transform);
-        prefabs.Add(go);
+            /// setup the prefab
+            ErrorMessageSetup prefabPanel = go.GetComponent<ErrorMessageSetup>();
+            prefabPanel.Setup(type, prefabs.Count - 1, msg);
 
-        /// setup the prefab
-        ErrorMessageSetup prefabPanel = go.GetComponent<ErrorMessageSetup>();
-        prefabPanel.Setup(type, prefabs.Count - 1, msg);
+            totalPrefabsNumber++;
 
-        totalPrefabsNumber++;
-
-        RefreshUI();
+            RefreshUI();
+        }
     }
 
 

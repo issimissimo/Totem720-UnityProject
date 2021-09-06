@@ -8,7 +8,7 @@ public class UiManager : MonoBehaviour
 {
     public GraphicRaycaster ui_raycaster; /// Don't delete! It's used by buttons!!!
     [SerializeField] GameObject ui_panels_container;
-    [SerializeField] Countdown countdown;
+    [SerializeField] CountdownCtrl countdownCtrl;
     private List<GameObject> ui_panels = new List<GameObject>();
     private GameObject main_panel;
 
@@ -47,7 +47,7 @@ public class UiManager : MonoBehaviour
     public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)
     {
         ShowUiContainer();
-        
+
         foreach (GameObject panel in ui_panels)
         {
             PanelType panelType = panel.GetComponent<PanelType>();
@@ -66,7 +66,7 @@ public class UiManager : MonoBehaviour
     public void ShowInitPanel()
     {
         ShowUiContainer();
-        
+
         ShowPanel(main_panel);
     }
 
@@ -88,8 +88,6 @@ public class UiManager : MonoBehaviour
     {
         HideUiContainer();
 
-        countdown.Play(videoDuration);
+        countdownCtrl.Play(videoDuration);
     }
-
-   
 }

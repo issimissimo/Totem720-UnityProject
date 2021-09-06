@@ -2,18 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Countdown : MonoBehaviour
+public class CountdownCtrl : MonoBehaviour
 {
-    private Animator animator;
-
-    private void Awake()
-    {
-        animator = GetComponent<Animator>();
-    }
+    [SerializeField] GameObject countdown;
+    [SerializeField] AnimationClip animationClip;
+    
     void Start()
     {
-        animator.speed = 0;
-        animator.playbackTime = 0;
+        countdown.SetActive(false);
     }
 
     public void Play(double videoDuration)
@@ -26,7 +22,10 @@ public class Countdown : MonoBehaviour
         /// wait for 3 sec from the end of the video
         yield return new WaitForSeconds((float)videoDuration - 3);
 
-        animator.playbackTime = 0;
-        animator.speed = 1;
+        countdown.SetActive(true);
+
+        yield return new WaitForSeconds(animationClip.length);
+
+        countdown.SetActive(false);
     }
 }
