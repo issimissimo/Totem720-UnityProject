@@ -41,7 +41,7 @@ public class EmailHandler : MonoBehaviour
                         mail.From = new MailAddress(Globals.data.email.da);
                         mail.To.Add(to);
                         mail.Subject = Globals.data.email.soggetto;
-                        mail.Body = Globals.data.email.descrizione;
+                        mail.Body = Globals.data.email.oggetto;
 
                         System.Net.Mail.Attachment attachment;
                         attachment = new System.Net.Mail.Attachment(filePath);

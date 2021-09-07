@@ -62,7 +62,7 @@ public static class Globals
     {
         public string da;
         public string soggetto;
-        public string descrizione;
+        public string oggetto;
         public string SMTP;
         public string password;
     }
