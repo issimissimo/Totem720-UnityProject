@@ -7,20 +7,14 @@ using System;
 public class UiManager : MonoBehaviour
 {
     public GraphicRaycaster ui_raycaster; /// Don't delete! It's used by buttons!!!
-    public OnScreenKeyboard oks;
     [SerializeField] GameObject ui_panels_container;
     [SerializeField] CountdownCtrl countdownCtrl;
+    [SerializeField] EmailCtrl emailCtrl;
+    [SerializeField] EndGameCtrl endGameCtrl;
     private List<GameObject> ui_panels = new List<GameObject>();
     private GameObject main_panel;
 
-   
-    private void Start() {
 
-        
-
-        /// hide keyboard
-        // oks.gameObject.SetActive(false);
-    }
 
     private void Awake()
     {
@@ -33,7 +27,7 @@ public class UiManager : MonoBehaviour
         /// hide panels at start
         HideUiContainer();
 
-        
+
     }
 
     private void HideAllUiPanels(Action callback = null)
@@ -103,10 +97,21 @@ public class UiManager : MonoBehaviour
     }
 
 
-    public void ShowEmail(Action callback){
+    public void ShowEmail(Action callback)
+    {
 
-        oks.gameObject.SetActive(true);
+        Action _callback = callback;
 
-        callback();
+        emailCtrl.Show(() =>
+        {
+            emailCtrl.Hide();
+
+            endGameCtrl.Show(() =>
+            {
+                callback();
+            });
+
+        });
+
     }
 }

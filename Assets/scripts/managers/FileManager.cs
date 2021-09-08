@@ -114,6 +114,11 @@ public class FileManager : MonoBehaviour
     }
 
 
+    public void DeleteFile(string fileName){
+        File.Delete(fileName);
+    }
+
+
     public string GetFile(Globals.Scenario scenario, Globals.Squadra squadra, int videoNumber)
     {
         // string path = Globals.data.videoFolder + "/" + url_scenario[scenario] + "/" + url_squadra[squadra];

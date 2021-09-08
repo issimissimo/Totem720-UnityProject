@@ -9,9275 +9,9275 @@ public static class Unifont {
 		{
 			case "emo-happy" :
 			return "";
-			break;
+			// // break;
 
 			case "emo-wink" :
 			return "";
-			break;
+			// // break;
 
 			case "emo-unhappy" :
 			return "";
-			break;
+			// // break;
 
 			case "emo-sleep" :
 			return "";
-			break;
+			// break;
 
 			case "emo-thumbsup" :
 			return "";
-			break;
+			// break;
 
 			case "emo-devil" :
 			return "";
-			break;
+			// break;
 
 			case "emo-surprised" :
 			return "";
-			break;
+			// break;
 
 			case "emo-tongue" :
 			return "";
-			break;
+			// break;
 
 			case "emo-coffee" :
 			return "";
-			break;
+			// break;
 
 			case "emo-sunglasses" :
 			return "";
-			break;
+			// break;
 
 			case "emo-displeased" :
 			return "";
-			break;
+			// break;
 
 			case "emo-beer" :
 			return "";
-			break;
+			// break;
 
 			case "emo-grin" :
 			return "";
-			break;
+			// break;
 
 			case "emo-angry" :
 			return "";
-			break;
+			// break;
 
 			case "emo-saint" :
 			return "";
-			break;
+			// break;
 
 			case "emo-cry" :
 			return "";
-			break;
+			// break;
 
 			case "emo-shoot" :
 			return "";
-			break;
+			// break;
 
 			case "emo-squint" :
 			return "";
-			break;
+			// break;
 
 			case "emo-laugh" :
 			return "";
-			break;
+			// break;
 
 			case "emo-wink2" :
 			return "";
-			break;
+			// break;
 
 			case "glass" :
 			return "";
-			break;
+			// break;
 
 			case "music" :
 			return "";
-			break;
+			// break;
 
 			case "search" :
 			return "";
-			break;
+			// break;
 
 			case "mail" :
 			return "";
-			break;
+			// break;
 
 			case "heart" :
 			return "";
-			break;
+			// break;
 
 			case "heart-empty" :
 			return "";
-			break;
+			// break;
 
 			case "star" :
 			return "";
-			break;
+			// break;
 
 			case "star-empty" :
 			return "";
-			break;
+			// break;
 
 			case "star-half" :
 			return "";
-			break;
+			// break;
 
 			case "user" :
 			return "";
-			break;
+			// break;
 
 			case "users" :
 			return "";
-			break;
+			// break;
 
 			case "video" :
 			return "";
-			break;
+			// break;
 
 			case "videocam" :
 			return "";
-			break;
+			// break;
 
 			case "picture" :
 			return "";
-			break;
+			// break;
 
 			case "camera" :
 			return "";
-			break;
+			// break;
 
 			case "camera-alt" :
 			return "";
-			break;
+			// break;
 
 			case "th-large" :
 			return "";
-			break;
+			// break;
 
 			case "th" :
 			return "";
-			break;
+			// break;
 
 			case "th-list" :
 			return "";
-			break;
+			// break;
 
 			case "ok" :
 			return "";
-			break;
+			// break;
 
 			case "ok-circled" :
 			return "";
-			break;
+			// break;
 
 			case "ok-circled2" :
 			return "";
-			break;
+			// break;
 
 			case "cancel" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-circled" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-circled2" :
 			return "";
-			break;
+			// break;
 
 			case "plus" :
 			return "";
-			break;
+			// break;
 
 			case "plus-circled" :
 			return "";
-			break;
+			// break;
 
 			case "minus" :
 			return "";
-			break;
+			// break;
 
 			case "spin1" :
 			return "";
-			break;
+			// break;
 
 			case "spin2" :
 			return "";
-			break;
+			// break;
 
 			case "spin3" :
 			return "";
-			break;
+			// break;
 
 			case "minus-circled" :
 			return "";
-			break;
+			// break;
 
 			case "spin4" :
 			return "";
-			break;
+			// break;
 
 			case "help-circled" :
 			return "";
-			break;
+			// break;
 
 			case "info-circled" :
 			return "";
-			break;
+			// break;
 
 			case "home" :
 			return "";
-			break;
+			// break;
 
 			case "spin5" :
 			return "";
-			break;
+			// break;
 
 			case "spin6" :
 			return "";
-			break;
+			// break;
 
 			case "link" :
 			return "";
-			break;
+			// break;
 
 			case "attach" :
 			return "";
-			break;
+			// break;
 
 			case "lock" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open" :
 			return "";
-			break;
+			// break;
 
 			case "pin" :
 			return "";
-			break;
+			// break;
 
 			case "eye" :
 			return "";
-			break;
+			// break;
 
 			case "firefox" :
 			return "";
-			break;
+			// break;
 
 			case "chrome" :
 			return "";
-			break;
+			// break;
 
 			case "opera" :
 			return "";
-			break;
+			// break;
 
 			case "ie" :
 			return "";
-			break;
+			// break;
 
 			case "crown" :
 			return "";
-			break;
+			// break;
 
 			case "crown-plus" :
 			return "";
-			break;
+			// break;
 
 			case "crown-minus" :
 			return "";
-			break;
+			// break;
 
 			case "marquee" :
 			return "";
-			break;
+			// break;
 
 			case "eye-off" :
 			return "";
-			break;
+			// break;
 
 			case "tag" :
 			return "";
-			break;
+			// break;
 
 			case "tags" :
 			return "";
-			break;
+			// break;
 
 			case "bookmark" :
 			return "";
-			break;
+			// break;
 
 			case "flag" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-up" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-down" :
 			return "";
-			break;
+			// break;
 
 			case "download" :
 			return "";
-			break;
+			// break;
 
 			case "upload" :
 			return "";
-			break;
+			// break;
 
 			case "forward" :
 			return "";
-			break;
+			// break;
 
 			case "export" :
 			return "";
-			break;
+			// break;
 
 			case "pencil" :
 			return "";
-			break;
+			// break;
 
 			case "edit" :
 			return "";
-			break;
+			// break;
 
 			case "print" :
 			return "";
-			break;
+			// break;
 
 			case "retweet" :
 			return "";
-			break;
+			// break;
 
 			case "comment" :
 			return "";
-			break;
+			// break;
 
 			case "chat" :
 			return "";
-			break;
+			// break;
 
 			case "bell" :
 			return "";
-			break;
+			// break;
 
 			case "attention" :
 			return "";
-			break;
+			// break;
 
 			case "attention-circled" :
 			return "";
-			break;
+			// break;
 
 			case "location" :
 			return "";
-			break;
+			// break;
 
 			case "trash-empty" :
 			return "";
-			break;
+			// break;
 
 			case "doc" :
 			return "";
-			break;
+			// break;
 
 			case "folder" :
 			return "";
-			break;
+			// break;
 
 			case "folder-open" :
 			return "";
-			break;
+			// break;
 
 			case "phone" :
 			return "";
-			break;
+			// break;
 
 			case "cog" :
 			return "";
-			break;
+			// break;
 
 			case "cog-alt" :
 			return "";
-			break;
+			// break;
 
 			case "wrench" :
 			return "";
-			break;
+			// break;
 
 			case "basket" :
 			return "";
-			break;
+			// break;
 
 			case "calendar" :
 			return "";
-			break;
+			// break;
 
 			case "login" :
 			return "";
-			break;
+			// break;
 
 			case "logout" :
 			return "";
-			break;
+			// break;
 
 			case "volume-off" :
 			return "";
-			break;
+			// break;
 
 			case "volume-down" :
 			return "";
-			break;
+			// break;
 
 			case "volume-up" :
 			return "";
-			break;
+			// break;
 
 			case "headphones" :
 			return "";
-			break;
+			// break;
 
 			case "clock" :
 			return "";
-			break;
+			// break;
 
 			case "block" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full" :
 			return "";
-			break;
+			// break;
 
 			case "resize-small" :
 			return "";
-			break;
+			// break;
 
 			case "resize-vertical" :
 			return "";
-			break;
+			// break;
 
 			case "resize-horizontal" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-in" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-out" :
 			return "";
-			break;
+			// break;
 
 			case "down-circled2" :
 			return "";
-			break;
+			// break;
 
 			case "up-circled2" :
 			return "";
-			break;
+			// break;
 
 			case "down-dir" :
 			return "";
-			break;
+			// break;
 
 			case "up-dir" :
 			return "";
-			break;
+			// break;
 
 			case "left-dir" :
 			return "";
-			break;
+			// break;
 
 			case "right-dir" :
 			return "";
-			break;
+			// break;
 
 			case "down-open" :
 			return "";
-			break;
+			// break;
 
 			case "left-open" :
 			return "";
-			break;
+			// break;
 
 			case "right-open" :
 			return "";
-			break;
+			// break;
 
 			case "up-open" :
 			return "";
-			break;
+			// break;
 
 			case "down-big" :
 			return "";
-			break;
+			// break;
 
 			case "left-big" :
 			return "";
-			break;
+			// break;
 
 			case "right-big" :
 			return "";
-			break;
+			// break;
 
 			case "up-big" :
 			return "";
-			break;
+			// break;
 
 			case "right-hand" :
 			return "";
-			break;
+			// break;
 
 			case "left-hand" :
 			return "";
-			break;
+			// break;
 
 			case "up-hand" :
 			return "";
-			break;
+			// break;
 
 			case "down-hand" :
 			return "";
-			break;
+			// break;
 
 			case "cw" :
 			return "";
-			break;
+			// break;
 
 			case "ccw" :
 			return "";
-			break;
+			// break;
 
 			case "arrows-cw" :
 			return "";
-			break;
+			// break;
 
 			case "shuffle" :
 			return "";
-			break;
+			// break;
 
 			case "play" :
 			return "";
-			break;
+			// break;
 
 			case "play-circled2" :
 			return "";
-			break;
+			// break;
 
 			case "stop" :
 			return "";
-			break;
+			// break;
 
 			case "pause" :
 			return "";
-			break;
+			// break;
 
 			case "to-end" :
 			return "";
-			break;
+			// break;
 
 			case "to-end-alt" :
 			return "";
-			break;
+			// break;
 
 			case "to-start" :
 			return "";
-			break;
+			// break;
 
 			case "to-start-alt" :
 			return "";
-			break;
+			// break;
 
 			case "fast-fw" :
 			return "";
-			break;
+			// break;
 
 			case "fast-bw" :
 			return "";
-			break;
+			// break;
 
 			case "eject" :
 			return "";
-			break;
+			// break;
 
 			case "target" :
 			return "";
-			break;
+			// break;
 
 			case "signal" :
 			return "";
-			break;
+			// break;
 
 			case "award" :
 			return "";
-			break;
+			// break;
 
 			case "inbox" :
 			return "";
-			break;
+			// break;
 
 			case "globe" :
 			return "";
-			break;
+			// break;
 
 			case "cloud" :
 			return "";
-			break;
+			// break;
 
 			case "flash" :
 			return "";
-			break;
+			// break;
 
 			case "umbrella" :
 			return "";
-			break;
+			// break;
 
 			case "flight" :
 			return "";
-			break;
+			// break;
 
 			case "leaf" :
 			return "";
-			break;
+			// break;
 
 			case "font" :
 			return "";
-			break;
+			// break;
 
 			case "bold" :
 			return "";
-			break;
+			// break;
 
 			case "italic" :
 			return "";
-			break;
+			// break;
 
 			case "text-height" :
 			return "";
-			break;
+			// break;
 
 			case "text-width" :
 			return "";
-			break;
+			// break;
 
 			case "align-left" :
 			return "";
-			break;
+			// break;
 
 			case "align-center" :
 			return "";
-			break;
+			// break;
 
 			case "align-right" :
 			return "";
-			break;
+			// break;
 
 			case "align-justify" :
 			return "";
-			break;
+			// break;
 
 			case "list" :
 			return "";
-			break;
+			// break;
 
 			case "indent-left" :
 			return "";
-			break;
+			// break;
 
 			case "indent-right" :
 			return "";
-			break;
+			// break;
 
 			case "scissors" :
 			return "";
-			break;
+			// break;
 
 			case "briefcase" :
 			return "";
-			break;
+			// break;
 
 			case "off" :
 			return "";
-			break;
+			// break;
 
 			case "road" :
 			return "";
-			break;
+			// break;
 
 			case "list-alt" :
 			return "";
-			break;
+			// break;
 
 			case "qrcode" :
 			return "";
-			break;
+			// break;
 
 			case "barcode" :
 			return "";
-			break;
+			// break;
 
 			case "book" :
 			return "";
-			break;
+			// break;
 
 			case "adjust" :
 			return "";
-			break;
+			// break;
 
 			case "tint" :
 			return "";
-			break;
+			// break;
 
 			case "check" :
 			return "";
-			break;
+			// break;
 
 			case "asterisk" :
 			return "";
-			break;
+			// break;
 
 			case "gift" :
 			return "";
-			break;
+			// break;
 
 			case "fire" :
 			return "";
-			break;
+			// break;
 
 			case "magnet" :
 			return "";
-			break;
+			// break;
 
 			case "chart-bar" :
 			return "";
-			break;
+			// break;
 
 			case "credit-card" :
 			return "";
-			break;
+			// break;
 
 			case "floppy" :
 			return "";
-			break;
+			// break;
 
 			case "megaphone" :
 			return "";
-			break;
+			// break;
 
 			case "key" :
 			return "";
-			break;
+			// break;
 
 			case "truck" :
 			return "";
-			break;
+			// break;
 
 			case "hammer" :
 			return "";
-			break;
+			// break;
 
 			case "lemon" :
 			return "";
-			break;
+			// break;
 
 			case "note" :
 			return "";
-			break;
+			// break;
 
 			case "note-beamed" :
 			return "";
-			break;
+			// break;
 
 			case "music-1" :
 			return "";
-			break;
+			// break;
 
 			case "search-1" :
 			return "";
-			break;
+			// break;
 
 			case "flashlight" :
 			return "";
-			break;
+			// break;
 
 			case "mail-1" :
 			return "";
-			break;
+			// break;
 
 			case "heart-1" :
 			return "";
-			break;
+			// break;
 
 			case "heart-empty-1" :
 			return "";
-			break;
+			// break;
 
 			case "star-1" :
 			return "";
-			break;
+			// break;
 
 			case "star-empty-1" :
 			return "";
-			break;
+			// break;
 
 			case "user-1" :
 			return "";
-			break;
+			// break;
 
 			case "users-1" :
 			return "";
-			break;
+			// break;
 
 			case "user-add" :
 			return "";
-			break;
+			// break;
 
 			case "video-1" :
 			return "";
-			break;
+			// break;
 
 			case "picture-1" :
 			return "";
-			break;
+			// break;
 
 			case "camera-1" :
 			return "";
-			break;
+			// break;
 
 			case "layout" :
 			return "";
-			break;
+			// break;
 
 			case "menu-1" :
 			return "";
-			break;
+			// break;
 
 			case "check-1" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-1" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-squared" :
 			return "";
-			break;
+			// break;
 
 			case "plus-1" :
 			return "";
-			break;
+			// break;
 
 			case "plus-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "plus-squared-1" :
 			return "";
-			break;
+			// break;
 
 			case "minus-1" :
 			return "";
-			break;
+			// break;
 
 			case "minus-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "minus-squared-1" :
 			return "";
-			break;
+			// break;
 
 			case "help-1" :
 			return "";
-			break;
+			// break;
 
 			case "help-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "info-1" :
 			return "";
-			break;
+			// break;
 
 			case "info-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "back" :
 			return "";
-			break;
+			// break;
 
 			case "home-1" :
 			return "";
-			break;
+			// break;
 
 			case "link-1" :
 			return "";
-			break;
+			// break;
 
 			case "attach-1" :
 			return "";
-			break;
+			// break;
 
 			case "lock-1" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-1" :
 			return "";
-			break;
+			// break;
 
 			case "eye-1" :
 			return "";
-			break;
+			// break;
 
 			case "tag-1" :
 			return "";
-			break;
+			// break;
 
 			case "bookmark-1" :
 			return "";
-			break;
+			// break;
 
 			case "bookmarks" :
 			return "";
-			break;
+			// break;
 
 			case "flag-1" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-up-1" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-down-1" :
 			return "";
-			break;
+			// break;
 
 			case "download-1" :
 			return "";
-			break;
+			// break;
 
 			case "upload-1" :
 			return "";
-			break;
+			// break;
 
 			case "upload-cloud-1" :
 			return "";
-			break;
+			// break;
 
 			case "reply-1" :
 			return "";
-			break;
+			// break;
 
 			case "reply-all-1" :
 			return "";
-			break;
+			// break;
 
 			case "forward-1" :
 			return "";
-			break;
+			// break;
 
 			case "quote" :
 			return "";
-			break;
+			// break;
 
 			case "code-1" :
 			return "";
-			break;
+			// break;
 
 			case "export-1" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-1" :
 			return "";
-			break;
+			// break;
 
 			case "feather" :
 			return "";
-			break;
+			// break;
 
 			case "print-1" :
 			return "";
-			break;
+			// break;
 
 			case "retweet-1" :
 			return "";
-			break;
+			// break;
 
 			case "keyboard-1" :
 			return "";
-			break;
+			// break;
 
 			case "comment-1" :
 			return "";
-			break;
+			// break;
 
 			case "chat-1" :
 			return "";
-			break;
+			// break;
 
 			case "bell-1" :
 			return "";
-			break;
+			// break;
 
 			case "attention-1" :
 			return "";
-			break;
+			// break;
 
 			case "alert" :
 			return "";
-			break;
+			// break;
 
 			case "vcard" :
 			return "";
-			break;
+			// break;
 
 			case "address" :
 			return "";
-			break;
+			// break;
 
 			case "location-1" :
 			return "";
-			break;
+			// break;
 
 			case "map-1" :
 			return "";
-			break;
+			// break;
 
 			case "direction-1" :
 			return "";
-			break;
+			// break;
 
 			case "compass-1" :
 			return "";
-			break;
+			// break;
 
 			case "cup" :
 			return "";
-			break;
+			// break;
 
 			case "trash-1" :
 			return "";
-			break;
+			// break;
 
 			case "doc-1" :
 			return "";
-			break;
+			// break;
 
 			case "docs-1" :
 			return "";
-			break;
+			// break;
 
 			case "doc-landscape" :
 			return "";
-			break;
+			// break;
 
 			case "doc-text-1" :
 			return "";
-			break;
+			// break;
 
 			case "doc-text-inv-1" :
 			return "";
-			break;
+			// break;
 
 			case "newspaper-1" :
 			return "";
-			break;
+			// break;
 
 			case "book-open" :
 			return "";
-			break;
+			// break;
 
 			case "book-1" :
 			return "";
-			break;
+			// break;
 
 			case "folder-1" :
 			return "";
-			break;
+			// break;
 
 			case "archive" :
 			return "";
-			break;
+			// break;
 
 			case "box-1" :
 			return "";
-			break;
+			// break;
 
 			case "rss-1" :
 			return "";
-			break;
+			// break;
 
 			case "phone-1" :
 			return "";
-			break;
+			// break;
 
 			case "cog-1" :
 			return "";
-			break;
+			// break;
 
 			case "tools" :
 			return "";
-			break;
+			// break;
 
 			case "share-1" :
 			return "";
-			break;
+			// break;
 
 			case "shareable" :
 			return "";
-			break;
+			// break;
 
 			case "basket-1" :
 			return "";
-			break;
+			// break;
 
 			case "bag" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-1" :
 			return "";
-			break;
+			// break;
 
 			case "login-1" :
 			return "";
-			break;
+			// break;
 
 			case "logout-1" :
 			return "";
-			break;
+			// break;
 
 			case "mic-1" :
 			return "";
-			break;
+			// break;
 
 			case "mute-1" :
 			return "";
-			break;
+			// break;
 
 			case "sound" :
 			return "";
-			break;
+			// break;
 
 			case "volume" :
 			return "";
-			break;
+			// break;
 
 			case "clock-1" :
 			return "";
-			break;
+			// break;
 
 			case "hourglass-4" :
 			return "";
-			break;
+			// break;
 
 			case "lamp" :
 			return "";
-			break;
+			// break;
 
 			case "light-down" :
 			return "";
-			break;
+			// break;
 
 			case "light-up" :
 			return "";
-			break;
+			// break;
 
 			case "adjust-1" :
 			return "";
-			break;
+			// break;
 
 			case "block-1" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full-1" :
 			return "";
-			break;
+			// break;
 
 			case "resize-small-1" :
 			return "";
-			break;
+			// break;
 
 			case "popup" :
 			return "";
-			break;
+			// break;
 
 			case "publish" :
 			return "";
-			break;
+			// break;
 
 			case "window" :
 			return "";
-			break;
+			// break;
 
 			case "arrow-combo" :
 			return "";
-			break;
+			// break;
 
 			case "down-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "left-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "right-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "up-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "down-open-1" :
 			return "";
-			break;
+			// break;
 
 			case "left-open-1" :
 			return "";
-			break;
+			// break;
 
 			case "right-open-1" :
 			return "";
-			break;
+			// break;
 
 			case "up-open-1" :
 			return "";
-			break;
+			// break;
 
 			case "down-open-mini" :
 			return "";
-			break;
+			// break;
 
 			case "left-open-mini" :
 			return "";
-			break;
+			// break;
 
 			case "right-open-mini" :
 			return "";
-			break;
+			// break;
 
 			case "up-open-mini" :
 			return "";
-			break;
+			// break;
 
 			case "down-open-big" :
 			return "";
-			break;
+			// break;
 
 			case "left-open-big" :
 			return "";
-			break;
+			// break;
 
 			case "right-open-big" :
 			return "";
-			break;
+			// break;
 
 			case "up-open-big" :
 			return "";
-			break;
+			// break;
 
 			case "down-1" :
 			return "";
-			break;
+			// break;
 
 			case "left-1" :
 			return "";
-			break;
+			// break;
 
 			case "right-1" :
 			return "";
-			break;
+			// break;
 
 			case "up-1" :
 			return "";
-			break;
+			// break;
 
 			case "down-dir-1" :
 			return "";
-			break;
+			// break;
 
 			case "left-dir-1" :
 			return "";
-			break;
+			// break;
 
 			case "right-dir-1" :
 			return "";
-			break;
+			// break;
 
 			case "up-dir-1" :
 			return "";
-			break;
+			// break;
 
 			case "down-bold" :
 			return "";
-			break;
+			// break;
 
 			case "left-bold" :
 			return "";
-			break;
+			// break;
 
 			case "right-bold" :
 			return "";
-			break;
+			// break;
 
 			case "up-bold" :
 			return "";
-			break;
+			// break;
 
 			case "down-thin" :
 			return "";
-			break;
+			// break;
 
 			case "left-thin" :
 			return "";
-			break;
+			// break;
 
 			case "right-thin" :
 			return "";
-			break;
+			// break;
 
 			case "up-thin" :
 			return "";
-			break;
+			// break;
 
 			case "ccw-1" :
 			return "";
-			break;
+			// break;
 
 			case "cw-1" :
 			return "";
-			break;
+			// break;
 
 			case "arrows-ccw" :
 			return "";
-			break;
+			// break;
 
 			case "level-down-1" :
 			return "";
-			break;
+			// break;
 
 			case "level-up-1" :
 			return "";
-			break;
+			// break;
 
 			case "shuffle-1" :
 			return "";
-			break;
+			// break;
 
 			case "loop" :
 			return "";
-			break;
+			// break;
 
 			case "switch" :
 			return "";
-			break;
+			// break;
 
 			case "play-1" :
 			return "";
-			break;
+			// break;
 
 			case "stop-1" :
 			return "";
-			break;
+			// break;
 
 			case "pause-1" :
 			return "";
-			break;
+			// break;
 
 			case "record" :
 			return "";
-			break;
+			// break;
 
 			case "to-end-1" :
 			return "";
-			break;
+			// break;
 
 			case "to-start-1" :
 			return "";
-			break;
+			// break;
 
 			case "fast-forward" :
 			return "";
-			break;
+			// break;
 
 			case "fast-backward" :
 			return "";
-			break;
+			// break;
 
 			case "progress-0" :
 			return "";
-			break;
+			// break;
 
 			case "progress-1" :
 			return "";
-			break;
+			// break;
 
 			case "progress-2" :
 			return "";
-			break;
+			// break;
 
 			case "progress-3" :
 			return "";
-			break;
+			// break;
 
 			case "target-1" :
 			return "";
-			break;
+			// break;
 
 			case "palette" :
 			return "";
-			break;
+			// break;
 
 			case "list-1" :
 			return "";
-			break;
+			// break;
 
 			case "list-add" :
 			return "";
-			break;
+			// break;
 
 			case "signal-1" :
 			return "";
-			break;
+			// break;
 
 			case "trophy" :
 			return "";
-			break;
+			// break;
 
 			case "battery" :
 			return "";
-			break;
+			// break;
 
 			case "back-in-time" :
 			return "";
-			break;
+			// break;
 
 			case "monitor" :
 			return "";
-			break;
+			// break;
 
 			case "mobile-1" :
 			return "";
-			break;
+			// break;
 
 			case "network" :
 			return "";
-			break;
+			// break;
 
 			case "cd" :
 			return "";
-			break;
+			// break;
 
 			case "inbox-1" :
 			return "";
-			break;
+			// break;
 
 			case "install" :
 			return "";
-			break;
+			// break;
 
 			case "globe-1" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-1" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-thunder" :
 			return "";
-			break;
+			// break;
 
 			case "flash-1" :
 			return "";
-			break;
+			// break;
 
 			case "moon-1" :
 			return "";
-			break;
+			// break;
 
 			case "flight-1" :
 			return "";
-			break;
+			// break;
 
 			case "paper-plane-1" :
 			return "";
-			break;
+			// break;
 
 			case "leaf-1" :
 			return "";
-			break;
+			// break;
 
 			case "lifebuoy-1" :
 			return "";
-			break;
+			// break;
 
 			case "mouse" :
 			return "";
-			break;
+			// break;
 
 			case "briefcase-1" :
 			return "";
-			break;
+			// break;
 
 			case "suitcase-1" :
 			return "";
-			break;
+			// break;
 
 			case "dot" :
 			return "";
-			break;
+			// break;
 
 			case "dot-2" :
 			return "";
-			break;
+			// break;
 
 			case "dot-3" :
 			return "";
-			break;
+			// break;
 
 			case "brush-1" :
 			return "";
-			break;
+			// break;
 
 			case "magnet-1" :
 			return "";
-			break;
+			// break;
 
 			case "infinity" :
 			return "";
-			break;
+			// break;
 
 			case "erase" :
 			return "";
-			break;
+			// break;
 
 			case "chart-pie-1" :
 			return "";
-			break;
+			// break;
 
 			case "chart-line-1" :
 			return "";
-			break;
+			// break;
 
 			case "chart-bar-1" :
 			return "";
-			break;
+			// break;
 
 			case "chart-area-1" :
 			return "";
-			break;
+			// break;
 
 			case "tape" :
 			return "";
-			break;
+			// break;
 
 			case "graduation-cap-1" :
 			return "";
-			break;
+			// break;
 
 			case "language-1" :
 			return "";
-			break;
+			// break;
 
 			case "ticket-1" :
 			return "";
-			break;
+			// break;
 
 			case "water" :
 			return "";
-			break;
+			// break;
 
 			case "droplet" :
 			return "";
-			break;
+			// break;
 
 			case "air" :
 			return "";
-			break;
+			// break;
 
 			case "credit-card-1" :
 			return "";
-			break;
+			// break;
 
 			case "floppy-1" :
 			return "";
-			break;
+			// break;
 
 			case "clipboard" :
 			return "";
-			break;
+			// break;
 
 			case "megaphone-1" :
 			return "";
-			break;
+			// break;
 
 			case "database-1" :
 			return "";
-			break;
+			// break;
 
 			case "drive" :
 			return "";
-			break;
+			// break;
 
 			case "bucket" :
 			return "";
-			break;
+			// break;
 
 			case "thermometer" :
 			return "";
-			break;
+			// break;
 
 			case "key-1" :
 			return "";
-			break;
+			// break;
 
 			case "flow-cascade" :
 			return "";
-			break;
+			// break;
 
 			case "flow-branch" :
 			return "";
-			break;
+			// break;
 
 			case "flow-tree" :
 			return "";
-			break;
+			// break;
 
 			case "flow-line" :
 			return "";
-			break;
+			// break;
 
 			case "flow-parallel" :
 			return "";
-			break;
+			// break;
 
 			case "rocket-1" :
 			return "";
-			break;
+			// break;
 
 			case "gauge-1" :
 			return "";
-			break;
+			// break;
 
 			case "traffic-cone" :
 			return "";
-			break;
+			// break;
 
 			case "cc-1" :
 			return "";
-			break;
+			// break;
 
 			case "cc-by" :
 			return "";
-			break;
+			// break;
 
 			case "cc-nc" :
 			return "";
-			break;
+			// break;
 
 			case "cc-nc-eu" :
 			return "";
-			break;
+			// break;
 
 			case "cc-nc-jp" :
 			return "";
-			break;
+			// break;
 
 			case "cc-sa" :
 			return "";
-			break;
+			// break;
 
 			case "cc-nd" :
 			return "";
-			break;
+			// break;
 
 			case "cc-pd" :
 			return "";
-			break;
+			// break;
 
 			case "cc-zero" :
 			return "";
-			break;
+			// break;
 
 			case "cc-share" :
 			return "";
-			break;
+			// break;
 
 			case "cc-remix" :
 			return "";
-			break;
+			// break;
 
 			case "github-1" :
 			return "";
-			break;
+			// break;
 
 			case "flickr-circled" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-1" :
 			return "";
-			break;
+			// break;
 
 			case "music-outline" :
 			return "";
-			break;
+			// break;
 
 			case "music-2" :
 			return "";
-			break;
+			// break;
 
 			case "search-outline" :
 			return "";
-			break;
+			// break;
 
 			case "search-2" :
 			return "";
-			break;
+			// break;
 
 			case "mail-2" :
 			return "";
-			break;
+			// break;
 
 			case "heart-2" :
 			return "";
-			break;
+			// break;
 
 			case "heart-filled" :
 			return "";
-			break;
+			// break;
 
 			case "star-2" :
 			return "";
-			break;
+			// break;
 
 			case "star-filled" :
 			return "";
-			break;
+			// break;
 
 			case "user-outline" :
 			return "";
-			break;
+			// break;
 
 			case "user-2" :
 			return "";
-			break;
+			// break;
 
 			case "users-outline" :
 			return "";
-			break;
+			// break;
 
 			case "users-2" :
 			return "";
-			break;
+			// break;
 
 			case "user-add-outline" :
 			return "";
-			break;
+			// break;
 
 			case "user-add-1" :
 			return "";
-			break;
+			// break;
 
 			case "user-delete-outline" :
 			return "";
-			break;
+			// break;
 
 			case "user-delete" :
 			return "";
-			break;
+			// break;
 
 			case "video-2" :
 			return "";
-			break;
+			// break;
 
 			case "videocam-outline" :
 			return "";
-			break;
+			// break;
 
 			case "videocam-1" :
 			return "";
-			break;
+			// break;
 
 			case "picture-outline" :
 			return "";
-			break;
+			// break;
 
 			case "picture-2" :
 			return "";
-			break;
+			// break;
 
 			case "camera-outline" :
 			return "";
-			break;
+			// break;
 
 			case "camera-2" :
 			return "";
-			break;
+			// break;
 
 			case "th-outline" :
 			return "";
-			break;
+			// break;
 
 			case "th-1" :
 			return "";
-			break;
+			// break;
 
 			case "th-large-outline" :
 			return "";
-			break;
+			// break;
 
 			case "th-large-1" :
 			return "";
-			break;
+			// break;
 
 			case "th-list-outline" :
 			return "";
-			break;
+			// break;
 
 			case "th-list-1" :
 			return "";
-			break;
+			// break;
 
 			case "ok-outline" :
 			return "";
-			break;
+			// break;
 
 			case "ok-1" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-outline" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-2" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-alt" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-alt-filled" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-circled-outline" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "plus-outline" :
 			return "";
-			break;
+			// break;
 
 			case "plus-2" :
 			return "";
-			break;
+			// break;
 
 			case "minus-outline" :
 			return "";
-			break;
+			// break;
 
 			case "minus-2" :
 			return "";
-			break;
+			// break;
 
 			case "divide-outline" :
 			return "";
-			break;
+			// break;
 
 			case "divide" :
 			return "";
-			break;
+			// break;
 
 			case "eq-outline" :
 			return "";
-			break;
+			// break;
 
 			case "eq" :
 			return "";
-			break;
+			// break;
 
 			case "info-outline" :
 			return "";
-			break;
+			// break;
 
 			case "info-2" :
 			return "";
-			break;
+			// break;
 
 			case "home-outline" :
 			return "";
-			break;
+			// break;
 
 			case "home-2" :
 			return "";
-			break;
+			// break;
 
 			case "link-outline" :
 			return "";
-			break;
+			// break;
 
 			case "link-2" :
 			return "";
-			break;
+			// break;
 
 			case "attach-outline" :
 			return "";
-			break;
+			// break;
 
 			case "attach-2" :
 			return "";
-			break;
+			// break;
 
 			case "lock-2" :
 			return "";
-			break;
+			// break;
 
 			case "lock-filled" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-2" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-filled" :
 			return "";
-			break;
+			// break;
 
 			case "pin-outline" :
 			return "";
-			break;
+			// break;
 
 			case "pin-1" :
 			return "";
-			break;
+			// break;
 
 			case "eye-outline" :
 			return "";
-			break;
+			// break;
 
 			case "eye-2" :
 			return "";
-			break;
+			// break;
 
 			case "tag-2" :
 			return "";
-			break;
+			// break;
 
 			case "tags-1" :
 			return "";
-			break;
+			// break;
 
 			case "bookmark-2" :
 			return "";
-			break;
+			// break;
 
 			case "flag-2" :
 			return "";
-			break;
+			// break;
 
 			case "flag-filled" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-up-2" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-down-2" :
 			return "";
-			break;
+			// break;
 
 			case "download-outline" :
 			return "";
-			break;
+			// break;
 
 			case "download-2" :
 			return "";
-			break;
+			// break;
 
 			case "upload-outline" :
 			return "";
-			break;
+			// break;
 
 			case "upload-2" :
 			return "";
-			break;
+			// break;
 
 			case "upload-cloud-outline" :
 			return "";
-			break;
+			// break;
 
 			case "upload-cloud-2" :
 			return "";
-			break;
+			// break;
 
 			case "reply-outline" :
 			return "";
-			break;
+			// break;
 
 			case "reply-2" :
 			return "";
-			break;
+			// break;
 
 			case "forward-outline" :
 			return "";
-			break;
+			// break;
 
 			case "forward-2" :
 			return "";
-			break;
+			// break;
 
 			case "code-outline" :
 			return "";
-			break;
+			// break;
 
 			case "code-2" :
 			return "";
-			break;
+			// break;
 
 			case "export-outline" :
 			return "";
-			break;
+			// break;
 
 			case "export-2" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-2" :
 			return "";
-			break;
+			// break;
 
 			case "pen" :
 			return "";
-			break;
+			// break;
 
 			case "feather-1" :
 			return "";
-			break;
+			// break;
 
 			case "edit-1" :
 			return "";
-			break;
+			// break;
 
 			case "print-2" :
 			return "";
-			break;
+			// break;
 
 			case "comment-2" :
 			return "";
-			break;
+			// break;
 
 			case "chat-2" :
 			return "";
-			break;
+			// break;
 
 			case "chat-alt" :
 			return "";
-			break;
+			// break;
 
 			case "bell-2" :
 			return "";
-			break;
+			// break;
 
 			case "attention-2" :
 			return "";
-			break;
+			// break;
 
 			case "attention-filled" :
 			return "";
-			break;
+			// break;
 
 			case "warning-empty" :
 			return "";
-			break;
+			// break;
 
 			case "warning" :
 			return "";
-			break;
+			// break;
 
 			case "contacts" :
 			return "";
-			break;
+			// break;
 
 			case "vcard-1" :
 			return "";
-			break;
+			// break;
 
 			case "address-1" :
 			return "";
-			break;
+			// break;
 
 			case "location-outline" :
 			return "";
-			break;
+			// break;
 
 			case "location-2" :
 			return "";
-			break;
+			// break;
 
 			case "map-2" :
 			return "";
-			break;
+			// break;
 
 			case "direction-outline" :
 			return "";
-			break;
+			// break;
 
 			case "direction-2" :
 			return "";
-			break;
+			// break;
 
 			case "compass-2" :
 			return "";
-			break;
+			// break;
 
 			case "trash-2" :
 			return "";
-			break;
+			// break;
 
 			case "doc-2" :
 			return "";
-			break;
+			// break;
 
 			case "doc-text-2" :
 			return "";
-			break;
+			// break;
 
 			case "doc-add" :
 			return "";
-			break;
+			// break;
 
 			case "doc-remove" :
 			return "";
-			break;
+			// break;
 
 			case "news" :
 			return "";
-			break;
+			// break;
 
 			case "folder-2" :
 			return "";
-			break;
+			// break;
 
 			case "folder-add" :
 			return "";
-			break;
+			// break;
 
 			case "folder-delete" :
 			return "";
-			break;
+			// break;
 
 			case "archive-1" :
 			return "";
-			break;
+			// break;
 
 			case "box-2" :
 			return "";
-			break;
+			// break;
 
 			case "rss-outline" :
 			return "";
-			break;
+			// break;
 
 			case "rss-2" :
 			return "";
-			break;
+			// break;
 
 			case "phone-outline" :
 			return "";
-			break;
+			// break;
 
 			case "phone-2" :
 			return "";
-			break;
+			// break;
 
 			case "menu-outline" :
 			return "";
-			break;
+			// break;
 
 			case "menu-2" :
 			return "";
-			break;
+			// break;
 
 			case "cog-outline" :
 			return "";
-			break;
+			// break;
 
 			case "cog-2" :
 			return "";
-			break;
+			// break;
 
 			case "wrench-outline" :
 			return "";
-			break;
+			// break;
 
 			case "wrench-1" :
 			return "";
-			break;
+			// break;
 
 			case "basket-2" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-outlilne" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-2" :
 			return "";
-			break;
+			// break;
 
 			case "mic-outline" :
 			return "";
-			break;
+			// break;
 
 			case "mic-2" :
 			return "";
-			break;
+			// break;
 
 			case "volume-off-1" :
 			return "";
-			break;
+			// break;
 
 			case "volume-low" :
 			return "";
-			break;
+			// break;
 
 			case "volume-middle" :
 			return "";
-			break;
+			// break;
 
 			case "volume-high" :
 			return "";
-			break;
+			// break;
 
 			case "headphones-1" :
 			return "";
-			break;
+			// break;
 
 			case "clock-2" :
 			return "";
-			break;
+			// break;
 
 			case "wristwatch" :
 			return "";
-			break;
+			// break;
 
 			case "stopwatch" :
 			return "";
-			break;
+			// break;
 
 			case "lightbulb-1" :
 			return "";
-			break;
+			// break;
 
 			case "block-outline" :
 			return "";
-			break;
+			// break;
 
 			case "block-2" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full-outline" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full-2" :
 			return "";
-			break;
+			// break;
 
 			case "resize-normal-outline" :
 			return "";
-			break;
+			// break;
 
 			case "resize-normal" :
 			return "";
-			break;
+			// break;
 
 			case "move-outline" :
 			return "";
-			break;
+			// break;
 
 			case "move-1" :
 			return "";
-			break;
+			// break;
 
 			case "popup-1" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-in-outline" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-in-1" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-out-outline" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-out-1" :
 			return "";
-			break;
+			// break;
 
 			case "popup-2" :
 			return "";
-			break;
+			// break;
 
 			case "left-open-outline" :
 			return "";
-			break;
+			// break;
 
 			case "left-open-2" :
 			return "";
-			break;
+			// break;
 
 			case "right-open-outline" :
 			return "";
-			break;
+			// break;
 
 			case "right-open-2" :
 			return "";
-			break;
+			// break;
 
 			case "down-2" :
 			return "";
-			break;
+			// break;
 
 			case "left-2" :
 			return "";
-			break;
+			// break;
 
 			case "right-2" :
 			return "";
-			break;
+			// break;
 
 			case "up-2" :
 			return "";
-			break;
+			// break;
 
 			case "down-outline" :
 			return "";
-			break;
+			// break;
 
 			case "left-outline" :
 			return "";
-			break;
+			// break;
 
 			case "right-outline" :
 			return "";
-			break;
+			// break;
 
 			case "up-outline" :
 			return "";
-			break;
+			// break;
 
 			case "down-small" :
 			return "";
-			break;
+			// break;
 
 			case "left-small" :
 			return "";
-			break;
+			// break;
 
 			case "right-small" :
 			return "";
-			break;
+			// break;
 
 			case "up-small" :
 			return "";
-			break;
+			// break;
 
 			case "cw-outline" :
 			return "";
-			break;
+			// break;
 
 			case "cw-2" :
 			return "";
-			break;
+			// break;
 
 			case "arrows-cw-outline" :
 			return "";
-			break;
+			// break;
 
 			case "arrows-cw-1" :
 			return "";
-			break;
+			// break;
 
 			case "loop-outline" :
 			return "";
-			break;
+			// break;
 
 			case "loop-1" :
 			return "";
-			break;
+			// break;
 
 			case "loop-alt-outline" :
 			return "";
-			break;
+			// break;
 
 			case "loop-alt" :
 			return "";
-			break;
+			// break;
 
 			case "shuffle-2" :
 			return "";
-			break;
+			// break;
 
 			case "play-outline" :
 			return "";
-			break;
+			// break;
 
 			case "play-2" :
 			return "";
-			break;
+			// break;
 
 			case "stop-outline" :
 			return "";
-			break;
+			// break;
 
 			case "stop-2" :
 			return "";
-			break;
+			// break;
 
 			case "pause-outline" :
 			return "";
-			break;
+			// break;
 
 			case "pause-2" :
 			return "";
-			break;
+			// break;
 
 			case "fast-fw-outline" :
 			return "";
-			break;
+			// break;
 
 			case "fast-fw-1" :
 			return "";
-			break;
+			// break;
 
 			case "rewind-outline" :
 			return "";
-			break;
+			// break;
 
 			case "rewind" :
 			return "";
-			break;
+			// break;
 
 			case "record-outline" :
 			return "";
-			break;
+			// break;
 
 			case "record-1" :
 			return "";
-			break;
+			// break;
 
 			case "eject-outline" :
 			return "";
-			break;
+			// break;
 
 			case "eject-1" :
 			return "";
-			break;
+			// break;
 
 			case "eject-alt-outline" :
 			return "";
-			break;
+			// break;
 
 			case "eject-alt" :
 			return "";
-			break;
+			// break;
 
 			case "bat1" :
 			return "";
-			break;
+			// break;
 
 			case "bat2" :
 			return "";
-			break;
+			// break;
 
 			case "bat3" :
 			return "";
-			break;
+			// break;
 
 			case "bat4" :
 			return "";
-			break;
+			// break;
 
 			case "bat-charge" :
 			return "";
-			break;
+			// break;
 
 			case "plug-1" :
 			return "";
-			break;
+			// break;
 
 			case "target-outline" :
 			return "";
-			break;
+			// break;
 
 			case "target-2" :
 			return "";
-			break;
+			// break;
 
 			case "wifi-outline" :
 			return "";
-			break;
+			// break;
 
 			case "wifi-1" :
 			return "";
-			break;
+			// break;
 
 			case "desktop-1" :
 			return "";
-			break;
+			// break;
 
 			case "laptop-1" :
 			return "";
-			break;
+			// break;
 
 			case "tablet-1" :
 			return "";
-			break;
+			// break;
 
 			case "mobile-2" :
 			return "";
-			break;
+			// break;
 
 			case "contrast" :
 			return "";
-			break;
+			// break;
 
 			case "globe-outline" :
 			return "";
-			break;
+			// break;
 
 			case "globe-2" :
 			return "";
-			break;
+			// break;
 
 			case "globe-alt-outline" :
 			return "";
-			break;
+			// break;
 
 			case "globe-alt" :
 			return "";
-			break;
+			// break;
 
 			case "sun-1" :
 			return "";
-			break;
+			// break;
 
 			case "sun-filled" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-2" :
 			return "";
-			break;
+			// break;
 
 			case "flash-outline" :
 			return "";
-			break;
+			// break;
 
 			case "flash-2" :
 			return "";
-			break;
+			// break;
 
 			case "moon-2" :
 			return "";
-			break;
+			// break;
 
 			case "waves-outline" :
 			return "";
-			break;
+			// break;
 
 			case "waves" :
 			return "";
-			break;
+			// break;
 
 			case "rain" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-sun" :
 			return "";
-			break;
+			// break;
 
 			case "drizzle" :
 			return "";
-			break;
+			// break;
 
 			case "snow" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-flash" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-wind" :
 			return "";
-			break;
+			// break;
 
 			case "wind" :
 			return "";
-			break;
+			// break;
 
 			case "plane-outline" :
 			return "";
-			break;
+			// break;
 
 			case "plane" :
 			return "";
-			break;
+			// break;
 
 			case "leaf-2" :
 			return "";
-			break;
+			// break;
 
 			case "lifebuoy-2" :
 			return "";
-			break;
+			// break;
 
 			case "briefcase-2" :
 			return "";
-			break;
+			// break;
 
 			case "brush-2" :
 			return "";
-			break;
+			// break;
 
 			case "pipette" :
 			return "";
-			break;
+			// break;
 
 			case "power-outline" :
 			return "";
-			break;
+			// break;
 
 			case "power" :
 			return "";
-			break;
+			// break;
 
 			case "check-outline" :
 			return "";
-			break;
+			// break;
 
 			case "check-2" :
 			return "";
-			break;
+			// break;
 
 			case "gift-1" :
 			return "";
-			break;
+			// break;
 
 			case "temperatire" :
 			return "";
-			break;
+			// break;
 
 			case "chart-outline" :
 			return "";
-			break;
+			// break;
 
 			case "chart" :
 			return "";
-			break;
+			// break;
 
 			case "chart-alt-outline" :
 			return "";
-			break;
+			// break;
 
 			case "chart-alt" :
 			return "";
-			break;
+			// break;
 
 			case "chart-bar-outline" :
 			return "";
-			break;
+			// break;
 
 			case "chart-bar-2" :
 			return "";
-			break;
+			// break;
 
 			case "chart-pie-outline" :
 			return "";
-			break;
+			// break;
 
 			case "chart-pie-2" :
 			return "";
-			break;
+			// break;
 
 			case "ticket-2" :
 			return "";
-			break;
+			// break;
 
 			case "credit-card-2" :
 			return "";
-			break;
+			// break;
 
 			case "clipboard-1" :
 			return "";
-			break;
+			// break;
 
 			case "database-2" :
 			return "";
-			break;
+			// break;
 
 			case "key-outline" :
 			return "";
-			break;
+			// break;
 
 			case "key-2" :
 			return "";
-			break;
+			// break;
 
 			case "flow-split" :
 			return "";
-			break;
+			// break;
 
 			case "flow-merge" :
 			return "";
-			break;
+			// break;
 
 			case "flow-parallel-1" :
 			return "";
-			break;
+			// break;
 
 			case "flow-cross" :
 			return "";
-			break;
+			// break;
 
 			case "certificate-outline" :
 			return "";
-			break;
+			// break;
 
 			case "certificate-1" :
 			return "";
-			break;
+			// break;
 
 			case "scissors-outline" :
 			return "";
-			break;
+			// break;
 
 			case "scissors-1" :
 			return "";
-			break;
+			// break;
 
 			case "flask" :
 			return "";
-			break;
+			// break;
 
 			case "wine" :
 			return "";
-			break;
+			// break;
 
 			case "coffee-1" :
 			return "";
-			break;
+			// break;
 
 			case "beer-1" :
 			return "";
-			break;
+			// break;
 
 			case "anchor-outline" :
 			return "";
-			break;
+			// break;
 
 			case "anchor-1" :
 			return "";
-			break;
+			// break;
 
 			case "puzzle-outline" :
 			return "";
-			break;
+			// break;
 
 			case "puzzle-1" :
 			return "";
-			break;
+			// break;
 
 			case "tree-1" :
 			return "";
-			break;
+			// break;
 
 			case "calculator" :
 			return "";
-			break;
+			// break;
 
 			case "infinity-outline" :
 			return "";
-			break;
+			// break;
 
 			case "infinity-1" :
 			return "";
-			break;
+			// break;
 
 			case "pi-outline" :
 			return "";
-			break;
+			// break;
 
 			case "pi" :
 			return "";
-			break;
+			// break;
 
 			case "at-1" :
 			return "";
-			break;
+			// break;
 
 			case "at-circled" :
 			return "";
-			break;
+			// break;
 
 			case "looped-square-outline" :
 			return "";
-			break;
+			// break;
 
 			case "looped-square-interest" :
 			return "";
-			break;
+			// break;
 
 			case "sort-alphabet-outline" :
 			return "";
-			break;
+			// break;
 
 			case "sort-alphabet" :
 			return "";
-			break;
+			// break;
 
 			case "sort-numeric-outline" :
 			return "";
-			break;
+			// break;
 
 			case "sort-numeric" :
 			return "";
-			break;
+			// break;
 
 			case "dribbble-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "dribbble-2" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-2" :
 			return "";
-			break;
+			// break;
 
 			case "flickr-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "flickr-2" :
 			return "";
-			break;
+			// break;
 
 			case "github-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "github-2" :
 			return "";
-			break;
+			// break;
 
 			case "lastfm-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "lastfm-2" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-2" :
 			return "";
-			break;
+			// break;
 
 			case "pinterest-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "pinterest-2" :
 			return "";
-			break;
+			// break;
 
 			case "skype-outline" :
 			return "";
-			break;
+			// break;
 
 			case "skype-2" :
 			return "";
-			break;
+			// break;
 
 			case "tumbler-circled" :
 			return "";
-			break;
+			// break;
 
 			case "tumbler" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-2" :
 			return "";
-			break;
+			// break;
 
 			case "vimeo-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "vimeo-2" :
 			return "";
-			break;
+			// break;
 
 			case "search-3" :
 			return "";
-			break;
+			// break;
 
 			case "mail-3" :
 			return "";
-			break;
+			// break;
 
 			case "heart-3" :
 			return "";
-			break;
+			// break;
 
 			case "heart-empty-2" :
 			return "";
-			break;
+			// break;
 
 			case "star-3" :
 			return "";
-			break;
+			// break;
 
 			case "user-3" :
 			return "";
-			break;
+			// break;
 
 			case "video-3" :
 			return "";
-			break;
+			// break;
 
 			case "picture-3" :
 			return "";
-			break;
+			// break;
 
 			case "camera-3" :
 			return "";
-			break;
+			// break;
 
 			case "ok-2" :
 			return "";
-			break;
+			// break;
 
 			case "ok-circle" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-3" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-circle" :
 			return "";
-			break;
+			// break;
 
 			case "plus-3" :
 			return "";
-			break;
+			// break;
 
 			case "plus-circle" :
 			return "";
-			break;
+			// break;
 
 			case "minus-3" :
 			return "";
-			break;
+			// break;
 
 			case "minus-circle" :
 			return "";
-			break;
+			// break;
 
 			case "help-2" :
 			return "";
-			break;
+			// break;
 
 			case "info-3" :
 			return "";
-			break;
+			// break;
 
 			case "home-3" :
 			return "";
-			break;
+			// break;
 
 			case "link-3" :
 			return "";
-			break;
+			// break;
 
 			case "attach-3" :
 			return "";
-			break;
+			// break;
 
 			case "lock-3" :
 			return "";
-			break;
+			// break;
 
 			case "lock-empty" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-3" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-empty" :
 			return "";
-			break;
+			// break;
 
 			case "pin-2" :
 			return "";
-			break;
+			// break;
 
 			case "eye-3" :
 			return "";
-			break;
+			// break;
 
 			case "tag-3" :
 			return "";
-			break;
+			// break;
 
 			case "tag-empty" :
 			return "";
-			break;
+			// break;
 
 			case "download-3" :
 			return "";
-			break;
+			// break;
 
 			case "upload-3" :
 			return "";
-			break;
+			// break;
 
 			case "download-cloud-1" :
 			return "";
-			break;
+			// break;
 
 			case "upload-cloud-3" :
 			return "";
-			break;
+			// break;
 
 			case "quote-left-1" :
 			return "";
-			break;
+			// break;
 
 			case "quote-right-1" :
 			return "";
-			break;
+			// break;
 
 			case "quote-left-alt" :
 			return "";
-			break;
+			// break;
 
 			case "quote-right-alt" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-3" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-neg" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-alt" :
 			return "";
-			break;
+			// break;
 
 			case "undo" :
 			return "";
-			break;
+			// break;
 
 			case "comment-3" :
 			return "";
-			break;
+			// break;
 
 			case "comment-inv" :
 			return "";
-			break;
+			// break;
 
 			case "comment-alt" :
 			return "";
-			break;
+			// break;
 
 			case "comment-inv-alt" :
 			return "";
-			break;
+			// break;
 
 			case "comment-alt2" :
 			return "";
-			break;
+			// break;
 
 			case "comment-inv-alt2" :
 			return "";
-			break;
+			// break;
 
 			case "chat-3" :
 			return "";
-			break;
+			// break;
 
 			case "chat-inv" :
 			return "";
-			break;
+			// break;
 
 			case "location-3" :
 			return "";
-			break;
+			// break;
 
 			case "location-inv" :
 			return "";
-			break;
+			// break;
 
 			case "location-alt" :
 			return "";
-			break;
+			// break;
 
 			case "compass-3" :
 			return "";
-			break;
+			// break;
 
 			case "trash-3" :
 			return "";
-			break;
+			// break;
 
 			case "trash-empty-1" :
 			return "";
-			break;
+			// break;
 
 			case "doc-3" :
 			return "";
-			break;
+			// break;
 
 			case "doc-inv-1" :
 			return "";
-			break;
+			// break;
 
 			case "doc-alt" :
 			return "";
-			break;
+			// break;
 
 			case "doc-inv-alt" :
 			return "";
-			break;
+			// break;
 
 			case "article" :
 			return "";
-			break;
+			// break;
 
 			case "article-alt" :
 			return "";
-			break;
+			// break;
 
 			case "book-open-1" :
 			return "";
-			break;
+			// break;
 
 			case "folder-3" :
 			return "";
-			break;
+			// break;
 
 			case "folder-empty-1" :
 			return "";
-			break;
+			// break;
 
 			case "box-3" :
 			return "";
-			break;
+			// break;
 
 			case "rss-3" :
 			return "";
-			break;
+			// break;
 
 			case "rss-alt" :
 			return "";
-			break;
+			// break;
 
 			case "cog-3" :
 			return "";
-			break;
+			// break;
 
 			case "wrench-2" :
 			return "";
-			break;
+			// break;
 
 			case "share-2" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-3" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-inv" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-alt" :
 			return "";
-			break;
+			// break;
 
 			case "mic-3" :
 			return "";
-			break;
+			// break;
 
 			case "volume-off-2" :
 			return "";
-			break;
+			// break;
 
 			case "volume-up-1" :
 			return "";
-			break;
+			// break;
 
 			case "headphones-2" :
 			return "";
-			break;
+			// break;
 
 			case "clock-3" :
 			return "";
-			break;
+			// break;
 
 			case "lamp-1" :
 			return "";
-			break;
+			// break;
 
 			case "block-3" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full-3" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full-alt-1" :
 			return "";
-			break;
+			// break;
 
 			case "resize-small-2" :
 			return "";
-			break;
+			// break;
 
 			case "resize-small-alt" :
 			return "";
-			break;
+			// break;
 
 			case "resize-vertical-1" :
 			return "";
-			break;
+			// break;
 
 			case "resize-horizontal-1" :
 			return "";
-			break;
+			// break;
 
 			case "move-2" :
 			return "";
-			break;
+			// break;
 
 			case "popup-3" :
 			return "";
-			break;
+			// break;
 
 			case "down-3" :
 			return "";
-			break;
+			// break;
 
 			case "left-3" :
 			return "";
-			break;
+			// break;
 
 			case "right-3" :
 			return "";
-			break;
+			// break;
 
 			case "up-3" :
 			return "";
-			break;
+			// break;
 
 			case "down-circle" :
 			return "";
-			break;
+			// break;
 
 			case "left-circle" :
 			return "";
-			break;
+			// break;
 
 			case "right-circle" :
 			return "";
-			break;
+			// break;
 
 			case "up-circle" :
 			return "";
-			break;
+			// break;
 
 			case "cw-3" :
 			return "";
-			break;
+			// break;
 
 			case "loop-2" :
 			return "";
-			break;
+			// break;
 
 			case "loop-alt-1" :
 			return "";
-			break;
+			// break;
 
 			case "exchange-1" :
 			return "";
-			break;
+			// break;
 
 			case "split" :
 			return "";
-			break;
+			// break;
 
 			case "arrow-curved" :
 			return "";
-			break;
+			// break;
 
 			case "play-3" :
 			return "";
-			break;
+			// break;
 
 			case "play-circle2" :
 			return "";
-			break;
+			// break;
 
 			case "stop-3" :
 			return "";
-			break;
+			// break;
 
 			case "pause-3" :
 			return "";
-			break;
+			// break;
 
 			case "to-start-2" :
 			return "";
-			break;
+			// break;
 
 			case "to-end-2" :
 			return "";
-			break;
+			// break;
 
 			case "eject-2" :
 			return "";
-			break;
+			// break;
 
 			case "target-3" :
 			return "";
-			break;
+			// break;
 
 			case "signal-2" :
 			return "";
-			break;
+			// break;
 
 			case "award-1" :
 			return "";
-			break;
+			// break;
 
 			case "award-empty" :
 			return "";
-			break;
+			// break;
 
 			case "list-2" :
 			return "";
-			break;
+			// break;
 
 			case "list-nested" :
 			return "";
-			break;
+			// break;
 
 			case "bat-empty" :
 			return "";
-			break;
+			// break;
 
 			case "bat-half" :
 			return "";
-			break;
+			// break;
 
 			case "bat-full" :
 			return "";
-			break;
+			// break;
 
 			case "bat-charge-1" :
 			return "";
-			break;
+			// break;
 
 			case "mobile-3" :
 			return "";
-			break;
+			// break;
 
 			case "cd-1" :
 			return "";
-			break;
+			// break;
 
 			case "equalizer" :
 			return "";
-			break;
+			// break;
 
 			case "cursor" :
 			return "";
-			break;
+			// break;
 
 			case "aperture" :
 			return "";
-			break;
+			// break;
 
 			case "aperture-alt" :
 			return "";
-			break;
+			// break;
 
 			case "steering-wheel" :
 			return "";
-			break;
+			// break;
 
 			case "book-2" :
 			return "";
-			break;
+			// break;
 
 			case "book-alt" :
 			return "";
-			break;
+			// break;
 
 			case "brush-3" :
 			return "";
-			break;
+			// break;
 
 			case "brush-alt" :
 			return "";
-			break;
+			// break;
 
 			case "eyedropper-1" :
 			return "";
-			break;
+			// break;
 
 			case "layers" :
 			return "";
-			break;
+			// break;
 
 			case "layers-alt" :
 			return "";
-			break;
+			// break;
 
 			case "sun-2" :
 			return "";
-			break;
+			// break;
 
 			case "sun-inv" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-3" :
 			return "";
-			break;
+			// break;
 
 			case "rain-1" :
 			return "";
-			break;
+			// break;
 
 			case "flash-3" :
 			return "";
-			break;
+			// break;
 
 			case "moon-3" :
 			return "";
-			break;
+			// break;
 
 			case "moon-inv" :
 			return "";
-			break;
+			// break;
 
 			case "umbrella-1" :
 			return "";
-			break;
+			// break;
 
 			case "chart-bar-3" :
 			return "";
-			break;
+			// break;
 
 			case "chart-pie-3" :
 			return "";
-			break;
+			// break;
 
 			case "chart-pie-alt" :
 			return "";
-			break;
+			// break;
 
 			case "key-3" :
 			return "";
-			break;
+			// break;
 
 			case "key-inv" :
 			return "";
-			break;
+			// break;
 
 			case "hash" :
 			return "";
-			break;
+			// break;
 
 			case "at-2" :
 			return "";
-			break;
+			// break;
 
 			case "pilcrow" :
 			return "";
-			break;
+			// break;
 
 			case "dial" :
 			return "";
-			break;
+			// break;
 
 			case "search-4" :
 			return "";
-			break;
+			// break;
 
 			case "mail-4" :
 			return "";
-			break;
+			// break;
 
 			case "heart-4" :
 			return "";
-			break;
+			// break;
 
 			case "star-4" :
 			return "";
-			break;
+			// break;
 
 			case "user-4" :
 			return "";
-			break;
+			// break;
 
 			case "user-woman" :
 			return "";
-			break;
+			// break;
 
 			case "user-pair" :
 			return "";
-			break;
+			// break;
 
 			case "video-alt" :
 			return "";
-			break;
+			// break;
 
 			case "videocam-2" :
 			return "";
-			break;
+			// break;
 
 			case "videocam-alt" :
 			return "";
-			break;
+			// break;
 
 			case "camera-4" :
 			return "";
-			break;
+			// break;
 
 			case "th-2" :
 			return "";
-			break;
+			// break;
 
 			case "th-list-2" :
 			return "";
-			break;
+			// break;
 
 			case "ok-3" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-4" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-circle-1" :
 			return "";
-			break;
+			// break;
 
 			case "plus-4" :
 			return "";
-			break;
+			// break;
 
 			case "home-4" :
 			return "";
-			break;
+			// break;
 
 			case "lock-4" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-4" :
 			return "";
-			break;
+			// break;
 
 			case "eye-4" :
 			return "";
-			break;
+			// break;
 
 			case "tag-4" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-up-3" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-down-3" :
 			return "";
-			break;
+			// break;
 
 			case "download-4" :
 			return "";
-			break;
+			// break;
 
 			case "export-3" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-4" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-alt-1" :
 			return "";
-			break;
+			// break;
 
 			case "edit-2" :
 			return "";
-			break;
+			// break;
 
 			case "chat-4" :
 			return "";
-			break;
+			// break;
 
 			case "print-3" :
 			return "";
-			break;
+			// break;
 
 			case "bell-3" :
 			return "";
-			break;
+			// break;
 
 			case "attention-3" :
 			return "";
-			break;
+			// break;
 
 			case "info-4" :
 			return "";
-			break;
+			// break;
 
 			case "question" :
 			return "";
-			break;
+			// break;
 
 			case "location-4" :
 			return "";
-			break;
+			// break;
 
 			case "trash-4" :
 			return "";
-			break;
+			// break;
 
 			case "doc-4" :
 			return "";
-			break;
+			// break;
 
 			case "article-1" :
 			return "";
-			break;
+			// break;
 
 			case "article-alt-1" :
 			return "";
-			break;
+			// break;
 
 			case "rss-4" :
 			return "";
-			break;
+			// break;
 
 			case "wrench-3" :
 			return "";
-			break;
+			// break;
 
 			case "basket-3" :
 			return "";
-			break;
+			// break;
 
 			case "basket-alt" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-4" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-alt-1" :
 			return "";
-			break;
+			// break;
 
 			case "volume-off-3" :
 			return "";
-			break;
+			// break;
 
 			case "volume-down-1" :
 			return "";
-			break;
+			// break;
 
 			case "volume-up-2" :
 			return "";
-			break;
+			// break;
 
 			case "bullhorn" :
 			return "";
-			break;
+			// break;
 
 			case "clock-4" :
 			return "";
-			break;
+			// break;
 
 			case "clock-alt" :
 			return "";
-			break;
+			// break;
 
 			case "stop-4" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full-4" :
 			return "";
-			break;
+			// break;
 
 			case "resize-small-3" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-in-2" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-out-2" :
 			return "";
-			break;
+			// break;
 
 			case "popup-4" :
 			return "";
-			break;
+			// break;
 
 			case "down-dir-2" :
 			return "";
-			break;
+			// break;
 
 			case "left-dir-2" :
 			return "";
-			break;
+			// break;
 
 			case "right-dir-2" :
 			return "";
-			break;
+			// break;
 
 			case "up-dir-2" :
 			return "";
-			break;
+			// break;
 
 			case "down-4" :
 			return "";
-			break;
+			// break;
 
 			case "up-4" :
 			return "";
-			break;
+			// break;
 
 			case "cw-4" :
 			return "";
-			break;
+			// break;
 
 			case "signal-3" :
 			return "";
-			break;
+			// break;
 
 			case "award-2" :
 			return "";
-			break;
+			// break;
 
 			case "mobile-4" :
 			return "";
-			break;
+			// break;
 
 			case "mobile-alt" :
 			return "";
-			break;
+			// break;
 
 			case "tablet-2" :
 			return "";
-			break;
+			// break;
 
 			case "ipod" :
 			return "";
-			break;
+			// break;
 
 			case "cd-2" :
 			return "";
-			break;
+			// break;
 
 			case "grid" :
 			return "";
-			break;
+			// break;
 
 			case "book-3" :
 			return "";
-			break;
+			// break;
 
 			case "easel" :
 			return "";
-			break;
+			// break;
 
 			case "globe-3" :
 			return "";
-			break;
+			// break;
 
 			case "chart-1" :
 			return "";
-			break;
+			// break;
 
 			case "chart-bar-4" :
 			return "";
-			break;
+			// break;
 
 			case "chart-pie-4" :
 			return "";
-			break;
+			// break;
 
 			case "dollar-1" :
 			return "";
-			break;
+			// break;
 
 			case "at-3" :
 			return "";
-			break;
+			// break;
 
 			case "colon" :
 			return "";
-			break;
+			// break;
 
 			case "semicolon" :
 			return "";
-			break;
+			// break;
 
 			case "squares" :
 			return "";
-			break;
+			// break;
 
 			case "money-1" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-3" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-rect" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-bird" :
 			return "";
-			break;
+			// break;
 
 			case "youtube-1" :
 			return "";
-			break;
+			// break;
 
 			case "windy-rain-inv" :
 			return "";
-			break;
+			// break;
 
 			case "snow-inv" :
 			return "";
-			break;
+			// break;
 
 			case "snow-heavy-inv" :
 			return "";
-			break;
+			// break;
 
 			case "hail-inv" :
 			return "";
-			break;
+			// break;
 
 			case "clouds-inv" :
 			return "";
-			break;
+			// break;
 
 			case "clouds-flash-inv" :
 			return "";
-			break;
+			// break;
 
 			case "temperature" :
 			return "";
-			break;
+			// break;
 
 			case "compass-4" :
 			return "";
-			break;
+			// break;
 
 			case "na" :
 			return "";
-			break;
+			// break;
 
 			case "celcius" :
 			return "";
-			break;
+			// break;
 
 			case "fahrenheit" :
 			return "";
-			break;
+			// break;
 
 			case "clouds-flash-alt" :
 			return "";
-			break;
+			// break;
 
 			case "sun-inv-1" :
 			return "";
-			break;
+			// break;
 
 			case "moon-inv-1" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-sun-inv" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-moon-inv" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-inv" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-flash-inv" :
 			return "";
-			break;
+			// break;
 
 			case "drizzle-inv" :
 			return "";
-			break;
+			// break;
 
 			case "rain-inv" :
 			return "";
-			break;
+			// break;
 
 			case "windy-inv" :
 			return "";
-			break;
+			// break;
 
 			case "sunrise" :
 			return "";
-			break;
+			// break;
 
 			case "sun-3" :
 			return "";
-			break;
+			// break;
 
 			case "moon-4" :
 			return "";
-			break;
+			// break;
 
 			case "eclipse" :
 			return "";
-			break;
+			// break;
 
 			case "mist" :
 			return "";
-			break;
+			// break;
 
 			case "wind-1" :
 			return "";
-			break;
+			// break;
 
 			case "snowflake" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-sun-1" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-moon" :
 			return "";
-			break;
+			// break;
 
 			case "fog-sun" :
 			return "";
-			break;
+			// break;
 
 			case "fog-moon" :
 			return "";
-			break;
+			// break;
 
 			case "fog-cloud" :
 			return "";
-			break;
+			// break;
 
 			case "fog" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-4" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-flash-1" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-flash-alt" :
 			return "";
-			break;
+			// break;
 
 			case "drizzle-1" :
 			return "";
-			break;
+			// break;
 
 			case "rain-2" :
 			return "";
-			break;
+			// break;
 
 			case "windy" :
 			return "";
-			break;
+			// break;
 
 			case "windy-rain" :
 			return "";
-			break;
+			// break;
 
 			case "snow-1" :
 			return "";
-			break;
+			// break;
 
 			case "snow-alt" :
 			return "";
-			break;
+			// break;
 
 			case "snow-heavy" :
 			return "";
-			break;
+			// break;
 
 			case "hail" :
 			return "";
-			break;
+			// break;
 
 			case "clouds" :
 			return "";
-			break;
+			// break;
 
 			case "clouds-flash" :
 			return "";
-			break;
+			// break;
 
 			case "mail-5" :
 			return "";
-			break;
+			// break;
 
 			case "heart-5" :
 			return "";
-			break;
+			// break;
 
 			case "star-5" :
 			return "";
-			break;
+			// break;
 
 			case "star-empty-2" :
 			return "";
-			break;
+			// break;
 
 			case "ok-4" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-5" :
 			return "";
-			break;
+			// break;
 
 			case "plus-5" :
 			return "";
-			break;
+			// break;
 
 			case "help-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "help-circled-alt" :
 			return "";
-			break;
+			// break;
 
 			case "home-5" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-5" :
 			return "";
-			break;
+			// break;
 
 			case "attention-4" :
 			return "";
-			break;
+			// break;
 
 			case "attention-alt-1" :
 			return "";
-			break;
+			// break;
 
 			case "cog-4" :
 			return "";
-			break;
+			// break;
 
 			case "mic-off" :
 			return "";
-			break;
+			// break;
 
 			case "clock-5" :
 			return "";
-			break;
+			// break;
 
 			case "stopwatch-1" :
 			return "";
-			break;
+			// break;
 
 			case "hourglass-5" :
 			return "";
-			break;
+			// break;
 
 			case "down-5" :
 			return "";
-			break;
+			// break;
 
 			case "left-4" :
 			return "";
-			break;
+			// break;
 
 			case "right-4" :
 			return "";
-			break;
+			// break;
 
 			case "up-5" :
 			return "";
-			break;
+			// break;
 
 			case "down-bold-1" :
 			return "";
-			break;
+			// break;
 
 			case "left-bold-1" :
 			return "";
-			break;
+			// break;
 
 			case "right-bold-1" :
 			return "";
-			break;
+			// break;
 
 			case "up-bold-1" :
 			return "";
-			break;
+			// break;
 
 			case "down-fat" :
 			return "";
-			break;
+			// break;
 
 			case "left-fat" :
 			return "";
-			break;
+			// break;
 
 			case "right-fat" :
 			return "";
-			break;
+			// break;
 
 			case "up-fat" :
 			return "";
-			break;
+			// break;
 
 			case "flash-4" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-5" :
 			return "";
-			break;
+			// break;
 
 			case "vector-pencil" :
 			return "";
-			break;
+			// break;
 
 			case "at-4" :
 			return "";
-			break;
+			// break;
 
 			case "female-1" :
 			return "";
-			break;
+			// break;
 
 			case "male-1" :
 			return "";
-			break;
+			// break;
 
 			case "king" :
 			return "";
-			break;
+			// break;
 
 			case "anchor-2" :
 			return "";
-			break;
+			// break;
 
 			case "aboveground-rail" :
 			return "";
-			break;
+			// break;
 
 			case "airfield" :
 			return "";
-			break;
+			// break;
 
 			case "airport" :
 			return "";
-			break;
+			// break;
 
 			case "art-gallery" :
 			return "";
-			break;
+			// break;
 
 			case "bar" :
 			return "";
-			break;
+			// break;
 
 			case "baseball" :
 			return "";
-			break;
+			// break;
 
 			case "basketball" :
 			return "";
-			break;
+			// break;
 
 			case "beer-2" :
 			return "";
-			break;
+			// break;
 
 			case "belowground-rail" :
 			return "";
-			break;
+			// break;
 
 			case "bicycle-1" :
 			return "";
-			break;
+			// break;
 
 			case "bus-1" :
 			return "";
-			break;
+			// break;
 
 			case "cafe" :
 			return "";
-			break;
+			// break;
 
 			case "campsite" :
 			return "";
-			break;
+			// break;
 
 			case "cemetery" :
 			return "";
-			break;
+			// break;
 
 			case "cinema" :
 			return "";
-			break;
+			// break;
 
 			case "college" :
 			return "";
-			break;
+			// break;
 
 			case "commerical-building" :
 			return "";
-			break;
+			// break;
 
 			case "credit-card-3" :
 			return "";
-			break;
+			// break;
 
 			case "cricket" :
 			return "";
-			break;
+			// break;
 
 			case "embassy" :
 			return "";
-			break;
+			// break;
 
 			case "fast-food" :
 			return "";
-			break;
+			// break;
 
 			case "ferry" :
 			return "";
-			break;
+			// break;
 
 			case "fire-station" :
 			return "";
-			break;
+			// break;
 
 			case "football" :
 			return "";
-			break;
+			// break;
 
 			case "fuel" :
 			return "";
-			break;
+			// break;
 
 			case "garden" :
 			return "";
-			break;
+			// break;
 
 			case "giraffe" :
 			return "";
-			break;
+			// break;
 
 			case "golf" :
 			return "";
-			break;
+			// break;
 
 			case "grocery-store" :
 			return "";
-			break;
+			// break;
 
 			case "harbor" :
 			return "";
-			break;
+			// break;
 
 			case "heliport" :
 			return "";
-			break;
+			// break;
 
 			case "hospital-1" :
 			return "";
-			break;
+			// break;
 
 			case "industrial-building" :
 			return "";
-			break;
+			// break;
 
 			case "library" :
 			return "";
-			break;
+			// break;
 
 			case "lodging" :
 			return "";
-			break;
+			// break;
 
 			case "london-underground" :
 			return "";
-			break;
+			// break;
 
 			case "minefield" :
 			return "";
-			break;
+			// break;
 
 			case "monument" :
 			return "";
-			break;
+			// break;
 
 			case "museum" :
 			return "";
-			break;
+			// break;
 
 			case "pharmacy" :
 			return "";
-			break;
+			// break;
 
 			case "pitch" :
 			return "";
-			break;
+			// break;
 
 			case "police" :
 			return "";
-			break;
+			// break;
 
 			case "post" :
 			return "";
-			break;
+			// break;
 
 			case "prison" :
 			return "";
-			break;
+			// break;
 
 			case "rail" :
 			return "";
-			break;
+			// break;
 
 			case "religious-christian" :
 			return "";
-			break;
+			// break;
 
 			case "religious-islam" :
 			return "";
-			break;
+			// break;
 
 			case "religious-jewish" :
 			return "";
-			break;
+			// break;
 
 			case "restaurant" :
 			return "";
-			break;
+			// break;
 
 			case "roadblock" :
 			return "";
-			break;
+			// break;
 
 			case "school" :
 			return "";
-			break;
+			// break;
 
 			case "shop" :
 			return "";
-			break;
+			// break;
 
 			case "skiing" :
 			return "";
-			break;
+			// break;
 
 			case "soccer" :
 			return "";
-			break;
+			// break;
 
 			case "swimming" :
 			return "";
-			break;
+			// break;
 
 			case "tennis" :
 			return "";
-			break;
+			// break;
 
 			case "theatre" :
 			return "";
-			break;
+			// break;
 
 			case "toilet" :
 			return "";
-			break;
+			// break;
 
 			case "town-hall" :
 			return "";
-			break;
+			// break;
 
 			case "trash-6" :
 			return "";
-			break;
+			// break;
 
 			case "tree-2" :
 			return "";
-			break;
+			// break;
 
 			case "tree-3" :
 			return "";
-			break;
+			// break;
 
 			case "warehouse" :
 			return "";
-			break;
+			// break;
 
 			case "duckduckgo" :
 			return "";
-			break;
+			// break;
 
 			case "aim" :
 			return "";
-			break;
+			// break;
 
 			case "delicious-1" :
 			return "";
-			break;
+			// break;
 
 			case "paypal-2" :
 			return "";
-			break;
+			// break;
 
 			case "flattr-1" :
 			return "";
-			break;
+			// break;
 
 			case "android-1" :
 			return "";
-			break;
+			// break;
 
 			case "eventful" :
 			return "";
-			break;
+			// break;
 
 			case "smashmag" :
 			return "";
-			break;
+			// break;
 
 			case "gplus-3" :
 			return "";
-			break;
+			// break;
 
 			case "wikipedia" :
 			return "";
-			break;
+			// break;
 
 			case "lanyrd" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-6" :
 			return "";
-			break;
+			// break;
 
 			case "stumbleupon-2" :
 			return "";
-			break;
+			// break;
 
 			case "fivehundredpx" :
 			return "";
-			break;
+			// break;
 
 			case "pinterest-3" :
 			return "";
-			break;
+			// break;
 
 			case "bitcoin-1" :
 			return "";
-			break;
+			// break;
 
 			case "w3c" :
 			return "";
-			break;
+			// break;
 
 			case "foursquare-1" :
 			return "";
-			break;
+			// break;
 
 			case "html5-1" :
 			return "";
-			break;
+			// break;
 
 			case "ie-1" :
 			return "";
-			break;
+			// break;
 
 			case "call" :
 			return "";
-			break;
+			// break;
 
 			case "grooveshark" :
 			return "";
-			break;
+			// break;
 
 			case "ninetyninedesigns" :
 			return "";
-			break;
+			// break;
 
 			case "forrst" :
 			return "";
-			break;
+			// break;
 
 			case "digg-1" :
 			return "";
-			break;
+			// break;
 
 			case "spotify-2" :
 			return "";
-			break;
+			// break;
 
 			case "reddit-1" :
 			return "";
-			break;
+			// break;
 
 			case "guest" :
 			return "";
-			break;
+			// break;
 
 			case "gowalla" :
 			return "";
-			break;
+			// break;
 
 			case "appstore" :
 			return "";
-			break;
+			// break;
 
 			case "blogger" :
 			return "";
-			break;
+			// break;
 
 			case "cc-2" :
 			return "";
-			break;
+			// break;
 
 			case "dribbble-4" :
 			return "";
-			break;
+			// break;
 
 			case "evernote-1" :
 			return "";
-			break;
+			// break;
 
 			case "flickr-3" :
 			return "";
-			break;
+			// break;
 
 			case "google-1" :
 			return "";
-			break;
+			// break;
 
 			case "viadeo-1" :
 			return "";
-			break;
+			// break;
 
 			case "instapaper" :
 			return "";
-			break;
+			// break;
 
 			case "weibo-1" :
 			return "";
-			break;
+			// break;
 
 			case "klout" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-4" :
 			return "";
-			break;
+			// break;
 
 			case "meetup" :
 			return "";
-			break;
+			// break;
 
 			case "vk" :
 			return "";
-			break;
+			// break;
 
 			case "plancast" :
 			return "";
-			break;
+			// break;
 
 			case "disqus" :
 			return "";
-			break;
+			// break;
 
 			case "rss-5" :
 			return "";
-			break;
+			// break;
 
 			case "skype-3" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-5" :
 			return "";
-			break;
+			// break;
 
 			case "youtube-2" :
 			return "";
-			break;
+			// break;
 
 			case "vimeo-3" :
 			return "";
-			break;
+			// break;
 
 			case "windows-1" :
 			return "";
-			break;
+			// break;
 
 			case "xing-1" :
 			return "";
-			break;
+			// break;
 
 			case "yahoo-1" :
 			return "";
-			break;
+			// break;
 
 			case "chrome-2" :
 			return "";
-			break;
+			// break;
 
 			case "email" :
 			return "";
-			break;
+			// break;
 
 			case "macstore" :
 			return "";
-			break;
+			// break;
 
 			case "myspace" :
 			return "";
-			break;
+			// break;
 
 			case "podcast" :
 			return "";
-			break;
+			// break;
 
 			case "amazon-1" :
 			return "";
-			break;
+			// break;
 
 			case "steam-1" :
 			return "";
-			break;
+			// break;
 
 			case "cloudapp" :
 			return "";
-			break;
+			// break;
 
 			case "dropbox-2" :
 			return "";
-			break;
+			// break;
 
 			case "ebay" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-5" :
 			return "";
-			break;
+			// break;
 
 			case "github-4" :
 			return "";
-			break;
+			// break;
 
 			case "github-circled-4" :
 			return "";
-			break;
+			// break;
 
 			case "googleplay" :
 			return "";
-			break;
+			// break;
 
 			case "itunes" :
 			return "";
-			break;
+			// break;
 
 			case "plurk" :
 			return "";
-			break;
+			// break;
 
 			case "songkick" :
 			return "";
-			break;
+			// break;
 
 			case "lastfm-3" :
 			return "";
-			break;
+			// break;
 
 			case "gmail" :
 			return "";
-			break;
+			// break;
 
 			case "pinboard" :
 			return "";
-			break;
+			// break;
 
 			case "openid-1" :
 			return "";
-			break;
+			// break;
 
 			case "quora" :
 			return "";
-			break;
+			// break;
 
 			case "soundcloud-3" :
 			return "";
-			break;
+			// break;
 
 			case "tumblr-2" :
 			return "";
-			break;
+			// break;
 
 			case "eventasaurus" :
 			return "";
-			break;
+			// break;
 
 			case "wordpress-1" :
 			return "";
-			break;
+			// break;
 
 			case "yelp-1" :
 			return "";
-			break;
+			// break;
 
 			case "intensedebate" :
 			return "";
-			break;
+			// break;
 
 			case "eventbrite" :
 			return "";
-			break;
+			// break;
 
 			case "scribd-1" :
 			return "";
-			break;
+			// break;
 
 			case "posterous" :
 			return "";
-			break;
+			// break;
 
 			case "stripe" :
 			return "";
-			break;
+			// break;
 
 			case "opentable" :
 			return "";
-			break;
+			// break;
 
 			case "cart" :
 			return "";
-			break;
+			// break;
 
 			case "print-5" :
 			return "";
-			break;
+			// break;
 
 			case "angellist-1" :
 			return "";
-			break;
+			// break;
 
 			case "instagram-3" :
 			return "";
-			break;
+			// break;
 
 			case "dwolla" :
 			return "";
-			break;
+			// break;
 
 			case "appnet" :
 			return "";
-			break;
+			// break;
 
 			case "statusnet" :
 			return "";
-			break;
+			// break;
 
 			case "acrobat" :
 			return "";
-			break;
+			// break;
 
 			case "drupal-1" :
 			return "";
-			break;
+			// break;
 
 			case "buffer" :
 			return "";
-			break;
+			// break;
 
 			case "pocket" :
 			return "";
-			break;
+			// break;
 
 			case "bitbucket-1" :
 			return "";
-			break;
+			// break;
 
 			case "lego" :
 			return "";
-			break;
+			// break;
 
 			case "login-3" :
 			return "";
-			break;
+			// break;
 
 			case "stackoverflow-1" :
 			return "";
-			break;
+			// break;
 
 			case "hackernews" :
 			return "";
-			break;
+			// break;
 
 			case "lkdto" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-6" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-rect-1" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-6" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-bird-1" :
 			return "";
-			break;
+			// break;
 
 			case "vimeo-4" :
 			return "";
-			break;
+			// break;
 
 			case "vimeo-rect" :
 			return "";
-			break;
+			// break;
 
 			case "tumblr-rect" :
 			return "";
-			break;
+			// break;
 
 			case "googleplus-rect" :
 			return "";
-			break;
+			// break;
 
 			case "github-text" :
 			return "";
-			break;
+			// break;
 
 			case "github-5" :
 			return "";
-			break;
+			// break;
 
 			case "icq" :
 			return "";
-			break;
+			// break;
 
 			case "yandex-rect" :
 			return "";
-			break;
+			// break;
 
 			case "vkontakte-rect" :
 			return "";
-			break;
+			// break;
 
 			case "odnoklassniki-1" :
 			return "";
-			break;
+			// break;
 
 			case "odnoklassniki-rect" :
 			return "";
-			break;
+			// break;
 
 			case "friendfeed" :
 			return "";
-			break;
+			// break;
 
 			case "friendfeed-rect" :
 			return "";
-			break;
+			// break;
 
 			case "blogger-1" :
 			return "";
-			break;
+			// break;
 
 			case "blogger-rect" :
 			return "";
-			break;
+			// break;
 
 			case "deviantart-1" :
 			return "";
-			break;
+			// break;
 
 			case "lastfm-4" :
 			return "";
-			break;
+			// break;
 
 			case "lastfm-rect" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-rect" :
 			return "";
-			break;
+			// break;
 
 			case "picasa-1" :
 			return "";
-			break;
+			// break;
 
 			case "instagram-4" :
 			return "";
-			break;
+			// break;
 
 			case "instagram-filled" :
 			return "";
-			break;
+			// break;
 
 			case "box-4" :
 			return "";
-			break;
+			// break;
 
 			case "box-rect" :
 			return "";
-			break;
+			// break;
 
 			case "youku" :
 			return "";
-			break;
+			// break;
 
 			case "win8" :
 			return "";
-			break;
+			// break;
 
 			case "discover" :
 			return "";
-			break;
+			// break;
 
 			case "visa" :
 			return "";
-			break;
+			// break;
 
 			case "houzz-1" :
 			return "";
-			break;
+			// break;
 
 			case "glass-1" :
 			return "";
-			break;
+			// break;
 
 			case "music-3" :
 			return "";
-			break;
+			// break;
 
 			case "search-6" :
 			return "";
-			break;
+			// break;
 
 			case "search-circled" :
 			return "";
-			break;
+			// break;
 
 			case "mail-6" :
 			return "";
-			break;
+			// break;
 
 			case "mail-circled" :
 			return "";
-			break;
+			// break;
 
 			case "heart-6" :
 			return "";
-			break;
+			// break;
 
 			case "heart-circled" :
 			return "";
-			break;
+			// break;
 
 			case "heart-empty-3" :
 			return "";
-			break;
+			// break;
 
 			case "star-6" :
 			return "";
-			break;
+			// break;
 
 			case "star-circled" :
 			return "";
-			break;
+			// break;
 
 			case "star-empty-3" :
 			return "";
-			break;
+			// break;
 
 			case "user-6" :
 			return "";
-			break;
+			// break;
 
 			case "group" :
 			return "";
-			break;
+			// break;
 
 			case "group-circled" :
 			return "";
-			break;
+			// break;
 
 			case "torso" :
 			return "";
-			break;
+			// break;
 
 			case "video-4" :
 			return "";
-			break;
+			// break;
 
 			case "video-circled" :
 			return "";
-			break;
+			// break;
 
 			case "video-alt-1" :
 			return "";
-			break;
+			// break;
 
 			case "videocam-4" :
 			return "";
-			break;
+			// break;
 
 			case "video-chat" :
 			return "";
-			break;
+			// break;
 
 			case "picture-4" :
 			return "";
-			break;
+			// break;
 
 			case "camera-6" :
 			return "";
-			break;
+			// break;
 
 			case "photo" :
 			return "";
-			break;
+			// break;
 
 			case "photo-circled" :
 			return "";
-			break;
+			// break;
 
 			case "th-large-2" :
 			return "";
-			break;
+			// break;
 
 			case "th-3" :
 			return "";
-			break;
+			// break;
 
 			case "th-list-4" :
 			return "";
-			break;
+			// break;
 
 			case "view-mode" :
 			return "";
-			break;
+			// break;
 
 			case "ok-5" :
 			return "";
-			break;
+			// break;
 
 			case "ok-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "ok-circled2-1" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-6" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-circled-4" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-circled2-1" :
 			return "";
-			break;
+			// break;
 
 			case "plus-6" :
 			return "";
-			break;
+			// break;
 
 			case "plus-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "minus-4" :
 			return "";
-			break;
+			// break;
 
 			case "minus-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "help-3" :
 			return "";
-			break;
+			// break;
 
 			case "help-circled-3" :
 			return "";
-			break;
+			// break;
 
 			case "info-circled-3" :
 			return "";
-			break;
+			// break;
 
 			case "home-6" :
 			return "";
-			break;
+			// break;
 
 			case "home-circled" :
 			return "";
-			break;
+			// break;
 
 			case "website" :
 			return "";
-			break;
+			// break;
 
 			case "website-circled" :
 			return "";
-			break;
+			// break;
 
 			case "attach-5" :
 			return "";
-			break;
+			// break;
 
 			case "attach-circled" :
 			return "";
-			break;
+			// break;
 
 			case "lock-6" :
 			return "";
-			break;
+			// break;
 
 			case "lock-circled" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-6" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-alt-2" :
 			return "";
-			break;
+			// break;
 
 			case "eye-6" :
 			return "";
-			break;
+			// break;
 
 			case "eye-off-1" :
 			return "";
-			break;
+			// break;
 
 			case "tag-5" :
 			return "";
-			break;
+			// break;
 
 			case "tags-2" :
 			return "";
-			break;
+			// break;
 
 			case "bookmark-3" :
 			return "";
-			break;
+			// break;
 
 			case "bookmark-empty-1" :
 			return "";
-			break;
+			// break;
 
 			case "flag-3" :
 			return "";
-			break;
+			// break;
 
 			case "flag-circled" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-up-4" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-down-4" :
 			return "";
-			break;
+			// break;
 
 			case "download-6" :
 			return "";
-			break;
+			// break;
 
 			case "download-alt" :
 			return "";
-			break;
+			// break;
 
 			case "upload-5" :
 			return "";
-			break;
+			// break;
 
 			case "share-3" :
 			return "";
-			break;
+			// break;
 
 			case "quote-1" :
 			return "";
-			break;
+			// break;
 
 			case "quote-circled" :
 			return "";
-			break;
+			// break;
 
 			case "export-5" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-6" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-circled" :
 			return "";
-			break;
+			// break;
 
 			case "edit-3" :
 			return "";
-			break;
+			// break;
 
 			case "edit-circled" :
 			return "";
-			break;
+			// break;
 
 			case "edit-alt" :
 			return "";
-			break;
+			// break;
 
 			case "print-6" :
 			return "";
-			break;
+			// break;
 
 			case "retweet-3" :
 			return "";
-			break;
+			// break;
 
 			case "comment-5" :
 			return "";
-			break;
+			// break;
 
 			case "comment-alt-1" :
 			return "";
-			break;
+			// break;
 
 			case "bell-5" :
 			return "";
-			break;
+			// break;
 
 			case "warning-1" :
 			return "";
-			break;
+			// break;
 
 			case "exclamation" :
 			return "";
-			break;
+			// break;
 
 			case "error" :
 			return "";
-			break;
+			// break;
 
 			case "error-alt" :
 			return "";
-			break;
+			// break;
 
 			case "location-6" :
 			return "";
-			break;
+			// break;
 
 			case "location-circled" :
 			return "";
-			break;
+			// break;
 
 			case "compass-5" :
 			return "";
-			break;
+			// break;
 
 			case "compass-circled" :
 			return "";
-			break;
+			// break;
 
 			case "trash-7" :
 			return "";
-			break;
+			// break;
 
 			case "trash-circled" :
 			return "";
-			break;
+			// break;
 
 			case "doc-6" :
 			return "";
-			break;
+			// break;
 
 			case "doc-circled" :
 			return "";
-			break;
+			// break;
 
 			case "doc-new" :
 			return "";
-			break;
+			// break;
 
 			case "doc-new-circled" :
 			return "";
-			break;
+			// break;
 
 			case "folder-5" :
 			return "";
-			break;
+			// break;
 
 			case "folder-circled" :
 			return "";
-			break;
+			// break;
 
 			case "folder-close" :
 			return "";
-			break;
+			// break;
 
 			case "folder-open-2" :
 			return "";
-			break;
+			// break;
 
 			case "rss-6" :
 			return "";
-			break;
+			// break;
 
 			case "phone-3" :
 			return "";
-			break;
+			// break;
 
 			case "phone-circled" :
 			return "";
-			break;
+			// break;
 
 			case "cog-5" :
 			return "";
-			break;
+			// break;
 
 			case "cog-circled" :
 			return "";
-			break;
+			// break;
 
 			case "cogs" :
 			return "";
-			break;
+			// break;
 
 			case "wrench-4" :
 			return "";
-			break;
+			// break;
 
 			case "wrench-circled" :
 			return "";
-			break;
+			// break;
 
 			case "basket-4" :
 			return "";
-			break;
+			// break;
 
 			case "basket-circled" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-7" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-circled" :
 			return "";
-			break;
+			// break;
 
 			case "mic-5" :
 			return "";
-			break;
+			// break;
 
 			case "mic-circled" :
 			return "";
-			break;
+			// break;
 
 			case "volume-off-4" :
 			return "";
-			break;
+			// break;
 
 			case "volume-down-2" :
 			return "";
-			break;
+			// break;
 
 			case "volume-1" :
 			return "";
-			break;
+			// break;
 
 			case "volume-up-3" :
 			return "";
-			break;
+			// break;
 
 			case "headphones-3" :
 			return "";
-			break;
+			// break;
 
 			case "clock-6" :
 			return "";
-			break;
+			// break;
 
 			case "clock-circled" :
 			return "";
-			break;
+			// break;
 
 			case "lightbulb-2" :
 			return "";
-			break;
+			// break;
 
 			case "lightbulb-alt" :
 			return "";
-			break;
+			// break;
 
 			case "block-4" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full-5" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full-alt-2" :
 			return "";
-			break;
+			// break;
 
 			case "resize-small-4" :
 			return "";
-			break;
+			// break;
 
 			case "resize-vertical-2" :
 			return "";
-			break;
+			// break;
 
 			case "resize-horizontal-2" :
 			return "";
-			break;
+			// break;
 
 			case "move-3" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-in-4" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-out-4" :
 			return "";
-			break;
+			// break;
 
 			case "down-open-3" :
 			return "";
-			break;
+			// break;
 
 			case "left-open-4" :
 			return "";
-			break;
+			// break;
 
 			case "right-open-4" :
 			return "";
-			break;
+			// break;
 
 			case "up-open-3" :
 			return "";
-			break;
+			// break;
 
 			case "down-6" :
 			return "";
-			break;
+			// break;
 
 			case "left-5" :
 			return "";
-			break;
+			// break;
 
 			case "right-5" :
 			return "";
-			break;
+			// break;
 
 			case "up-6" :
 			return "";
-			break;
+			// break;
 
 			case "down-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "left-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "right-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "up-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "down-hand-1" :
 			return "";
-			break;
+			// break;
 
 			case "left-hand-1" :
 			return "";
-			break;
+			// break;
 
 			case "right-hand-1" :
 			return "";
-			break;
+			// break;
 
 			case "up-hand-1" :
 			return "";
-			break;
+			// break;
 
 			case "cw-5" :
 			return "";
-			break;
+			// break;
 
 			case "cw-circled" :
 			return "";
-			break;
+			// break;
 
 			case "arrows-cw-2" :
 			return "";
-			break;
+			// break;
 
 			case "shuffle-4" :
 			return "";
-			break;
+			// break;
 
 			case "play-5" :
 			return "";
-			break;
+			// break;
 
 			case "play-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "play-circled2-1" :
 			return "";
-			break;
+			// break;
 
 			case "stop-6" :
 			return "";
-			break;
+			// break;
 
 			case "stop-circled" :
 			return "";
-			break;
+			// break;
 
 			case "pause-5" :
 			return "";
-			break;
+			// break;
 
 			case "pause-circled" :
 			return "";
-			break;
+			// break;
 
 			case "record-2" :
 			return "";
-			break;
+			// break;
 
 			case "eject-3" :
 			return "";
-			break;
+			// break;
 
 			case "backward" :
 			return "";
-			break;
+			// break;
 
 			case "backward-circled" :
 			return "";
-			break;
+			// break;
 
 			case "fast-backward-2" :
 			return "";
-			break;
+			// break;
 
 			case "fast-forward-2" :
 			return "";
-			break;
+			// break;
 
 			case "forward-3" :
 			return "";
-			break;
+			// break;
 
 			case "forward-circled" :
 			return "";
-			break;
+			// break;
 
 			case "step-backward" :
 			return "";
-			break;
+			// break;
 
 			case "step-forward" :
 			return "";
-			break;
+			// break;
 
 			case "target-4" :
 			return "";
-			break;
+			// break;
 
 			case "signal-4" :
 			return "";
-			break;
+			// break;
 
 			case "desktop-2" :
 			return "";
-			break;
+			// break;
 
 			case "desktop-circled" :
 			return "";
-			break;
+			// break;
 
 			case "laptop-2" :
 			return "";
-			break;
+			// break;
 
 			case "laptop-circled" :
 			return "";
-			break;
+			// break;
 
 			case "network-1" :
 			return "";
-			break;
+			// break;
 
 			case "inbox-3" :
 			return "";
-			break;
+			// break;
 
 			case "inbox-circled" :
 			return "";
-			break;
+			// break;
 
 			case "inbox-alt" :
 			return "";
-			break;
+			// break;
 
 			case "globe-5" :
 			return "";
-			break;
+			// break;
 
 			case "globe-alt-1" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-6" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-circled" :
 			return "";
-			break;
+			// break;
 
 			case "flight-2" :
 			return "";
-			break;
+			// break;
 
 			case "leaf-3" :
 			return "";
-			break;
+			// break;
 
 			case "font-1" :
 			return "";
-			break;
+			// break;
 
 			case "fontsize-1" :
 			return "";
-			break;
+			// break;
 
 			case "bold-1" :
 			return "";
-			break;
+			// break;
 
 			case "italic-1" :
 			return "";
-			break;
+			// break;
 
 			case "text-height-1" :
 			return "";
-			break;
+			// break;
 
 			case "text-width-1" :
 			return "";
-			break;
+			// break;
 
 			case "align-left-1" :
 			return "";
-			break;
+			// break;
 
 			case "align-center-1" :
 			return "";
-			break;
+			// break;
 
 			case "align-right-1" :
 			return "";
-			break;
+			// break;
 
 			case "align-justify-1" :
 			return "";
-			break;
+			// break;
 
 			case "list-3" :
 			return "";
-			break;
+			// break;
 
 			case "indent-left-1" :
 			return "";
-			break;
+			// break;
 
 			case "indent-right-1" :
 			return "";
-			break;
+			// break;
 
 			case "briefcase-3" :
 			return "";
-			break;
+			// break;
 
 			case "off-1" :
 			return "";
-			break;
+			// break;
 
 			case "road-1" :
 			return "";
-			break;
+			// break;
 
 			case "qrcode-1" :
 			return "";
-			break;
+			// break;
 
 			case "barcode-1" :
 			return "";
-			break;
+			// break;
 
 			case "braille-1" :
 			return "";
-			break;
+			// break;
 
 			case "book-4" :
 			return "";
-			break;
+			// break;
 
 			case "adjust-2" :
 			return "";
-			break;
+			// break;
 
 			case "tint-1" :
 			return "";
-			break;
+			// break;
 
 			case "check-3" :
 			return "";
-			break;
+			// break;
 
 			case "check-empty-1" :
 			return "";
-			break;
+			// break;
 
 			case "asterisk-1" :
 			return "";
-			break;
+			// break;
 
 			case "gift-2" :
 			return "";
-			break;
+			// break;
 
 			case "fire-2" :
 			return "";
-			break;
+			// break;
 
 			case "magnet-2" :
 			return "";
-			break;
+			// break;
 
 			case "chart-2" :
 			return "";
-			break;
+			// break;
 
 			case "chart-circled" :
 			return "";
-			break;
+			// break;
 
 			case "credit-card-4" :
 			return "";
-			break;
+			// break;
 
 			case "megaphone-2" :
 			return "";
-			break;
+			// break;
 
 			case "clipboard-2" :
 			return "";
-			break;
+			// break;
 
 			case "hdd-2" :
 			return "";
-			break;
+			// break;
 
 			case "key-4" :
 			return "";
-			break;
+			// break;
 
 			case "certificate-2" :
 			return "";
-			break;
+			// break;
 
 			case "tasks-1" :
 			return "";
-			break;
+			// break;
 
 			case "filter-1" :
 			return "";
-			break;
+			// break;
 
 			case "gauge-2" :
 			return "";
-			break;
+			// break;
 
 			case "smiley" :
 			return "";
-			break;
+			// break;
 
 			case "smiley-circled" :
 			return "";
-			break;
+			// break;
 
 			case "address-book" :
 			return "";
-			break;
+			// break;
 
 			case "address-book-alt" :
 			return "";
-			break;
+			// break;
 
 			case "asl" :
 			return "";
-			break;
+			// break;
 
 			case "glasses" :
 			return "";
-			break;
+			// break;
 
 			case "hearing-impaired" :
 			return "";
-			break;
+			// break;
 
 			case "iphone-home" :
 			return "";
-			break;
+			// break;
 
 			case "person" :
 			return "";
-			break;
+			// break;
 
 			case "adult" :
 			return "";
-			break;
+			// break;
 
 			case "child-1" :
 			return "";
-			break;
+			// break;
 
 			case "blind-1" :
 			return "";
-			break;
+			// break;
 
 			case "guidedog" :
 			return "";
-			break;
+			// break;
 
 			case "accessibility" :
 			return "";
-			break;
+			// break;
 
 			case "universal-access-1" :
 			return "";
-			break;
+			// break;
 
 			case "male-2" :
 			return "";
-			break;
+			// break;
 
 			case "female-2" :
 			return "";
-			break;
+			// break;
 
 			case "behance-2" :
 			return "";
-			break;
+			// break;
 
 			case "blogger-2" :
 			return "";
-			break;
+			// break;
 
 			case "cc-3" :
 			return "";
-			break;
+			// break;
 
 			case "css" :
 			return "";
-			break;
+			// break;
 
 			case "delicious-2" :
 			return "";
-			break;
+			// break;
 
 			case "deviantart-2" :
 			return "";
-			break;
+			// break;
 
 			case "digg-2" :
 			return "";
-			break;
+			// break;
 
 			case "dribbble-5" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-7" :
 			return "";
-			break;
+			// break;
 
 			case "flickr-4" :
 			return "";
-			break;
+			// break;
 
 			case "foursquare-2" :
 			return "";
-			break;
+			// break;
 
 			case "friendfeed-1" :
 			return "";
-			break;
+			// break;
 
 			case "friendfeed-rect-1" :
 			return "";
-			break;
+			// break;
 
 			case "github-6" :
 			return "";
-			break;
+			// break;
 
 			case "github-text-1" :
 			return "";
-			break;
+			// break;
 
 			case "googleplus" :
 			return "";
-			break;
+			// break;
 
 			case "instagram-5" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-6" :
 			return "";
-			break;
+			// break;
 
 			case "path" :
 			return "";
-			break;
+			// break;
 
 			case "picasa-2" :
 			return "";
-			break;
+			// break;
 
 			case "pinterest-4" :
 			return "";
-			break;
+			// break;
 
 			case "reddit-2" :
 			return "";
-			break;
+			// break;
 
 			case "skype-5" :
 			return "";
-			break;
+			// break;
 
 			case "slideshare-1" :
 			return "";
-			break;
+			// break;
 
 			case "stackoverflow-2" :
 			return "";
-			break;
+			// break;
 
 			case "stumbleupon-3" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-7" :
 			return "";
-			break;
+			// break;
 
 			case "tumblr-4" :
 			return "";
-			break;
+			// break;
 
 			case "vimeo-5" :
 			return "";
-			break;
+			// break;
 
 			case "vkontakte-2" :
 			return "";
-			break;
+			// break;
 
 			case "w3c-1" :
 			return "";
-			break;
+			// break;
 
 			case "wordpress-3" :
 			return "";
-			break;
+			// break;
 
 			case "youtube-3" :
 			return "";
-			break;
+			// break;
 
 			case "music-4" :
 			return "";
-			break;
+			// break;
 
 			case "search-7" :
 			return "";
-			break;
+			// break;
 
 			case "mail-7" :
 			return "";
-			break;
+			// break;
 
 			case "heart-7" :
 			return "";
-			break;
+			// break;
 
 			case "star-7" :
 			return "";
-			break;
+			// break;
 
 			case "user-7" :
 			return "";
-			break;
+			// break;
 
 			case "videocam-5" :
 			return "";
-			break;
+			// break;
 
 			case "camera-7" :
 			return "";
-			break;
+			// break;
 
 			case "photo-1" :
 			return "";
-			break;
+			// break;
 
 			case "attach-6" :
 			return "";
-			break;
+			// break;
 
 			case "lock-7" :
 			return "";
-			break;
+			// break;
 
 			case "eye-7" :
 			return "";
-			break;
+			// break;
 
 			case "tag-6" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-up-5" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-7" :
 			return "";
-			break;
+			// break;
 
 			case "comment-6" :
 			return "";
-			break;
+			// break;
 
 			case "location-7" :
 			return "";
-			break;
+			// break;
 
 			case "cup-1" :
 			return "";
-			break;
+			// break;
 
 			case "trash-8" :
 			return "";
-			break;
+			// break;
 
 			case "doc-7" :
 			return "";
-			break;
+			// break;
 
 			case "note-1" :
 			return "";
-			break;
+			// break;
 
 			case "cog-6" :
 			return "";
-			break;
+			// break;
 
 			case "params" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-8" :
 			return "";
-			break;
+			// break;
 
 			case "sound-1" :
 			return "";
-			break;
+			// break;
 
 			case "clock-7" :
 			return "";
-			break;
+			// break;
 
 			case "lightbulb-3" :
 			return "";
-			break;
+			// break;
 
 			case "tv" :
 			return "";
-			break;
+			// break;
 
 			case "desktop-3" :
 			return "";
-			break;
+			// break;
 
 			case "mobile-6" :
 			return "";
-			break;
+			// break;
 
 			case "cd-3" :
 			return "";
-			break;
+			// break;
 
 			case "inbox-4" :
 			return "";
-			break;
+			// break;
 
 			case "globe-6" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-7" :
 			return "";
-			break;
+			// break;
 
 			case "paper-plane-3" :
 			return "";
-			break;
+			// break;
 
 			case "fire-3" :
 			return "";
-			break;
+			// break;
 
 			case "graduation-cap-2" :
 			return "";
-			break;
+			// break;
 
 			case "megaphone-3" :
 			return "";
-			break;
+			// break;
 
 			case "database-3" :
 			return "";
-			break;
+			// break;
 
 			case "key-5" :
 			return "";
-			break;
+			// break;
 
 			case "beaker-1" :
 			return "";
-			break;
+			// break;
 
 			case "truck-1" :
 			return "";
-			break;
+			// break;
 
 			case "money-2" :
 			return "";
-			break;
+			// break;
 
 			case "food-1" :
 			return "";
-			break;
+			// break;
 
 			case "shop-1" :
 			return "";
-			break;
+			// break;
 
 			case "diamond-1" :
 			return "";
-			break;
+			// break;
 
 			case "t-shirt" :
 			return "";
-			break;
+			// break;
 
 			case "wallet" :
 			return "";
-			break;
+			// break;
 
 			case "search-8" :
 			return "";
-			break;
+			// break;
 
 			case "mail-8" :
 			return "";
-			break;
+			// break;
 
 			case "heart-8" :
 			return "";
-			break;
+			// break;
 
 			case "heart-empty-4" :
 			return "";
-			break;
+			// break;
 
 			case "star-8" :
 			return "";
-			break;
+			// break;
 
 			case "user-8" :
 			return "";
-			break;
+			// break;
 
 			case "video-5" :
 			return "";
-			break;
+			// break;
 
 			case "picture-5" :
 			return "";
-			break;
+			// break;
 
 			case "th-large-3" :
 			return "";
-			break;
+			// break;
 
 			case "th-4" :
 			return "";
-			break;
+			// break;
 
 			case "th-list-5" :
 			return "";
-			break;
+			// break;
 
 			case "ok-6" :
 			return "";
-			break;
+			// break;
 
 			case "ok-circle-1" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-7" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-circle-2" :
 			return "";
-			break;
+			// break;
 
 			case "plus-circle-1" :
 			return "";
-			break;
+			// break;
 
 			case "minus-circle-1" :
 			return "";
-			break;
+			// break;
 
 			case "link-5" :
 			return "";
-			break;
+			// break;
 
 			case "attach-7" :
 			return "";
-			break;
+			// break;
 
 			case "lock-8" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-7" :
 			return "";
-			break;
+			// break;
 
 			case "tag-7" :
 			return "";
-			break;
+			// break;
 
 			case "reply-4" :
 			return "";
-			break;
+			// break;
 
 			case "reply-all-2" :
 			return "";
-			break;
+			// break;
 
 			case "forward-4" :
 			return "";
-			break;
+			// break;
 
 			case "code-3" :
 			return "";
-			break;
+			// break;
 
 			case "retweet-4" :
 			return "";
-			break;
+			// break;
 
 			case "comment-7" :
 			return "";
-			break;
+			// break;
 
 			case "comment-alt-2" :
 			return "";
-			break;
+			// break;
 
 			case "chat-6" :
 			return "";
-			break;
+			// break;
 
 			case "attention-5" :
 			return "";
-			break;
+			// break;
 
 			case "location-8" :
 			return "";
-			break;
+			// break;
 
 			case "doc-8" :
 			return "";
-			break;
+			// break;
 
 			case "docs-landscape" :
 			return "";
-			break;
+			// break;
 
 			case "folder-6" :
 			return "";
-			break;
+			// break;
 
 			case "archive-2" :
 			return "";
-			break;
+			// break;
 
 			case "rss-7" :
 			return "";
-			break;
+			// break;
 
 			case "rss-alt-1" :
 			return "";
-			break;
+			// break;
 
 			case "cog-7" :
 			return "";
-			break;
+			// break;
 
 			case "logout-3" :
 			return "";
-			break;
+			// break;
 
 			case "clock-8" :
 			return "";
-			break;
+			// break;
 
 			case "block-5" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full-6" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full-circle" :
 			return "";
-			break;
+			// break;
 
 			case "popup-5" :
 			return "";
-			break;
+			// break;
 
 			case "left-open-5" :
 			return "";
-			break;
+			// break;
 
 			case "right-open-5" :
 			return "";
-			break;
+			// break;
 
 			case "down-circle-1" :
 			return "";
-			break;
+			// break;
 
 			case "left-circle-1" :
 			return "";
-			break;
+			// break;
 
 			case "right-circle-1" :
 			return "";
-			break;
+			// break;
 
 			case "up-circle-1" :
 			return "";
-			break;
+			// break;
 
 			case "down-dir-3" :
 			return "";
-			break;
+			// break;
 
 			case "right-dir-3" :
 			return "";
-			break;
+			// break;
 
 			case "down-micro" :
 			return "";
-			break;
+			// break;
 
 			case "up-micro" :
 			return "";
-			break;
+			// break;
 
 			case "cw-circle" :
 			return "";
-			break;
+			// break;
 
 			case "arrows-cw-3" :
 			return "";
-			break;
+			// break;
 
 			case "updown-circle" :
 			return "";
-			break;
+			// break;
 
 			case "target-5" :
 			return "";
-			break;
+			// break;
 
 			case "signal-5" :
 			return "";
-			break;
+			// break;
 
 			case "progress-4" :
 			return "";
-			break;
+			// break;
 
 			case "progress-5" :
 			return "";
-			break;
+			// break;
 
 			case "progress-6" :
 			return "";
-			break;
+			// break;
 
 			case "progress-7" :
 			return "";
-			break;
+			// break;
 
 			case "progress-8" :
 			return "";
-			break;
+			// break;
 
 			case "progress-9" :
 			return "";
-			break;
+			// break;
 
 			case "progress-10" :
 			return "";
-			break;
+			// break;
 
 			case "progress-11" :
 			return "";
-			break;
+			// break;
 
 			case "font-2" :
 			return "";
-			break;
+			// break;
 
 			case "list-4" :
 			return "";
-			break;
+			// break;
 
 			case "list-numbered-1" :
 			return "";
-			break;
+			// break;
 
 			case "indent-left-2" :
 			return "";
-			break;
+			// break;
 
 			case "indent-right-2" :
 			return "";
-			break;
+			// break;
 
 			case "cloud-8" :
 			return "";
-			break;
+			// break;
 
 			case "terminal-1" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-rect-2" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-bird-2" :
 			return "";
-			break;
+			// break;
 
 			case "vimeo-rect-1" :
 			return "";
-			break;
+			// break;
 
 			case "tumblr-rect-1" :
 			return "";
-			break;
+			// break;
 
 			case "googleplus-rect-1" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-rect-1" :
 			return "";
-			break;
+			// break;
 
 			case "skype-6" :
 			return "";
-			break;
+			// break;
 
 			case "vkontakte-rect-1" :
 			return "";
-			break;
+			// break;
 
 			case "youtube-4" :
 			return "";
-			break;
+			// break;
 
 			case "odnoklassniki-rect-1" :
 			return "";
-			break;
+			// break;
 
 			case "down-open-2" :
 			return "";
-			break;
+			// break;
 
 			case "up-open-2" :
 			return "";
-			break;
+			// break;
 
 			case "right-open-3" :
 			return "";
-			break;
+			// break;
 
 			case "left-open-3" :
 			return "";
-			break;
+			// break;
 
 			case "menu-3" :
 			return "";
-			break;
+			// break;
 
 			case "th-list-3" :
 			return "";
-			break;
+			// break;
 
 			case "th-thumb" :
 			return "";
-			break;
+			// break;
 
 			case "th-thumb-empty" :
 			return "";
-			break;
+			// break;
 
 			case "coverflow" :
 			return "";
-			break;
+			// break;
 
 			case "coverflow-empty" :
 			return "";
-			break;
+			// break;
 
 			case "pause-4" :
 			return "";
-			break;
+			// break;
 
 			case "play-4" :
 			return "";
-			break;
+			// break;
 
 			case "to-end-3" :
 			return "";
-			break;
+			// break;
 
 			case "to-start-3" :
 			return "";
-			break;
+			// break;
 
 			case "fast-forward-1" :
 			return "";
-			break;
+			// break;
 
 			case "fast-backward-1" :
 			return "";
-			break;
+			// break;
 
 			case "upload-cloud-4" :
 			return "";
-			break;
+			// break;
 
 			case "download-cloud-2" :
 			return "";
-			break;
+			// break;
 
 			case "data-science" :
 			return "";
-			break;
+			// break;
 
 			case "data-science-inv" :
 			return "";
-			break;
+			// break;
 
 			case "globe-4" :
 			return "";
-			break;
+			// break;
 
 			case "globe-inv" :
 			return "";
-			break;
+			// break;
 
 			case "math" :
 			return "";
-			break;
+			// break;
 
 			case "math-circled-empty" :
 			return "";
-			break;
+			// break;
 
 			case "math-circled" :
 			return "";
-			break;
+			// break;
 
 			case "paper-plane-2" :
 			return "";
-			break;
+			// break;
 
 			case "paper-plane-alt2" :
 			return "";
-			break;
+			// break;
 
 			case "paper-plane-alt" :
 			return "";
-			break;
+			// break;
 
 			case "color-adjust" :
 			return "";
-			break;
+			// break;
 
 			case "star-half-1" :
 			return "";
-			break;
+			// break;
 
 			case "star-half_empty" :
 			return "";
-			break;
+			// break;
 
 			case "ccw-2" :
 			return "";
-			break;
+			// break;
 
 			case "heart-broken" :
 			return "";
-			break;
+			// break;
 
 			case "hash-1" :
 			return "";
-			break;
+			// break;
 
 			case "reply-3" :
 			return "";
-			break;
+			// break;
 
 			case "retweet-2" :
 			return "";
-			break;
+			// break;
 
 			case "login-2" :
 			return "";
-			break;
+			// break;
 
 			case "logout-2" :
 			return "";
-			break;
+			// break;
 
 			case "download-5" :
 			return "";
-			break;
+			// break;
 
 			case "upload-4" :
 			return "";
-			break;
+			// break;
 
 			case "location-5" :
 			return "";
-			break;
+			// break;
 
 			case "monitor-1" :
 			return "";
-			break;
+			// break;
 
 			case "tablet-3" :
 			return "";
-			break;
+			// break;
 
 			case "mobile-5" :
 			return "";
-			break;
+			// break;
 
 			case "connected-object" :
 			return "";
-			break;
+			// break;
 
 			case "isight" :
 			return "";
-			break;
+			// break;
 
 			case "videocam-3" :
 			return "";
-			break;
+			// break;
 
 			case "shuffle-3" :
 			return "";
-			break;
+			// break;
 
 			case "chat-5" :
 			return "";
-			break;
+			// break;
 
 			case "bell-4" :
 			return "";
-			break;
+			// break;
 
 			case "movie" :
 			return "";
-			break;
+			// break;
 
 			case "ruler" :
 			return "";
-			break;
+			// break;
 
 			case "vector" :
 			return "";
-			break;
+			// break;
 
 			case "move" :
 			return "";
-			break;
+			// break;
 
 			case "mic-4" :
 			return "";
-			break;
+			// break;
 
 			case "doc-5" :
 			return "";
-			break;
+			// break;
 
 			case "dribbble-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "dribbble-3" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-4" :
 			return "";
-			break;
+			// break;
 
 			case "github-circled-alt" :
 			return "";
-			break;
+			// break;
 
 			case "github-circled-3" :
 			return "";
-			break;
+			// break;
 
 			case "github-3" :
 			return "";
-			break;
+			// break;
 
 			case "github-circled-alt2" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-4" :
 			return "";
-			break;
+			// break;
 
 			case "gplus-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "gplus-2" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-3" :
 			return "";
-			break;
+			// break;
 
 			case "instagram-2" :
 			return "";
-			break;
+			// break;
 
 			case "instagram-circled" :
 			return "";
-			break;
+			// break;
 
 			case "mfg-logo" :
 			return "";
-			break;
+			// break;
 
 			case "mfg-logo-circled" :
 			return "";
-			break;
+			// break;
 
 			case "user-5" :
 			return "";
-			break;
+			// break;
 
 			case "user-male" :
 			return "";
-			break;
+			// break;
 
 			case "user-female" :
 			return "";
-			break;
+			// break;
 
 			case "users-3" :
 			return "";
-			break;
+			// break;
 
 			case "folder-4" :
 			return "";
-			break;
+			// break;
 
 			case "folder-open-1" :
 			return "";
-			break;
+			// break;
 
 			case "folder-empty-2" :
 			return "";
-			break;
+			// break;
 
 			case "attach-4" :
 			return "";
-			break;
+			// break;
 
 			case "ok-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "cancel-circled-3" :
 			return "";
-			break;
+			// break;
 
 			case "inbox-2" :
 			return "";
-			break;
+			// break;
 
 			case "trophy-1" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-alt-1" :
 			return "";
-			break;
+			// break;
 
 			case "link-4" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-in-3" :
 			return "";
-			break;
+			// break;
 
 			case "zoom-out-3" :
 			return "";
-			break;
+			// break;
 
 			case "stop-5" :
 			return "";
-			break;
+			// break;
 
 			case "export-4" :
 			return "";
-			break;
+			// break;
 
 			case "eye-5" :
 			return "";
-			break;
+			// break;
 
 			case "trash-5" :
 			return "";
-			break;
+			// break;
 
 			case "hdd-1" :
 			return "";
-			break;
+			// break;
 
 			case "info-circled-2" :
 			return "";
-			break;
+			// break;
 
 			case "info-circled-alt" :
 			return "";
-			break;
+			// break;
 
 			case "print-4" :
 			return "";
-			break;
+			// break;
 
 			case "fontsize" :
 			return "";
-			break;
+			// break;
 
 			case "soundcloud-2" :
 			return "";
-			break;
+			// break;
 
 			case "soundcloud-circled" :
 			return "";
-			break;
+			// break;
 
 			case "link-ext" :
 			return "";
-			break;
+			// break;
 
 			case "check-empty" :
 			return "";
-			break;
+			// break;
 
 			case "bookmark-empty" :
 			return "";
-			break;
+			// break;
 
 			case "phone-squared" :
 			return "";
-			break;
+			// break;
 
 			case "twitter" :
 			return "";
-			break;
+			// break;
 
 			case "facebook" :
 			return "";
-			break;
+			// break;
 
 			case "github-circled" :
 			return "";
-			break;
+			// break;
 
 			case "rss" :
 			return "";
-			break;
+			// break;
 
 			case "hdd" :
 			return "";
-			break;
+			// break;
 
 			case "certificate" :
 			return "";
-			break;
+			// break;
 
 			case "left-circled" :
 			return "";
-			break;
+			// break;
 
 			case "right-circled" :
 			return "";
-			break;
+			// break;
 
 			case "up-circled" :
 			return "";
-			break;
+			// break;
 
 			case "down-circled" :
 			return "";
-			break;
+			// break;
 
 			case "tasks" :
 			return "";
-			break;
+			// break;
 
 			case "filter" :
 			return "";
-			break;
+			// break;
 
 			case "resize-full-alt" :
 			return "";
-			break;
+			// break;
 
 			case "beaker" :
 			return "";
-			break;
+			// break;
 
 			case "docs" :
 			return "";
-			break;
+			// break;
 
 			case "blank" :
 			return "";
-			break;
+			// break;
 
 			case "menu" :
 			return "";
-			break;
+			// break;
 
 			case "list-bullet" :
 			return "";
-			break;
+			// break;
 
 			case "list-numbered" :
 			return "";
-			break;
+			// break;
 
 			case "strike" :
 			return "";
-			break;
+			// break;
 
 			case "underline" :
 			return "";
-			break;
+			// break;
 
 			case "table" :
 			return "";
-			break;
+			// break;
 
 			case "magic" :
 			return "";
-			break;
+			// break;
 
 			case "pinterest-circled" :
 			return "";
-			break;
+			// break;
 
 			case "pinterest-squared" :
 			return "";
-			break;
+			// break;
 
 			case "gplus-squared" :
 			return "";
-			break;
+			// break;
 
 			case "gplus" :
 			return "";
-			break;
+			// break;
 
 			case "money" :
 			return "";
-			break;
+			// break;
 
 			case "columns" :
 			return "";
-			break;
+			// break;
 
 			case "sort" :
 			return "";
-			break;
+			// break;
 
 			case "sort-down" :
 			return "";
-			break;
+			// break;
 
 			case "sort-up" :
 			return "";
-			break;
+			// break;
 
 			case "mail-alt" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin" :
 			return "";
-			break;
+			// break;
 
 			case "gauge" :
 			return "";
-			break;
+			// break;
 
 			case "comment-empty" :
 			return "";
-			break;
+			// break;
 
 			case "chat-empty" :
 			return "";
-			break;
+			// break;
 
 			case "sitemap" :
 			return "";
-			break;
+			// break;
 
 			case "paste" :
 			return "";
-			break;
+			// break;
 
 			case "lightbulb" :
 			return "";
-			break;
+			// break;
 
 			case "exchange" :
 			return "";
-			break;
+			// break;
 
 			case "download-cloud" :
 			return "";
-			break;
+			// break;
 
 			case "upload-cloud" :
 			return "";
-			break;
+			// break;
 
 			case "user-md" :
 			return "";
-			break;
+			// break;
 
 			case "stethoscope" :
 			return "";
-			break;
+			// break;
 
 			case "suitcase" :
 			return "";
-			break;
+			// break;
 
 			case "bell-alt" :
 			return "";
-			break;
+			// break;
 
 			case "coffee" :
 			return "";
-			break;
+			// break;
 
 			case "food" :
 			return "";
-			break;
+			// break;
 
 			case "doc-text" :
 			return "";
-			break;
+			// break;
 
 			case "building" :
 			return "";
-			break;
+			// break;
 
 			case "hospital" :
 			return "";
-			break;
+			// break;
 
 			case "ambulance" :
 			return "";
-			break;
+			// break;
 
 			case "medkit" :
 			return "";
-			break;
+			// break;
 
 			case "fighter-jet" :
 			return "";
-			break;
+			// break;
 
 			case "beer" :
 			return "";
-			break;
+			// break;
 
 			case "h-sigh" :
 			return "";
-			break;
+			// break;
 
 			case "plus-squared" :
 			return "";
-			break;
+			// break;
 
 			case "angle-double-left" :
 			return "";
-			break;
+			// break;
 
 			case "angle-double-right" :
 			return "";
-			break;
+			// break;
 
 			case "angle-double-up" :
 			return "";
-			break;
+			// break;
 
 			case "angle-double-down" :
 			return "";
-			break;
+			// break;
 
 			case "angle-left" :
 			return "";
-			break;
+			// break;
 
 			case "angle-right" :
 			return "";
-			break;
+			// break;
 
 			case "angle-up" :
 			return "";
-			break;
+			// break;
 
 			case "angle-down" :
 			return "";
-			break;
+			// break;
 
 			case "desktop" :
 			return "";
-			break;
+			// break;
 
 			case "laptop" :
 			return "";
-			break;
+			// break;
 
 			case "tablet" :
 			return "";
-			break;
+			// break;
 
 			case "mobile" :
 			return "";
-			break;
+			// break;
 
 			case "circle-empty" :
 			return "";
-			break;
+			// break;
 
 			case "quote-left" :
 			return "";
-			break;
+			// break;
 
 			case "quote-right" :
 			return "";
-			break;
+			// break;
 
 			case "spinner" :
 			return "";
-			break;
+			// break;
 
 			case "circle" :
 			return "";
-			break;
+			// break;
 
 			case "reply" :
 			return "";
-			break;
+			// break;
 
 			case "github" :
 			return "";
-			break;
+			// break;
 
 			case "folder-empty" :
 			return "";
-			break;
+			// break;
 
 			case "folder-open-empty" :
 			return "";
-			break;
+			// break;
 
 			case "smile" :
 			return "";
-			break;
+			// break;
 
 			case "frown" :
 			return "";
-			break;
+			// break;
 
 			case "meh" :
 			return "";
-			break;
+			// break;
 
 			case "gamepad" :
 			return "";
-			break;
+			// break;
 
 			case "keyboard" :
 			return "";
-			break;
+			// break;
 
 			case "flag-empty" :
 			return "";
-			break;
+			// break;
 
 			case "flag-checkered" :
 			return "";
-			break;
+			// break;
 
 			case "terminal" :
 			return "";
-			break;
+			// break;
 
 			case "code" :
 			return "";
-			break;
+			// break;
 
 			case "reply-all" :
 			return "";
-			break;
+			// break;
 
 			case "star-half-alt" :
 			return "";
-			break;
+			// break;
 
 			case "direction" :
 			return "";
-			break;
+			// break;
 
 			case "crop" :
 			return "";
-			break;
+			// break;
 
 			case "fork" :
 			return "";
-			break;
+			// break;
 
 			case "unlink" :
 			return "";
-			break;
+			// break;
 
 			case "help" :
 			return "";
-			break;
+			// break;
 
 			case "info" :
 			return "";
-			break;
+			// break;
 
 			case "attention-alt" :
 			return "";
-			break;
+			// break;
 
 			case "superscript" :
 			return "";
-			break;
+			// break;
 
 			case "subscript" :
 			return "";
-			break;
+			// break;
 
 			case "eraser" :
 			return "";
-			break;
+			// break;
 
 			case "puzzle" :
 			return "";
-			break;
+			// break;
 
 			case "mic" :
 			return "";
-			break;
+			// break;
 
 			case "mute" :
 			return "";
-			break;
+			// break;
 
 			case "shield" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-empty" :
 			return "";
-			break;
+			// break;
 
 			case "extinguisher" :
 			return "";
-			break;
+			// break;
 
 			case "rocket" :
 			return "";
-			break;
+			// break;
 
 			case "maxcdn" :
 			return "";
-			break;
+			// break;
 
 			case "angle-circled-left" :
 			return "";
-			break;
+			// break;
 
 			case "angle-circled-right" :
 			return "";
-			break;
+			// break;
 
 			case "angle-circled-up" :
 			return "";
-			break;
+			// break;
 
 			case "angle-circled-down" :
 			return "";
-			break;
+			// break;
 
 			case "html5" :
 			return "";
-			break;
+			// break;
 
 			case "css3" :
 			return "";
-			break;
+			// break;
 
 			case "anchor" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-alt" :
 			return "";
-			break;
+			// break;
 
 			case "bullseye" :
 			return "";
-			break;
+			// break;
 
 			case "ellipsis" :
 			return "";
-			break;
+			// break;
 
 			case "ellipsis-vert" :
 			return "";
-			break;
+			// break;
 
 			case "rss-squared" :
 			return "";
-			break;
+			// break;
 
 			case "play-circled" :
 			return "";
-			break;
+			// break;
 
 			case "ticket" :
 			return "";
-			break;
+			// break;
 
 			case "minus-squared" :
 			return "";
-			break;
+			// break;
 
 			case "minus-squared-alt" :
 			return "";
-			break;
+			// break;
 
 			case "level-up" :
 			return "";
-			break;
+			// break;
 
 			case "level-down" :
 			return "";
-			break;
+			// break;
 
 			case "ok-squared" :
 			return "";
-			break;
+			// break;
 
 			case "pencil-squared" :
 			return "";
-			break;
+			// break;
 
 			case "link-ext-alt" :
 			return "";
-			break;
+			// break;
 
 			case "export-alt" :
 			return "";
-			break;
+			// break;
 
 			case "compass" :
 			return "";
-			break;
+			// break;
 
 			case "expand" :
 			return "";
-			break;
+			// break;
 
 			case "collapse" :
 			return "";
-			break;
+			// break;
 
 			case "expand-right" :
 			return "";
-			break;
+			// break;
 
 			case "euro" :
 			return "";
-			break;
+			// break;
 
 			case "pound" :
 			return "";
-			break;
+			// break;
 
 			case "dollar" :
 			return "";
-			break;
+			// break;
 
 			case "rupee" :
 			return "";
-			break;
+			// break;
 
 			case "yen" :
 			return "";
-			break;
+			// break;
 
 			case "rouble" :
 			return "";
-			break;
+			// break;
 
 			case "won" :
 			return "";
-			break;
+			// break;
 
 			case "bitcoin" :
 			return "";
-			break;
+			// break;
 
 			case "doc-inv" :
 			return "";
-			break;
+			// break;
 
 			case "doc-text-inv" :
 			return "";
-			break;
+			// break;
 
 			case "sort-name-up" :
 			return "";
-			break;
+			// break;
 
 			case "sort-name-down" :
 			return "";
-			break;
+			// break;
 
 			case "sort-alt-up" :
 			return "";
-			break;
+			// break;
 
 			case "sort-alt-down" :
 			return "";
-			break;
+			// break;
 
 			case "sort-number-up" :
 			return "";
-			break;
+			// break;
 
 			case "sort-number-down" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-up-alt" :
 			return "";
-			break;
+			// break;
 
 			case "thumbs-down-alt" :
 			return "";
-			break;
+			// break;
 
 			case "youtube-squared" :
 			return "";
-			break;
+			// break;
 
 			case "youtube" :
 			return "";
-			break;
+			// break;
 
 			case "xing" :
 			return "";
-			break;
+			// break;
 
 			case "xing-squared" :
 			return "";
-			break;
+			// break;
 
 			case "youtube-play" :
 			return "";
-			break;
+			// break;
 
 			case "dropbox" :
 			return "";
-			break;
+			// break;
 
 			case "stackoverflow" :
 			return "";
-			break;
+			// break;
 
 			case "instagram" :
 			return "";
-			break;
+			// break;
 
 			case "flickr" :
 			return "";
-			break;
+			// break;
 
 			case "adn" :
 			return "";
-			break;
+			// break;
 
 			case "bitbucket" :
 			return "";
-			break;
+			// break;
 
 			case "bitbucket-squared" :
 			return "";
-			break;
+			// break;
 
 			case "tumblr" :
 			return "";
-			break;
+			// break;
 
 			case "tumblr-squared" :
 			return "";
-			break;
+			// break;
 
 			case "down" :
 			return "";
-			break;
+			// break;
 
 			case "up" :
 			return "";
-			break;
+			// break;
 
 			case "left" :
 			return "";
-			break;
+			// break;
 
 			case "right" :
 			return "";
-			break;
+			// break;
 
 			case "apple" :
 			return "";
-			break;
+			// break;
 
 			case "windows" :
 			return "";
-			break;
+			// break;
 
 			case "android" :
 			return "";
-			break;
+			// break;
 
 			case "linux" :
 			return "";
-			break;
+			// break;
 
 			case "dribbble" :
 			return "";
-			break;
+			// break;
 
 			case "skype" :
 			return "";
-			break;
+			// break;
 
 			case "foursquare" :
 			return "";
-			break;
+			// break;
 
 			case "trello" :
 			return "";
-			break;
+			// break;
 
 			case "female" :
 			return "";
-			break;
+			// break;
 
 			case "male" :
 			return "";
-			break;
+			// break;
 
 			case "gittip" :
 			return "";
-			break;
+			// break;
 
 			case "sun" :
 			return "";
-			break;
+			// break;
 
 			case "moon" :
 			return "";
-			break;
+			// break;
 
 			case "box" :
 			return "";
-			break;
+			// break;
 
 			case "bug" :
 			return "";
-			break;
+			// break;
 
 			case "vkontakte" :
 			return "";
-			break;
+			// break;
 
 			case "weibo" :
 			return "";
-			break;
+			// break;
 
 			case "renren" :
 			return "";
-			break;
+			// break;
 
 			case "pagelines" :
 			return "";
-			break;
+			// break;
 
 			case "stackexchange" :
 			return "";
-			break;
+			// break;
 
 			case "right-circled2" :
 			return "";
-			break;
+			// break;
 
 			case "left-circled2" :
 			return "";
-			break;
+			// break;
 
 			case "collapse-left" :
 			return "";
-			break;
+			// break;
 
 			case "dot-circled" :
 			return "";
-			break;
+			// break;
 
 			case "wheelchair" :
 			return "";
-			break;
+			// break;
 
 			case "vimeo-squared" :
 			return "";
-			break;
+			// break;
 
 			case "try" :
 			return "";
-			break;
+			// break;
 
 			case "plus-squared-alt" :
 			return "";
-			break;
+			// break;
 
 			case "space-shuttle" :
 			return "";
-			break;
+			// break;
 
 			case "slack" :
 			return "";
-			break;
+			// break;
 
 			case "mail-squared" :
 			return "";
-			break;
+			// break;
 
 			case "wordpress" :
 			return "";
-			break;
+			// break;
 
 			case "openid" :
 			return "";
-			break;
+			// break;
 
 			case "bank" :
 			return "";
-			break;
+			// break;
 
 			case "graduation-cap" :
 			return "";
-			break;
+			// break;
 
 			case "yahoo" :
 			return "";
-			break;
+			// break;
 
 			case "google" :
 			return "";
-			break;
+			// break;
 
 			case "reddit" :
 			return "";
-			break;
+			// break;
 
 			case "reddit-squared" :
 			return "";
-			break;
+			// break;
 
 			case "stumbleupon-circled" :
 			return "";
-			break;
+			// break;
 
 			case "stumbleupon" :
 			return "";
-			break;
+			// break;
 
 			case "delicious" :
 			return "";
-			break;
+			// break;
 
 			case "digg" :
 			return "";
-			break;
+			// break;
 
 			case "pied-piper-squared" :
 			return "";
-			break;
+			// break;
 
 			case "pied-piper-alt" :
 			return "";
-			break;
+			// break;
 
 			case "drupal" :
 			return "";
-			break;
+			// break;
 
 			case "joomla" :
 			return "";
-			break;
+			// break;
 
 			case "language" :
 			return "";
-			break;
+			// break;
 
 			case "fax" :
 			return "";
-			break;
+			// break;
 
 			case "building-filled" :
 			return "";
-			break;
+			// break;
 
 			case "child" :
 			return "";
-			break;
+			// break;
 
 			case "paw" :
 			return "";
-			break;
+			// break;
 
 			case "spoon" :
 			return "";
-			break;
+			// break;
 
 			case "cube" :
 			return "";
-			break;
+			// break;
 
 			case "cubes" :
 			return "";
-			break;
+			// break;
 
 			case "behance" :
 			return "";
-			break;
+			// break;
 
 			case "behance-squared" :
 			return "";
-			break;
+			// break;
 
 			case "steam" :
 			return "";
-			break;
+			// break;
 
 			case "steam-squared" :
 			return "";
-			break;
+			// break;
 
 			case "recycle" :
 			return "";
-			break;
+			// break;
 
 			case "cab" :
 			return "";
-			break;
+			// break;
 
 			case "taxi" :
 			return "";
-			break;
+			// break;
 
 			case "tree" :
 			return "";
-			break;
+			// break;
 
 			case "spotify" :
 			return "";
-			break;
+			// break;
 
 			case "deviantart" :
 			return "";
-			break;
+			// break;
 
 			case "soundcloud" :
 			return "";
-			break;
+			// break;
 
 			case "database" :
 			return "";
-			break;
+			// break;
 
 			case "file-pdf" :
 			return "";
-			break;
+			// break;
 
 			case "file-word" :
 			return "";
-			break;
+			// break;
 
 			case "file-excel" :
 			return "";
-			break;
+			// break;
 
 			case "file-powerpoint" :
 			return "";
-			break;
+			// break;
 
 			case "file-image" :
 			return "";
-			break;
+			// break;
 
 			case "file-archive" :
 			return "";
-			break;
+			// break;
 
 			case "file-audio" :
 			return "";
-			break;
+			// break;
 
 			case "file-video" :
 			return "";
-			break;
+			// break;
 
 			case "file-code" :
 			return "";
-			break;
+			// break;
 
 			case "vine" :
 			return "";
-			break;
+			// break;
 
 			case "codeopen" :
 			return "";
-			break;
+			// break;
 
 			case "jsfiddle" :
 			return "";
-			break;
+			// break;
 
 			case "lifebuoy" :
 			return "";
-			break;
+			// break;
 
 			case "circle-notch" :
 			return "";
-			break;
+			// break;
 
 			case "rebel" :
 			return "";
-			break;
+			// break;
 
 			case "empire" :
 			return "";
-			break;
+			// break;
 
 			case "git-squared" :
 			return "";
-			break;
+			// break;
 
 			case "git" :
 			return "";
-			break;
+			// break;
 
 			case "hacker-news" :
 			return "";
-			break;
+			// break;
 
 			case "tencent-weibo" :
 			return "";
-			break;
+			// break;
 
 			case "qq" :
 			return "";
-			break;
+			// break;
 
 			case "wechat" :
 			return "";
-			break;
+			// break;
 
 			case "paper-plane" :
 			return "";
-			break;
+			// break;
 
 			case "paper-plane-empty" :
 			return "";
-			break;
+			// break;
 
 			case "history" :
 			return "";
-			break;
+			// break;
 
 			case "circle-thin" :
 			return "";
-			break;
+			// break;
 
 			case "header" :
 			return "";
-			break;
+			// break;
 
 			case "paragraph" :
 			return "";
-			break;
+			// break;
 
 			case "sliders" :
 			return "";
-			break;
+			// break;
 
 			case "share" :
 			return "";
-			break;
+			// break;
 
 			case "share-squared" :
 			return "";
-			break;
+			// break;
 
 			case "bomb" :
 			return "";
-			break;
+			// break;
 
 			case "soccer-ball" :
 			return "";
-			break;
+			// break;
 
 			case "tty" :
 			return "";
-			break;
+			// break;
 
 			case "binoculars" :
 			return "";
-			break;
+			// break;
 
 			case "plug" :
 			return "";
-			break;
+			// break;
 
 			case "slideshare" :
 			return "";
-			break;
+			// break;
 
 			case "twitch" :
 			return "";
-			break;
+			// break;
 
 			case "yelp" :
 			return "";
-			break;
+			// break;
 
 			case "newspaper" :
 			return "";
-			break;
+			// break;
 
 			case "wifi" :
 			return "";
-			break;
+			// break;
 
 			case "calc" :
 			return "";
-			break;
+			// break;
 
 			case "paypal" :
 			return "";
-			break;
+			// break;
 
 			case "gwallet" :
 			return "";
-			break;
+			// break;
 
 			case "cc-visa" :
 			return "";
-			break;
+			// break;
 
 			case "cc-mastercard" :
 			return "";
-			break;
+			// break;
 
 			case "cc-discover" :
 			return "";
-			break;
+			// break;
 
 			case "cc-amex" :
 			return "";
-			break;
+			// break;
 
 			case "cc-paypal" :
 			return "";
-			break;
+			// break;
 
 			case "cc-stripe" :
 			return "";
-			break;
+			// break;
 
 			case "bell-off" :
 			return "";
-			break;
+			// break;
 
 			case "bell-off-empty" :
 			return "";
-			break;
+			// break;
 
 			case "trash" :
 			return "";
-			break;
+			// break;
 
 			case "copyright" :
 			return "";
-			break;
+			// break;
 
 			case "at" :
 			return "";
-			break;
+			// break;
 
 			case "eyedropper" :
 			return "";
-			break;
+			// break;
 
 			case "brush" :
 			return "";
-			break;
+			// break;
 
 			case "birthday" :
 			return "";
-			break;
+			// break;
 
 			case "chart-area" :
 			return "";
-			break;
+			// break;
 
 			case "chart-pie" :
 			return "";
-			break;
+			// break;
 
 			case "chart-line" :
 			return "";
-			break;
+			// break;
 
 			case "lastfm" :
 			return "";
-			break;
+			// break;
 
 			case "lastfm-squared" :
 			return "";
-			break;
+			// break;
 
 			case "toggle-off" :
 			return "";
-			break;
+			// break;
 
 			case "toggle-on" :
 			return "";
-			break;
+			// break;
 
 			case "bicycle" :
 			return "";
-			break;
+			// break;
 
 			case "bus" :
 			return "";
-			break;
+			// break;
 
 			case "ioxhost" :
 			return "";
-			break;
+			// break;
 
 			case "angellist" :
 			return "";
-			break;
+			// break;
 
 			case "cc" :
 			return "";
-			break;
+			// break;
 
 			case "shekel" :
 			return "";
-			break;
+			// break;
 
 			case "meanpath" :
 			return "";
-			break;
+			// break;
 
 			case "buysellads" :
 			return "";
-			break;
+			// break;
 
 			case "connectdevelop" :
 			return "";
-			break;
+			// break;
 
 			case "dashcube" :
 			return "";
-			break;
+			// break;
 
 			case "forumbee" :
 			return "";
-			break;
+			// break;
 
 			case "leanpub" :
 			return "";
-			break;
+			// break;
 
 			case "sellsy" :
 			return "";
-			break;
+			// break;
 
 			case "shirtsinbulk" :
 			return "";
-			break;
+			// break;
 
 			case "simplybuilt" :
 			return "";
-			break;
+			// break;
 
 			case "skyatlas" :
 			return "";
-			break;
+			// break;
 
 			case "cart-plus" :
 			return "";
-			break;
+			// break;
 
 			case "cart-arrow-down" :
 			return "";
-			break;
+			// break;
 
 			case "diamond" :
 			return "";
-			break;
+			// break;
 
 			case "ship" :
 			return "";
-			break;
+			// break;
 
 			case "user-secret" :
 			return "";
-			break;
+			// break;
 
 			case "motorcycle" :
 			return "";
-			break;
+			// break;
 
 			case "street-view" :
 			return "";
-			break;
+			// break;
 
 			case "heartbeat" :
 			return "";
-			break;
+			// break;
 
 			case "venus" :
 			return "";
-			break;
+			// break;
 
 			case "mars" :
 			return "";
-			break;
+			// break;
 
 			case "mercury" :
 			return "";
-			break;
+			// break;
 
 			case "transgender" :
 			return "";
-			break;
+			// break;
 
 			case "transgender-alt" :
 			return "";
-			break;
+			// break;
 
 			case "venus-double" :
 			return "";
-			break;
+			// break;
 
 			case "mars-double" :
 			return "";
-			break;
+			// break;
 
 			case "venus-mars" :
 			return "";
-			break;
+			// break;
 
 			case "mars-stroke" :
 			return "";
-			break;
+			// break;
 
 			case "mars-stroke-v" :
 			return "";
-			break;
+			// break;
 
 			case "mars-stroke-h" :
 			return "";
-			break;
+			// break;
 
 			case "neuter" :
 			return "";
-			break;
+			// break;
 
 			case "genderless" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-official" :
 			return "";
-			break;
+			// break;
 
 			case "pinterest" :
 			return "";
-			break;
+			// break;
 
 			case "whatsapp" :
 			return "";
-			break;
+			// break;
 
 			case "server" :
 			return "";
-			break;
+			// break;
 
 			case "user-plus" :
 			return "";
-			break;
+			// break;
 
 			case "user-times" :
 			return "";
-			break;
+			// break;
 
 			case "bed" :
 			return "";
-			break;
+			// break;
 
 			case "viacoin" :
 			return "";
-			break;
+			// break;
 
 			case "train" :
 			return "";
-			break;
+			// break;
 
 			case "subway" :
 			return "";
-			break;
+			// break;
 
 			case "medium" :
 			return "";
-			break;
+			// break;
 
 			case "y-combinator" :
 			return "";
-			break;
+			// break;
 
 			case "optin-monster" :
 			return "";
-			break;
+			// break;
 
 			case "opencart" :
 			return "";
-			break;
+			// break;
 
 			case "expeditedssl" :
 			return "";
-			break;
+			// break;
 
 			case "battery-4" :
 			return "";
-			break;
+			// break;
 
 			case "battery-3" :
 			return "";
-			break;
+			// break;
 
 			case "battery-2" :
 			return "";
-			break;
+			// break;
 
 			case "battery-1" :
 			return "";
-			break;
+			// break;
 
 			case "battery-0" :
 			return "";
-			break;
+			// break;
 
 			case "mouse-pointer" :
 			return "";
-			break;
+			// break;
 
 			case "i-cursor" :
 			return "";
-			break;
+			// break;
 
 			case "object-group" :
 			return "";
-			break;
+			// break;
 
 			case "object-ungroup" :
 			return "";
-			break;
+			// break;
 
 			case "sticky-note" :
 			return "";
-			break;
+			// break;
 
 			case "sticky-note-o" :
 			return "";
-			break;
+			// break;
 
 			case "cc-jcb" :
 			return "";
-			break;
+			// break;
 
 			case "cc-diners-club" :
 			return "";
-			break;
+			// break;
 
 			case "clone" :
 			return "";
-			break;
+			// break;
 
 			case "balance-scale" :
 			return "";
-			break;
+			// break;
 
 			case "hourglass-o" :
 			return "";
-			break;
+			// break;
 
 			case "hourglass-1" :
 			return "";
-			break;
+			// break;
 
 			case "hourglass-2" :
 			return "";
-			break;
+			// break;
 
 			case "hourglass-3" :
 			return "";
-			break;
+			// break;
 
 			case "hourglass" :
 			return "";
-			break;
+			// break;
 
 			case "hand-grab-o" :
 			return "";
-			break;
+			// break;
 
 			case "hand-paper-o" :
 			return "";
-			break;
+			// break;
 
 			case "hand-scissors-o" :
 			return "";
-			break;
+			// break;
 
 			case "hand-lizard-o" :
 			return "";
-			break;
+			// break;
 
 			case "hand-spock-o" :
 			return "";
-			break;
+			// break;
 
 			case "hand-pointer-o" :
 			return "";
-			break;
+			// break;
 
 			case "hand-peace-o" :
 			return "";
-			break;
+			// break;
 
 			case "trademark" :
 			return "";
-			break;
+			// break;
 
 			case "registered" :
 			return "";
-			break;
+			// break;
 
 			case "creative-commons" :
 			return "";
-			break;
+			// break;
 
 			case "gg" :
 			return "";
-			break;
+			// break;
 
 			case "gg-circle" :
 			return "";
-			break;
+			// break;
 
 			case "tripadvisor" :
 			return "";
-			break;
+			// break;
 
 			case "odnoklassniki" :
 			return "";
-			break;
+			// break;
 
 			case "odnoklassniki-square" :
 			return "";
-			break;
+			// break;
 
 			case "get-pocket" :
 			return "";
-			break;
+			// break;
 
 			case "wikipedia-w" :
 			return "";
-			break;
+			// break;
 
 			case "safari" :
 			return "";
-			break;
+			// break;
 
 			case "chrome-1" :
 			return "";
-			break;
+			// break;
 
 			case "firefox-1" :
 			return "";
-			break;
+			// break;
 
 			case "opera-1" :
 			return "";
-			break;
+			// break;
 
 			case "internet-explorer" :
 			return "";
-			break;
+			// break;
 
 			case "television" :
 			return "";
-			break;
+			// break;
 
 			case "contao" :
 			return "";
-			break;
+			// break;
 
 			case "500px" :
 			return "";
-			break;
+			// break;
 
 			case "amazon" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-plus-o" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-minus-o" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-times-o" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-check-o" :
 			return "";
-			break;
+			// break;
 
 			case "industry" :
 			return "";
-			break;
+			// break;
 
 			case "map-pin" :
 			return "";
-			break;
+			// break;
 
 			case "map-signs" :
 			return "";
-			break;
+			// break;
 
 			case "map-o" :
 			return "";
-			break;
+			// break;
 
 			case "map" :
 			return "";
-			break;
+			// break;
 
 			case "commenting" :
 			return "";
-			break;
+			// break;
 
 			case "commenting-o" :
 			return "";
-			break;
+			// break;
 
 			case "houzz" :
 			return "";
-			break;
+			// break;
 
 			case "vimeo" :
 			return "";
-			break;
+			// break;
 
 			case "black-tie" :
 			return "";
-			break;
+			// break;
 
 			case "fonticons" :
 			return "";
-			break;
+			// break;
 
 			case "reddit-alien" :
 			return "";
-			break;
+			// break;
 
 			case "edge" :
 			return "";
-			break;
+			// break;
 
 			case "credit-card-alt" :
 			return "";
-			break;
+			// break;
 
 			case "codiepie" :
 			return "";
-			break;
+			// break;
 
 			case "modx" :
 			return "";
-			break;
+			// break;
 
 			case "fort-awesome" :
 			return "";
-			break;
+			// break;
 
 			case "usb" :
 			return "";
-			break;
+			// break;
 
 			case "product-hunt" :
 			return "";
-			break;
+			// break;
 
 			case "mixcloud" :
 			return "";
-			break;
+			// break;
 
 			case "scribd" :
 			return "";
-			break;
+			// break;
 
 			case "pause-circle" :
 			return "";
-			break;
+			// break;
 
 			case "pause-circle-o" :
 			return "";
-			break;
+			// break;
 
 			case "stop-circle" :
 			return "";
-			break;
+			// break;
 
 			case "stop-circle-o" :
 			return "";
-			break;
+			// break;
 
 			case "shopping-bag" :
 			return "";
-			break;
+			// break;
 
 			case "shopping-basket" :
 			return "";
-			break;
+			// break;
 
 			case "hashtag" :
 			return "";
-			break;
+			// break;
 
 			case "bluetooth" :
 			return "";
-			break;
+			// break;
 
 			case "bluetooth-b" :
 			return "";
-			break;
+			// break;
 
 			case "percent" :
 			return "";
-			break;
+			// break;
 
 			case "gitlab" :
 			return "";
-			break;
+			// break;
 
 			case "wpbeginner" :
 			return "";
-			break;
+			// break;
 
 			case "wpforms" :
 			return "";
-			break;
+			// break;
 
 			case "envira" :
 			return "";
-			break;
+			// break;
 
 			case "universal-access" :
 			return "";
-			break;
+			// break;
 
 			case "wheelchair-alt" :
 			return "";
-			break;
+			// break;
 
 			case "question-circle-o" :
 			return "";
-			break;
+			// break;
 
 			case "blind" :
 			return "";
-			break;
+			// break;
 
 			case "audio-description" :
 			return "";
-			break;
+			// break;
 
 			case "volume-control-phone" :
 			return "";
-			break;
+			// break;
 
 			case "braille" :
 			return "";
-			break;
+			// break;
 
 			case "assistive-listening-systems" :
 			return "";
-			break;
+			// break;
 
 			case "american-sign-language-interpreting" :
 			return "";
-			break;
+			// break;
 
 			case "asl-interpreting" :
 			return "";
-			break;
+			// break;
 
 			case "glide" :
 			return "";
-			break;
+			// break;
 
 			case "glide-g" :
 			return "";
-			break;
+			// break;
 
 			case "sign-language" :
 			return "";
-			break;
+			// break;
 
 			case "low-vision" :
 			return "";
-			break;
+			// break;
 
 			case "viadeo" :
 			return "";
-			break;
+			// break;
 
 			case "viadeo-square" :
 			return "";
-			break;
+			// break;
 
 			case "snapchat" :
 			return "";
-			break;
+			// break;
 
 			case "snapchat-ghost" :
 			return "";
-			break;
+			// break;
 
 			case "snapchat-square" :
 			return "";
-			break;
+			// break;
 
 			case "pied-piper" :
 			return "";
-			break;
+			// break;
 
 			case "first-order" :
 			return "";
-			break;
+			// break;
 
 			case "yoast" :
 			return "";
-			break;
+			// break;
 
 			case "themeisle" :
 			return "";
-			break;
+			// break;
 
 			case "google-plus-circle" :
 			return "";
-			break;
+			// break;
 
 			case "font-awesome" :
 			return "";
-			break;
+			// break;
 
 			case "github-squared" :
 			return "";
-			break;
+			// break;
 
 			case "github-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-3" :
 			return "";
-			break;
+			// break;
 
 			case "flickr-1" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-squared" :
 			return "";
-			break;
+			// break;
 
 			case "yandex" :
 			return "";
-			break;
+			// break;
 
 			case "vimeo-1" :
 			return "";
-			break;
+			// break;
 
 			case "vimeo-circled" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-squared" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-1" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-circled" :
 			return "";
-			break;
+			// break;
 
 			case "skype-4" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-squared" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-circled" :
 			return "";
-			break;
+			// break;
 
 			case "facebook-squared-1" :
 			return "";
-			break;
+			// break;
 
 			case "gplus-1" :
 			return "";
-			break;
+			// break;
 
 			case "gplus-circled" :
 			return "";
-			break;
+			// break;
 
 			case "tumblr-3" :
 			return "";
-			break;
+			// break;
 
 			case "pinterest-1" :
 			return "";
-			break;
+			// break;
 
 			case "pinterest-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "twitter-rect" :
 			return "";
-			break;
+			// break;
 
 			case "tumblr-1" :
 			return "";
-			break;
+			// break;
 
 			case "tumblr-circled" :
 			return "";
-			break;
+			// break;
 
 			case "jabber" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-1" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-circled" :
 			return "";
-			break;
+			// break;
 
 			case "linkedin-5" :
 			return "";
-			break;
+			// break;
 
 			case "dribbble-1" :
 			return "";
-			break;
+			// break;
 
 			case "dribbble-circled" :
 			return "";
-			break;
+			// break;
 
 			case "wordpress-2" :
 			return "";
-			break;
+			// break;
 
 			case "stumbleupon-1" :
 			return "";
-			break;
+			// break;
 
 			case "stumbleupon-circled-1" :
 			return "";
-			break;
+			// break;
 
 			case "diigo" :
 			return "";
-			break;
+			// break;
 
 			case "lastfm-1" :
 			return "";
-			break;
+			// break;
 
 			case "lastfm-circled" :
 			return "";
-			break;
+			// break;
 
 			case "tudou" :
 			return "";
-			break;
+			// break;
 
 			case "rdio" :
 			return "";
-			break;
+			// break;
 
 			case "rdio-circled" :
 			return "";
-			break;
+			// break;
 
 			case "amex" :
 			return "";
-			break;
+			// break;
 
 			case "spotify-1" :
 			return "";
-			break;
+			// break;
 
 			case "spotify-circled" :
 			return "";
-			break;
+			// break;
 
 			case "mastercard" :
 			return "";
-			break;
+			// break;
 
 			case "qq-1" :
 			return "";
-			break;
+			// break;
 
 			case "bandcamp" :
 			return "";
-			break;
+			// break;
 
 			case "codepen" :
 			return "";
-			break;
+			// break;
 
 			case "instagram-1" :
 			return "";
-			break;
+			// break;
 
 			case "dropbox-1" :
 			return "";
-			break;
+			// break;
 
 			case "evernote" :
 			return "";
-			break;
+			// break;
 
 			case "flattr" :
 			return "";
-			break;
+			// break;
 
 			case "skype-1" :
 			return "";
-			break;
+			// break;
 
 			case "skype-circled" :
 			return "";
-			break;
+			// break;
 
 			case "renren-1" :
 			return "";
-			break;
+			// break;
 
 			case "sina-weibo" :
 			return "";
-			break;
+			// break;
 
 			case "paypal-1" :
 			return "";
-			break;
+			// break;
 
 			case "picasa" :
 			return "";
-			break;
+			// break;
 
 			case "soundcloud-1" :
 			return "";
-			break;
+			// break;
 
 			case "mixi" :
 			return "";
-			break;
+			// break;
 
 			case "behance-1" :
 			return "";
-			break;
+			// break;
 
 			case "google-circles" :
 			return "";
-			break;
+			// break;
 
 			case "vkontakte-1" :
 			return "";
-			break;
+			// break;
 
 			case "smashing" :
 			return "";
-			break;
+			// break;
 
 			case "comment-4" :
 			return "";
-			break;
+			// break;
 
 			case "folder-open-empty-1" :
 			return "";
-			break;
+			// break;
 
 			case "calendar-5" :
 			return "";
-			break;
+			// break;
 
 			case "newspaper-2" :
 			return "";
-			break;
+			// break;
 
 			case "camera-5" :
 			return "";
-			break;
+			// break;
 
 			case "search-5" :
 			return "";
-			break;
+			// break;
 
 			case "lock-alt" :
 			return "";
-			break;
+			// break;
 
 			case "lock-5" :
 			return "";
-			break;
+			// break;
 
 			case "lock-open-5" :
 			return "";
-			break;
+			// break;
 
 			case "joystick" :
 			return "";
-			break;
+			// break;
 
 			case "fire-1" :
 			return "";
-			break;
+			// break;
 
 			case "chart-bar-5" :
 			return "";
-			break;
+			// break;
 
 			case "spread" :
 			return "";
-			break;
+			// break;
 
 			case "spinner1" :
 			return "";
-			break;
+			// break;
 
 			case "spinner2" :
 			return "";
-			break;
+			// break;
 
 			case "db-shape" :
 			return "";
-			break;
+			// break;
 
 			case "sweden" :
 			return "";
-			break;
+			// break;
 
 			case "logo-db" :
 			return "";
-			break;
+			// break;
 
 			default:
 			return "";
-			break;
+			// break;
 		}
 	}
 

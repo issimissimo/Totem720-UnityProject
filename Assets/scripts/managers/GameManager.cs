@@ -116,7 +116,7 @@ public class GameManager : MonoBehaviour
                     webcamManager.Pause();
 
                     /// take screenshot
-                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, Globals.data.videoFolder, (screenshotFullName) =>
+                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, Application.dataPath, (screenshotFullName) =>
                     {
                         // /// return to main UI
                         // ShowInit();
@@ -135,21 +135,20 @@ public class GameManager : MonoBehaviour
     private void StartFinalSession(string fileName)
     {
         /// payment request
-        
-        
-        /// print
 
-        
-        /// send email if liked
+
+        /// print image
+
+
+        /// send email (if liked)
         string _fileName = fileName;
         uiManager.ShowEmail(() =>
         {
-            emailHandler.Send(_fileName);
+            /// return to main UI
+            ShowInit();
+
+            /// delete screenshot
+            fileManager.DeleteFile(_fileName);
         });
-
-
     }
-
-
-
 }
