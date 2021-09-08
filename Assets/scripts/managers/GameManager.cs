@@ -22,6 +22,13 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        if (Utils.ValidateEmail("pippo@gmail.com")){
+            print("MAIL OK");
+        }
+        else{
+            print("MAIL NON OK");
+        }
+        
         /// Check for config file exist
         fileManager.CheckConfigFile((result) =>
         {
