@@ -7,6 +7,6 @@ public class ButtonStartGame : ButtonBase
     public override void onClick()
     {
         base.onClick();
-        GameManager.instance.StartGameSession(videoNumber);
+        GameManager.instance.StartGame(videoNumber);
     }
 }

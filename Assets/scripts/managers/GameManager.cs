@@ -22,13 +22,15 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        if (Utils.ValidateEmail("pippo@gmail.com")){
+        if (Utils.ValidateEmail("pippo@gmail.com"))
+        {
             print("MAIL OK");
         }
-        else{
+        else
+        {
             print("MAIL NON OK");
         }
-        
+
         /// Check for config file exist
         fileManager.CheckConfigFile((result) =>
         {
@@ -67,11 +69,13 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra){
+    public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)
+    {
 
         /// if inputs are different from the stored ones,
         /// write them in the config.json 
-        if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA){
+        if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA)
+        {
             Globals._SCENARIO = scenario;
             Globals._SQUADRA = squadra;
             fileManager.UpdateConfigFile();
@@ -84,9 +88,14 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     /// Start game
     //////////////////////////////////////////
-    public void StartGameSession(int videoNumber)
+    public void StartGame(int videoNumber)
     {
-        ///get video url
+        StartPhotoSession(videoNumber);
+    }
+
+
+    private void StartPhotoSession(int videoNumber)
+    {
         string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoNumber);
         if (videoUrl != null)
         {
@@ -107,19 +116,40 @@ public class GameManager : MonoBehaviour
                     webcamManager.Pause();
 
                     /// take screenshot
-                    screenshotHandler.TakeScreenshot(1080, 1920, Globals.data.videoFolder, (screenshotFullName) =>
+                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, Globals.data.videoFolder, (screenshotFullName) =>
                     {
-                        /// return to main UI
-                        ShowInit();
+                        // /// return to main UI
+                        // ShowInit();
 
-                        emailHandler.Send(screenshotFullName);
+                        // emailHandler.Send(screenshotFullName);
 
-                        Debug.Log(screenshotFullName);
+                        // Debug.Log(screenshotFullName);
+
+                        StartFinalSession(screenshotFullName);
                     });
                 });
             });
         }
     }
+
+    private void StartFinalSession(string fileName)
+    {
+        /// payment request
+        
+        
+        /// print
+
+        
+        /// send email if liked
+        string _fileName = fileName;
+        uiManager.ShowEmail(() =>
+        {
+            emailHandler.Send(_fileName);
+        });
+
+
+    }
+
 
 
 }
