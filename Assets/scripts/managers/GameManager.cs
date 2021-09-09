@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.InputSystem;
-
+﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -40,11 +36,10 @@ public class GameManager : MonoBehaviour
         });
     }
 
-    // private void Update() {
-    //     if ( Keyboard.current[Key.Space].wasPressedThisFrame){
-    //         screenshotHandler.TakeScreenshot(1080, 1920, defVideoPath);
-    //     }
-    // }
+
+    public void Quit(){
+        Application.Quit();
+    }
 
 
     public void ShowInit()

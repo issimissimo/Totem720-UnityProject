@@ -1,12 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using System;
 
 public class UiManager : MonoBehaviour
 {
-    public GraphicRaycaster ui_raycaster; /// Don't delete! It's used by buttons!!!
     [SerializeField] GameObject ui_panels_container;
     [SerializeField] CountdownCtrl countdownCtrl;
     [SerializeField] EmailCtrl emailCtrl;
