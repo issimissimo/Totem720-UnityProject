@@ -97,14 +97,14 @@ public class UiManager : MonoBehaviour
     }
 
 
-    public void ShowEmail(Action callback)
+    public void ShowEmail(string screenshot, Action callback)
     {
 
         Action _callback = callback;
 
-        emailCtrl.Show(() =>
+        emailCtrl.Show(screenshot, () =>
         {
-            emailCtrl.Hide();
+            // emailCtrl.Hide();
 
             endGameCtrl.Show(() =>
             {

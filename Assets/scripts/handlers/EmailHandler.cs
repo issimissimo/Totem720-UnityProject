@@ -7,7 +7,7 @@ using System;
 
 public class EmailHandler : MonoBehaviour
 {
-    public void Send(string filePath)
+    public void Send(string filePath, string to)
     {
         InternetConnection.instance.Check(ErrorManager.TYPE.ERROR, (result) =>
         {
@@ -19,7 +19,7 @@ public class EmailHandler : MonoBehaviour
                     try
                     {
                         // string from = Globals.data.email.da;
-                        string to = "danielesuppo@gmail.com";
+                        // string to = "danielesuppo@gmail.com";
                         // string title = Globals.data.email.soggetto;
                         // string body = Globals.data.email.descrizione;
                         // string password = Globals.data.email.password;
@@ -35,6 +35,7 @@ public class EmailHandler : MonoBehaviour
                         // }
 
                         Debug.Log("Sending email...");
+                        print(int.Parse(Globals.data.email.porta));
 
                         MailMessage mail = new MailMessage();
                         SmtpClient SmtpServer = new SmtpClient(Globals.data.email.SMTP);
@@ -47,7 +48,8 @@ public class EmailHandler : MonoBehaviour
                         attachment = new System.Net.Mail.Attachment(filePath);
                         mail.Attachments.Add(attachment);
 
-                        SmtpServer.Port = 587;
+                        // SmtpServer.Port = 587;
+                        SmtpServer.Port = int.Parse(Globals.data.email.porta);
                         SmtpServer.Credentials = new NetworkCredential(Globals.data.email.da, Globals.data.email.password);
                         SmtpServer.EnableSsl = true;
 

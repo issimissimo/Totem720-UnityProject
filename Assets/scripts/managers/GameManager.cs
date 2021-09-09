@@ -22,15 +22,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        if (Utils.ValidateEmail("pippo@gmail.com"))
-        {
-            print("MAIL OK");
-        }
-        else
-        {
-            print("MAIL NON OK");
-        }
-
         /// Check for config file exist
         fileManager.CheckConfigFile((result) =>
         {
@@ -94,6 +85,9 @@ public class GameManager : MonoBehaviour
     }
 
 
+    //////////////////////////////////////////
+    /// Start photo
+    //////////////////////////////////////////
     private void StartPhotoSession(int videoNumber)
     {
         string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoNumber);
@@ -116,15 +110,8 @@ public class GameManager : MonoBehaviour
                     webcamManager.Pause();
 
                     /// take screenshot
-                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, Application.dataPath, (screenshotFullName) =>
+                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, Application.persistentDataPath, (screenshotFullName) =>
                     {
-                        // /// return to main UI
-                        // ShowInit();
-
-                        // emailHandler.Send(screenshotFullName);
-
-                        // Debug.Log(screenshotFullName);
-
                         StartFinalSession(screenshotFullName);
                     });
                 });
@@ -132,6 +119,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //////////////////////////////////////////
+    /// Start email
+    //////////////////////////////////////////
     private void StartFinalSession(string fileName)
     {
         /// payment request
@@ -141,14 +131,11 @@ public class GameManager : MonoBehaviour
 
 
         /// send email (if liked)
-        string _fileName = fileName;
-        uiManager.ShowEmail(() =>
+        uiManager.ShowEmail(fileName, () =>
         {
             /// return to main UI
             ShowInit();
 
-            /// delete screenshot
-            fileManager.DeleteFile(_fileName);
         });
     }
 }

@@ -34,12 +34,13 @@ public class ScreenshotHandler : MonoBehaviour
 
             if (byteArray.Length > 0)
             {
-                System.DateTime now = System.DateTime.Now;
-                long fileCreationFileTime = now.ToFileTime();
-                string screenshotFullName = filePath + "/" + fileCreationFileTime + ".jpg";
+                // System.DateTime now = System.DateTime.Now;
+                // long fileCreationFileTime = now.ToFileTime();
+                // string screenshotFullName = filePath + "/" + fileCreationFileTime + ".jpg";
+                string screenshotFullName = filePath + "/" + "screenshot" + ".jpg";
 
                 System.IO.File.WriteAllBytes(screenshotFullName, byteArray);
-                Debug.Log("Saved CameraScreenshot.png");
+                Debug.Log("Saved screenshot.jpg");
 
                 RenderTexture.ReleaseTemporary(renderTexture);
                 myCamera.targetTexture = null;

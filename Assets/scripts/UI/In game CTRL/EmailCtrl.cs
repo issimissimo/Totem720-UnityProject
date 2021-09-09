@@ -2,29 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class EmailCtrl : MonoBehaviour
 {
     public OnScreenKeyboard oks;
     public GameObject panelEmail;
     public GameObject panelRequest;
-
     public GameObject panelSendemail;
+    public InputField emailInputField;
+    public Button sendEmailButton;
+    private CanvasGroup panelRequestCg;
+
+
 
     private Action _callback;
+    private string _screenshot;
+
+
+    private void Awake()
+    {
+        panelRequestCg = panelRequest.GetComponent<CanvasGroup>();
+    }
+
 
     void Start()
     {
         Hide();
+        emailInputField.onValueChanged.AddListener(ValidateEmail);
+        sendEmailButton.onClick.AddListener(Send);
     }
 
-    public void Show(Action callback)
+    public void Show(string screenshot, Action callback)
     {
+        _screenshot = screenshot;
         _callback = callback;
 
         panelEmail.SetActive(true);
         panelRequest.SetActive(true);
         panelSendemail.SetActive(false);
+        // sendEmailButton.interactable = false;
+        emailInputField.text = "";
     }
 
     public void Hide()
@@ -32,19 +50,39 @@ public class EmailCtrl : MonoBehaviour
         panelEmail.SetActive(false);
     }
 
-    public void Send()
+    public void OpenForSend()
     {
-        /// here we have to send to open the keyboard.... !!!!!!!!!!!
-        ///
-        ///
-        
-        /// when is finished....
+        panelRequest.SetActive(false);
+        panelSendemail.SetActive(true);
+
+        /// when is finished
         // _callback();
     }
 
+    public void Send()
+    {
+        string to = emailInputField.text;
+        print(to);
+        GameManager.instance.emailHandler.Send(_screenshot, to);
+        Finished();
+    }
+
+
     public void Dismiss()
     {
+        Finished();
+    }
+
+
+    private void Finished()
+    {
+        Hide();
         _callback();
+    }
+
+    private void ValidateEmail(string st)
+    {
+        sendEmailButton.interactable = Utils.ValidateEmail(st) ? true : false;
     }
 
 

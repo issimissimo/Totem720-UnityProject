@@ -64,6 +64,7 @@ public static class Globals
         public string soggetto;
         public string oggetto;
         public string SMTP;
+        public string porta;
         public string password;
     }
 }
