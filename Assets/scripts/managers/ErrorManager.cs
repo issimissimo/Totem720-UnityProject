@@ -27,7 +27,7 @@ public class ErrorManager : MonoBehaviour
     }
 
 
-    public void ShowError(TYPE type, string msg)
+    public void ShowError(TYPE type, string msg, string buttonText = null, Action buttonAction = null)
     {
         if (type != TYPE.NONE)
         {
@@ -38,7 +38,7 @@ public class ErrorManager : MonoBehaviour
 
             /// setup the prefab
             ErrorMessageSetup prefabPanel = go.GetComponent<ErrorMessageSetup>();
-            prefabPanel.Setup(type, prefabs.Count - 1, msg);
+            prefabPanel.Setup(type, prefabs.Count - 1, msg, buttonText, buttonAction);
 
             totalPrefabsNumber++;
 

@@ -11,21 +11,6 @@ public class FileManager : MonoBehaviour
     private string configFileName = "config.json";
 
 
-    // public void CkeckDefaultPath()
-    // {
-    //     if (Globals.data.videoFolder != "" && Globals.data.videoFolder != null)
-    //     {
-    //         if (!CheckDirectory(Globals.data.videoFolder, ErrorManager.TYPE.WARNING))
-    //         {
-    //             StartCoroutine(CreateDefaultDirectories());
-    //         }
-    //     }
-    //     else
-    //     {
-    //         ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Nel file di configurazione non è stata specificata la cartella in cui ci sono i video");
-    //     }
-    // }
-
     public void CkeckDefaultPath()
     {
         if (Globals.data.videoFolder != "" && Globals.data.videoFolder != null)
@@ -52,10 +37,14 @@ public class FileManager : MonoBehaviour
             print(configFile);
             System.IO.File.WriteAllText(Application.persistentDataPath + "/" + configFileName, configFile);
 
-            ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Il file di configurazione non esiste\n\n E' stato creato nella cartella\n" + Application.persistentDataPath +
-            "\n\n Si prega di completarlo con tutti i parametri e riavviare l'applicazione");
-
-            OpenFileForEdit(configFileName);
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR,
+            "Il file di configurazione non esiste\n\n E' stato creato nella cartella\n" + Application.persistentDataPath + "\n\n Si prega di completarlo con tutti i parametri e riavviare l'applicazione",
+            "Apri", () =>
+            {
+                OpenFileForEdit(configFileName);
+                // GameManager.instance.Quit();
+            });
+            
             callback(false);
         }
         ///
@@ -110,11 +99,12 @@ public class FileManager : MonoBehaviour
 
     public void OpenFileForEdit(string fileName)
     {
-        StartCoroutine(_OpenFileForEdit(fileName));
+        Process.Start("notepad.exe", Application.persistentDataPath + "\\" + fileName);
     }
 
 
-    public void DeleteFile(string fileName){
+    public void DeleteFile(string fileName)
+    {
         File.Delete(fileName);
     }
 
@@ -234,9 +224,5 @@ public class FileManager : MonoBehaviour
     }
 
 
-    private IEnumerator _OpenFileForEdit(string fileName)
-    {
-        yield return new WaitForSeconds(0.5f);
-        Process.Start("notepad.exe", Application.persistentDataPath + "\\" + fileName);
-    }
+ 
 }
