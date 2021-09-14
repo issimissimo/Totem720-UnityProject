@@ -45060,6 +45060,7 @@ MonoBehaviour:
   webcamManager: {fileID: 1804514267}
   screenshotHandler: {fileID: 963194229}
   emailHandler: {fileID: 1288683443}
+  printerHandler: {fileID: 178914686}
 --- !u!4 &1982431616
 Transform:
   m_ObjectHideFlags: 0

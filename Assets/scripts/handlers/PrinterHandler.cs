@@ -1,68 +1,20 @@
-﻿    using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
-using System.Diagnostics;
-using System.ComponentModel.Design;
+﻿using UnityEngine;
 
 public class PrinterHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void PrintBytes(byte[] bytes)
     {
-        string printerName = "Microsoft Print to PDF";
-        string _filePath = "C:\test.jpg";
-        string fullCommand = "rundll32 C:\\WINDOWS\\system32\\shimgvw.dll,ImageView_PrintTo " + "\"" + _filePath + "\"" + " " + "\"" + printerName + "\"";
-        // PrintImage(fullCommand);
-        // PrintScreen();
-    }
+        string printerName = Globals.data.stampante;
 
-
-    /// PROVA che in teoria dovrebbe funzionare
-    void PrintImage(string _cmd)
-    {
-        try
+        if (string.IsNullOrEmpty(printerName))
         {
-            UnityEngine.Debug.Log("YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY");
-            Process myProcess = new Process();
-            //myProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            myProcess.StartInfo.CreateNoWindow = true;
-            myProcess.StartInfo.UseShellExecute = false;
-            myProcess.StartInfo.FileName = "cmd.exe";
-            myProcess.StartInfo.Arguments = "/c " + _cmd;
-            myProcess.EnableRaisingEvents = true;
-            myProcess.Start();
-            myProcess.WaitForExit();
-            UnityEngine.Debug.Log("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
-
-
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Non è stata specificata la stampante, quindi non è possibile stampare");
         }
-        catch (Exception e)
+        else
         {
-            UnityEngine.Debug.Log(e);
+            print("Printing on: " + printerName);
+            LCPrinter.Print.PrintTexture(bytes, 1, printerName);
         }
-    }
-
-
-
-    /// PROVA CHE dovrebbe aprire la preview (ma che non funziona)
-    void PrintFiles()
-    {
-        string path = "file:///C:\test.jpg";
-        Process process = new Process();
-        process.StartInfo.CreateNoWindow = false;
-        process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-        process.StartInfo.UseShellExecute = true;
-        process.StartInfo.FileName = path;
-        process.StartInfo.Verb = "print";
-        process.Start();
-    }
-
-
-/// PROVA altra
-    public void PrintScreen()
-    {
-        System.Diagnostics.Process.Start("mspaint.exe", "C:\\test.png");
     }
 }
 

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public WebcamManager webcamManager;
     public ScreenshotHandler screenshotHandler;
     public EmailHandler emailHandler;
+    public PrinterHandler printerHandler;
 
     private void Awake()
     {
@@ -37,7 +38,8 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void Quit(){
+    public void Quit()
+    {
         Application.Quit();
     }
 
@@ -115,7 +117,7 @@ public class GameManager : MonoBehaviour
     }
 
     //////////////////////////////////////////
-    /// Start email
+    /// Start final session
     //////////////////////////////////////////
     private void StartFinalSession(string fileName)
     {

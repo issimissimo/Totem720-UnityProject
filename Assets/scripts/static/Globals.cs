@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 public static class Globals
 {
@@ -36,11 +37,16 @@ public static class Globals
     public static bool squadraIsDefined;
 
 
+    /// screenshot
+    public static string screenshotFolder = Application.persistentDataPath;
+    public static string screenshotName = "screenshot.jpg";
+
+
     public static MainData data;
 
 
     /////////////////////////////////
-    /// main
+    /// main class
     /////////////////////////////////
     [Serializable]
     public class MainData
@@ -49,13 +55,14 @@ public static class Globals
         public string scenario;
         public string squadra;
         public Email email = new Email();
+        public string stampante;
     }
 
 
 
 
     /////////////////////////////////
-    /// email
+    /// email class
     /////////////////////////////////
     [Serializable]
     public class Email

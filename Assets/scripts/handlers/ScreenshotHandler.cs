@@ -34,6 +34,10 @@ public class ScreenshotHandler : MonoBehaviour
 
             if (byteArray.Length > 0)
             {
+                
+                GameManager.instance.printerHandler.PrintBytes(byteArray);
+                
+                
                 // System.DateTime now = System.DateTime.Now;
                 // long fileCreationFileTime = now.ToFileTime();
                 // string screenshotFullName = filePath + "/" + fileCreationFileTime + ".jpg";
