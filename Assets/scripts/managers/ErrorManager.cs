@@ -59,4 +59,14 @@ public class ErrorManager : MonoBehaviour
             panelError.SetActive(false);
         }
     }
+
+
+    public void CloseAll(){
+        foreach(GameObject go in prefabs){
+            Destroy(go);
+        }
+        totalPrefabsNumber = 0;
+        prefabs.Clear();
+        panelError.SetActive(false);
+    }
 }

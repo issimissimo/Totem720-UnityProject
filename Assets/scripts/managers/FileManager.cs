@@ -9,6 +9,8 @@ public class FileManager : MonoBehaviour
 {
     private string fileExtension = ".webm";
     private string configFileName = "config.json";
+    private Action<bool> _callback;
+
 
 
     public void CkeckDefaultPath()
@@ -19,7 +21,12 @@ public class FileManager : MonoBehaviour
         }
         else
         {
-            ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Nel file di configurazione non è stata specificata la cartella in cui ci sono i video");
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING,
+            "Nel file di configurazione non è stata specificata la cartella in cui ci sono i video",
+            "RIPROVA", () =>
+            {
+                CheckConfigFile(_callback);
+            });
         }
     }
 
@@ -27,6 +34,9 @@ public class FileManager : MonoBehaviour
 
     public void CheckConfigFile(Action<bool> callback)
     {
+        ErrorManager.instance.CloseAll();
+        _callback = callback;
+
         ///
         /// save the config file with empty values
         ///
@@ -43,8 +53,9 @@ public class FileManager : MonoBehaviour
             {
                 OpenFileForEdit(configFileName);
                 // GameManager.instance.Quit();
+                CheckConfigFile(_callback);
             });
-            
+
             callback(false);
         }
         ///
@@ -224,5 +235,5 @@ public class FileManager : MonoBehaviour
     }
 
 
- 
+
 }

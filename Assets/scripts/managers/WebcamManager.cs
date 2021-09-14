@@ -25,13 +25,13 @@ public class WebcamManager : MonoBehaviour
 
         // /// init webcam
         Play();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         Pause();
     }
 
     public void Play(){
         webcamTexture.Play();
-        // Debug.Log(webcamTexture.width + " - " + webcamTexture.height);
+        Debug.Log(webcamTexture.width + " - " + webcamTexture.height);
     }
 
      public void Pause(){
