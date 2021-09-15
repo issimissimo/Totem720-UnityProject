@@ -36,8 +36,8 @@ public class UDPReceive : MonoBehaviour
     public int port = 8051; // define > init
 
     // infos
-    public string lastReceivedUDPPacket = "";
-    public string allReceivedUDPPackets = ""; // clean up this from time to time!
+    private string lastReceivedUDPPacket = "";
+    private string allReceivedUDPPackets = ""; // clean up this from time to time!
 
 
     private void Update()
@@ -55,8 +55,6 @@ public class UDPReceive : MonoBehaviour
         print("received message...");
         string[] array = msg.Split(' ');
 
-        // GameManager.instance.ShowMain();
-
         if (array.Length != 2)
         {
             ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Nel messaggio bisogna definire sia lo scenario che la squadra");
@@ -67,13 +65,17 @@ public class UDPReceive : MonoBehaviour
             {
                 try
                 {
-                    // Globals._SCENARIO = (Globals.Scenario)System.Enum.Parse(typeof(Globals.Scenario), array[0]);
-                    // Globals._SQUADRA = (Globals.Squadra)System.Enum.Parse(typeof(Globals.Squadra), array[1]);
                     Globals.Scenario scenario = (Globals.Scenario)System.Enum.Parse(typeof(Globals.Scenario), array[0]);
                     Globals.Squadra squadra = (Globals.Squadra)System.Enum.Parse(typeof(Globals.Squadra), array[1]);
 
-                    // GameManager.instance.ShowInit();
-                    GameManager.instance.ShowPanelByType(scenario, squadra);
+                    if (GameManager.STATE == GameManager.GAMESTATE.IDLE)
+                    {
+                        GameManager.instance.ShowPanelByType(scenario, squadra);
+                    }
+                    else
+                    {
+                        ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Non si può cambiare scenario e squadra durante il gioco");
+                    }
                 }
                 catch (Exception e)
                 {
@@ -82,6 +84,12 @@ public class UDPReceive : MonoBehaviour
             }
         }
     }
+
+    // private IEnumerator _OnMessageReceived(string msg){
+    //     while (GameManager.STATE != GameManager.GAMESTATE.IDLE){
+    //         yield return null;
+    //     }
+    // }
 
 
 
@@ -107,30 +115,30 @@ public class UDPReceive : MonoBehaviour
     }
 
     // OnGUI
-    void OnGUI()
-    {
-        Rect rectObj = new Rect(40, 10, 200, 400);
-        GUIStyle style = new GUIStyle();
-        style.alignment = TextAnchor.UpperLeft;
-        GUI.Box(rectObj, "# UDPReceive\n127.0.0.1 " + port + " #\n"
-                    + "shell> nc -u 127.0.0.1 : " + port + " \n"
-                    + "\nLast Packet: \n" + lastReceivedUDPPacket
-                    + "\n\nAll Messages: \n" + allReceivedUDPPackets
-                , style);
-    }
+    // void OnGUI()
+    // {
+    //     Rect rectObj = new Rect(40, 10, 200, 400);
+    //     GUIStyle style = new GUIStyle();
+    //     style.alignment = TextAnchor.UpperLeft;
+    //     GUI.Box(rectObj, "# UDPReceive\n127.0.0.1 " + port + " #\n"
+    //                 + "shell> nc -u 127.0.0.1 : " + port + " \n"
+    //                 + "\nLast Packet: \n" + lastReceivedUDPPacket
+    //                 + "\n\nAll Messages: \n" + allReceivedUDPPackets
+    //             , style);
+    // }
 
     // init
     private void init()
     {
         // Endpunkt definieren, von dem die Nachrichten gesendet werden.
-        print("UDPSend.init()");
+        // print("UDPSend.init()");
 
         // define port
         // port = 8051;
 
         // status
-        print("Sending to 127.0.0.1 : " + port);
-        print("Test-Sending to this Port: nc -u 127.0.0.1  " + port + "");
+        // print("Sending to 127.0.0.1 : " + port);
+        // print("Test-Sending to this Port: nc -u 127.0.0.1  " + port + "");
 
 
         // ----------------------------

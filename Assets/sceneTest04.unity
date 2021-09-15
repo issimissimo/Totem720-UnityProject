@@ -45061,6 +45061,7 @@ MonoBehaviour:
   screenshotHandler: {fileID: 963194229}
   emailHandler: {fileID: 1288683443}
   printerHandler: {fileID: 178914686}
+  printImage: 1
 --- !u!4 &1982431616
 Transform:
   m_ObjectHideFlags: 0
@@ -46129,8 +46130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   port: 8051
-  lastReceivedUDPPacket: 
-  allReceivedUDPPackets: 
 --- !u!4 &2077567151
 Transform:
   m_ObjectHideFlags: 0

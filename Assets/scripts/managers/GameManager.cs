@@ -11,6 +11,15 @@ public class GameManager : MonoBehaviour
     public EmailHandler emailHandler;
     public PrinterHandler printerHandler;
 
+    public enum GAMESTATE
+    {
+        IDLE, GAME
+    }
+
+    public static GAMESTATE STATE;
+
+    public bool printImage;
+
     private void Awake()
     {
         if (instance != null) Destroy(instance);
@@ -46,6 +55,8 @@ public class GameManager : MonoBehaviour
 
     public void ShowInit()
     {
+        STATE = GAMESTATE.IDLE;
+
         if (Globals.scenarioIsDefined && Globals.squadraIsDefined)
         {
             uiManager.ShowPanelByType(Globals._SCENARIO, Globals._SQUADRA);
@@ -78,6 +89,8 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void StartGame(int videoNumber)
     {
+        STATE = GAMESTATE.GAME;
+
         StartPhotoSession(videoNumber);
     }
 
@@ -125,7 +138,8 @@ public class GameManager : MonoBehaviour
 
 
         /// print image
-        printerHandler.PrintBytes(returnedBytesFromScreenshot);
+        if (printImage)
+            printerHandler.PrintBytes(returnedBytesFromScreenshot);
 
         /// send email (if liked)
         uiManager.ShowEmail(() =>
