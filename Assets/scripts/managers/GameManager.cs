@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
 
 
     //////////////////////////////////////////
-    /// Start photo
+    /// Start photo session
     //////////////////////////////////////////
     private void StartPhotoSession(int videoNumber)
     {
@@ -107,9 +107,9 @@ public class GameManager : MonoBehaviour
                     webcamManager.Pause();
 
                     /// take screenshot
-                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, Application.persistentDataPath, (screenshotFullName) =>
+                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, (returnedBytesFromScreenshot) =>
                     {
-                        StartFinalSession(screenshotFullName);
+                        StartFinalSession(returnedBytesFromScreenshot);
                     });
                 });
             });
@@ -119,16 +119,16 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     /// Start final session
     //////////////////////////////////////////
-    private void StartFinalSession(string fileName)
+    private void StartFinalSession(byte[] returnedBytesFromScreenshot)
     {
         /// payment request
 
 
         /// print image
-
+        printerHandler.PrintBytes(returnedBytesFromScreenshot);
 
         /// send email (if liked)
-        uiManager.ShowEmail(fileName, () =>
+        uiManager.ShowEmail(() =>
         {
             /// return to main UI
             ShowInit();

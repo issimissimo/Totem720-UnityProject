@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using System.IO;
 
 public class EmailCtrl : MonoBehaviour
 {
@@ -33,9 +34,9 @@ public class EmailCtrl : MonoBehaviour
         sendEmailButton.onClick.AddListener(Send);
     }
 
-    public void Show(string screenshot, Action callback)
+    public void Show(Action callback)
     {
-        _screenshot = screenshot;
+        _screenshot = Path.Combine(Globals.screenshotFolder, Globals.screenshotName);
         _callback = callback;
 
         panelEmail.SetActive(true);

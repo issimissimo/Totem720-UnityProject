@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.IO;
 
 public class ScreenshotHandler : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class ScreenshotHandler : MonoBehaviour
     private bool takeScreenshotOnNextFrame;
 
     private string filePath;
-    private Action<string> callbackAfterScreenshot;
+    private Action<byte[]> returnBytesAfterScreenshot;
 
     private void Awake()
     {
@@ -34,30 +35,18 @@ public class ScreenshotHandler : MonoBehaviour
 
             if (byteArray.Length > 0)
             {
-                
-                GameManager.instance.printerHandler.PrintBytes(byteArray);
-                
-                
-                // System.DateTime now = System.DateTime.Now;
-                // long fileCreationFileTime = now.ToFileTime();
-                // string screenshotFullName = filePath + "/" + fileCreationFileTime + ".jpg";
-                string screenshotFullName = filePath + "/" + "screenshot" + ".jpg";
+                string path = Path.Combine(Globals.screenshotFolder, Globals.screenshotName);
 
-                System.IO.File.WriteAllBytes(screenshotFullName, byteArray);
-                Debug.Log("Saved screenshot.jpg");
+                File.WriteAllBytes(path, byteArray);
+                Debug.Log("Saved: " + path);
 
                 RenderTexture.ReleaseTemporary(renderTexture);
                 myCamera.targetTexture = null;
 
-                // System.IO.File.WriteAllBytes(filePath + "/CameraScreenshot.jpg", byteArray);
-                // Debug.Log("Saved CameraScreenshot.png");
-
-                // RenderTexture.ReleaseTemporary(renderTexture);
-                // myCamera.targetTexture = null;
-
-                if (callbackAfterScreenshot != null)
+                if (returnBytesAfterScreenshot != null)
                 {
-                    callbackAfterScreenshot(screenshotFullName);
+                    /// callback
+                    returnBytesAfterScreenshot(byteArray);
                 }
             }
             else
@@ -67,10 +56,9 @@ public class ScreenshotHandler : MonoBehaviour
         }
     }
 
-    public void TakeScreenshot(int width, int height, string path, Action<string> callback = null)
+    public void TakeScreenshot(int width, int height, Action<byte[]> callback = null)
     {
-        filePath = path;
-        callbackAfterScreenshot = callback;
+        returnBytesAfterScreenshot = callback;
         myCamera.targetTexture = RenderTexture.GetTemporary(width, height, 16);
         takeScreenshotOnNextFrame = true;
     }
