@@ -9,9 +9,12 @@ public class FileManager : MonoBehaviour
 {
     private string fileExtension = ".webm";
     private string configFileName = "config.json";
+    private string configFilePath;
     private Action<bool> _callback;
 
-
+    private void Awake() {
+        configFilePath = Application.persistentDataPath;
+    }
 
     public void CkeckDefaultPath()
     {
@@ -40,15 +43,15 @@ public class FileManager : MonoBehaviour
         ///
         /// save the config file with empty values
         ///
-        if (!File.Exists(Application.persistentDataPath + "/" + configFileName))
+        if (!File.Exists(configFilePath + "/" + configFileName))
         {
             Globals.MainData mainData = new Globals.MainData();
             string configFile = JsonUtility.ToJson(mainData, true);
             print(configFile);
-            System.IO.File.WriteAllText(Application.persistentDataPath + "/" + configFileName, configFile);
+            System.IO.File.WriteAllText(configFilePath + "/" + configFileName, configFile);
 
             ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR,
-            "Il file di configurazione non esiste\n\n E' stato creato nella cartella\n" + Application.persistentDataPath + "\n\n Si prega di completarlo con tutti i parametri e riavviare l'applicazione",
+            "Il file di configurazione non esiste\n\n E' stato creato nella cartella\n" + configFilePath + "\n\n Si prega di completarlo con tutti i parametri e riavviare l'applicazione",
             "Apri", () =>
             {
                 OpenFileForEdit(configFileName);
@@ -63,8 +66,8 @@ public class FileManager : MonoBehaviour
         ///
         else
         {
-            string filePath = System.IO.Path.Combine(Application.persistentDataPath, configFileName);
-            string data = System.IO.File.ReadAllText(filePath);
+            string filePath = Path.Combine(configFilePath, configFileName);
+            string data = File.ReadAllText(filePath);
 
             try
             {
@@ -104,13 +107,13 @@ public class FileManager : MonoBehaviour
         print("----------- UPDATE CONFIG FILE!!!!!!!!!!!! ---------");
         string configFile = JsonUtility.ToJson(Globals.data, true);
         print(configFile);
-        System.IO.File.WriteAllText(Application.persistentDataPath + "/" + configFileName, configFile);
+        System.IO.File.WriteAllText(configFilePath + "/" + configFileName, configFile);
     }
 
 
     public void OpenFileForEdit(string fileName)
     {
-        Process.Start("notepad.exe", Application.persistentDataPath + "\\" + fileName);
+        Process.Start("notepad.exe", configFilePath + "\\" + fileName);
     }
 
 

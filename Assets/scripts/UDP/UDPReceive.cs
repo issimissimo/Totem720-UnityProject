@@ -52,9 +52,35 @@ public class UDPReceive : MonoBehaviour
 
     private void ShowPanelOnMessageReceived(string msg)
     {
+        print("received message...");
         string[] array = msg.Split(' ');
 
         // GameManager.instance.ShowMain();
+
+        if (array.Length != 2)
+        {
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Nel messaggio bisogna definire sia lo scenario che la squadra");
+        }
+        else
+        {
+            if (Utils.ValidateString(array[0]) && Utils.ValidateString(array[1]))
+            {
+                try
+                {
+                    // Globals._SCENARIO = (Globals.Scenario)System.Enum.Parse(typeof(Globals.Scenario), array[0]);
+                    // Globals._SQUADRA = (Globals.Squadra)System.Enum.Parse(typeof(Globals.Squadra), array[1]);
+                    Globals.Scenario scenario = (Globals.Scenario)System.Enum.Parse(typeof(Globals.Scenario), array[0]);
+                    Globals.Squadra squadra = (Globals.Squadra)System.Enum.Parse(typeof(Globals.Squadra), array[1]);
+
+                    // GameManager.instance.ShowInit();
+                    GameManager.instance.ShowPanelByType(scenario, squadra);
+                }
+                catch (Exception e)
+                {
+                    ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Lo scenario e la squadra definiti nel messaggio non sono stati riconosciuti");
+                }
+            }
+        }
     }
 
 
