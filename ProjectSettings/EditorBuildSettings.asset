@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/sceneTest04.unity
-    guid: a48548ee03f825c45898ca04f857c253
+    path: Assets/Project/Scenes/Totem.unity
+    guid: 6c70ed9fddce3d940a4435e3291dba52
   m_configObjects: {}

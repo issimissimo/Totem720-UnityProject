@@ -8,7 +8,7 @@ public class PrinterHandler : MonoBehaviour
 
         if (string.IsNullOrEmpty(printerName))
         {
-            ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Non è stata specificata la stampante, quindi non è possibile stampare");
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.WARNING, "Non è stata specificata la stampante, quindi non è possibile stampare");
         }
         else
         {

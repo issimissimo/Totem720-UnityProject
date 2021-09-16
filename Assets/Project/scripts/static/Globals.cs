@@ -39,7 +39,7 @@ public static class Globals
 
     /// screenshot
     public static string screenshotFolder = Application.persistentDataPath;
-    public static string screenshotName = "screenshot.jpg";
+    public static string screenshotName = "screenshot";
 
 
     public static MainData data;

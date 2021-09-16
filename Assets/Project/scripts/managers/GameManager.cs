@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
@@ -72,12 +73,12 @@ public class GameManager : MonoBehaviour
     {
 
         /// if inputs are different from the stored ones,
-        /// write them in the config.json 
+        /// (write them in the config.json)
         if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA)
         {
             Globals._SCENARIO = scenario;
             Globals._SQUADRA = squadra;
-            fileManager.UpdateConfigFile();
+            // fileManager.UpdateConfigFile();
         }
 
         ShowInit();
@@ -120,9 +121,12 @@ public class GameManager : MonoBehaviour
                     webcamManager.Pause();
 
                     /// take screenshot
-                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, (returnedBytesFromScreenshot) =>
+                    System.DateTime now = System.DateTime.Now;
+                    long fileCreationTime = now.ToFileTime();
+                    string screenshotPath = Path.Combine(Globals.screenshotFolder, fileCreationTime + ".jpg");
+                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, screenshotPath, (returnedBytesFromScreenshot) =>
                     {
-                        StartFinalSession(returnedBytesFromScreenshot);
+                        StartFinalSession(screenshotPath, returnedBytesFromScreenshot);
                     });
                 });
             });
@@ -132,7 +136,7 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     /// Start final session
     //////////////////////////////////////////
-    private void StartFinalSession(byte[] returnedBytesFromScreenshot)
+    private void StartFinalSession(string screenshotPath, byte[] returnedBytesFromScreenshot)
     {
         /// payment request
 
@@ -142,7 +146,7 @@ public class GameManager : MonoBehaviour
             printerHandler.PrintBytes(returnedBytesFromScreenshot);
 
         /// send email (if liked)
-        uiManager.ShowEmail(() =>
+        uiManager.ShowEmail(screenshotPath, () =>
         {
             /// return to main UI
             ShowInit();

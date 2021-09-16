@@ -95,12 +95,12 @@ public class UiManager : MonoBehaviour
     }
 
 
-    public void ShowEmail(Action callback)
+    public void ShowEmail(string filePath, Action callback)
     {
 
         Action _callback = callback;
 
-        emailCtrl.Show(() =>
+        emailCtrl.Show(filePath, () =>
         {
             // emailCtrl.Hide();
 

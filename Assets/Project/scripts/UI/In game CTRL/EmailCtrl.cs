@@ -34,9 +34,9 @@ public class EmailCtrl : MonoBehaviour
         sendEmailButton.onClick.AddListener(Send);
     }
 
-    public void Show(Action callback)
+    public void Show(string filePath, Action callback)
     {
-        _screenshot = Path.Combine(Globals.screenshotFolder, Globals.screenshotName);
+        _screenshot = filePath;
         _callback = callback;
 
         panelEmail.SetActive(true);

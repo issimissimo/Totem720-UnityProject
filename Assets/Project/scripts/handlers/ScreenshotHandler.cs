@@ -35,10 +35,19 @@ public class ScreenshotHandler : MonoBehaviour
 
             if (byteArray.Length > 0)
             {
-                string path = Path.Combine(Globals.screenshotFolder, Globals.screenshotName);
+                // System.DateTime now = System.DateTime.Now;
+                // long fileCreationTime = now.ToFileTime();
+                // // string screenshotFullName = filePath + "/" + fileCreationTime + ".jpg";
+                
+                // string path = Path.Combine(Globals.screenshotFolder, Globals.screenshotName + fileCreationTime + "jpg");
 
-                File.WriteAllBytes(path, byteArray);
-                Debug.Log("Saved: " + path);
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                }
+
+                File.WriteAllBytes(filePath, byteArray);
+                Debug.Log("Saved: " + filePath);
 
                 RenderTexture.ReleaseTemporary(renderTexture);
                 myCamera.targetTexture = null;
@@ -56,8 +65,9 @@ public class ScreenshotHandler : MonoBehaviour
         }
     }
 
-    public void TakeScreenshot(int width, int height, Action<byte[]> callback = null)
+    public void TakeScreenshot(int width, int height, string path, Action<byte[]> callback = null)
     {
+        filePath = path;
         returnBytesAfterScreenshot = callback;
         myCamera.targetTexture = RenderTexture.GetTemporary(width, height, 16);
         takeScreenshotOnNextFrame = true;
