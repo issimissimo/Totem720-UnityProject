@@ -74,12 +74,12 @@ public class GameManager : MonoBehaviour
 
         /// if inputs are different from the stored ones,
         /// (write them in the config.json)
-        if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA)
-        {
-            Globals._SCENARIO = scenario;
-            Globals._SQUADRA = squadra;
-            // fileManager.UpdateConfigFile();
-        }
+        // if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA)
+        // {
+        Globals._SCENARIO = scenario;
+        Globals._SQUADRA = squadra;
+        // fileManager.UpdateConfigFile();
+        // }
 
         ShowInit();
     }

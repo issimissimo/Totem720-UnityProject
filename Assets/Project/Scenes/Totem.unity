@@ -45061,7 +45061,7 @@ MonoBehaviour:
   screenshotHandler: {fileID: 963194229}
   emailHandler: {fileID: 1288683443}
   printerHandler: {fileID: 178914686}
-  printImage: 1
+  printImage: 0
 --- !u!4 &1982431616
 Transform:
   m_ObjectHideFlags: 0

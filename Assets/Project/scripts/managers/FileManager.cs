@@ -12,9 +12,25 @@ public class FileManager : MonoBehaviour
     private string configFilePath;
     private Action<bool> _callback;
 
-    private void Awake() {
+    private void Awake()
+    {
         configFilePath = Application.persistentDataPath;
     }
+
+    private void Start()
+    {
+        /// delete all previously created images
+        var dir = new DirectoryInfo(Globals.screenshotFolder);
+        foreach (var file in dir.EnumerateFiles("*.jpg"))
+        {
+            file.Delete();
+        }
+        foreach (var file in dir.EnumerateFiles("*.png"))
+        {
+            file.Delete();
+        }
+    }
+
 
     public void CkeckDefaultPath()
     {
