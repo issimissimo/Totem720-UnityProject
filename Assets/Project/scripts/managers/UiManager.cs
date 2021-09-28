@@ -49,6 +49,7 @@ public class UiManager : MonoBehaviour
 
     public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)
     {
+        print("ShowPanelByType: " + scenario.ToString() + " - " + squadra.ToString());
         ShowUiContainer();
 
         foreach (GameObject panel in ui_panels)

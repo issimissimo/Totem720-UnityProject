@@ -54,6 +54,9 @@ public class GameManager : MonoBehaviour
     }
 
 
+    //////////////////////////////////////////
+    /// Init
+    //////////////////////////////////////////
     public void ShowInit()
     {
         STATE = GAMESTATE.IDLE;
@@ -71,17 +74,22 @@ public class GameManager : MonoBehaviour
 
     public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)
     {
-
         /// if inputs are different from the stored ones,
         /// (write them in the config.json)
         // if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA)
         // {
-        Globals._SCENARIO = scenario;
-        Globals._SQUADRA = squadra;
-        // fileManager.UpdateConfigFile();
-        // }
 
-        ShowInit();
+        /// set the new scenario
+        Globals._SCENARIO = scenario;
+
+        /// if the previuos "squadra" was NOT Inter_Milan,
+        /// set the new squadra
+        if (Globals._SQUADRA != Globals.Squadra.Inter_Milan)
+        {
+            Globals._SQUADRA = squadra;
+        }
+
+        uiManager.ShowPanelByType(scenario, squadra);
     }
 
 
