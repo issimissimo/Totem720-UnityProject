@@ -6,6 +6,7 @@ using System;
 public class UiManager : MonoBehaviour
 {
     [SerializeField] GameObject ui_panels_container;
+    [SerializeField] GameObject instructions;
     [SerializeField] CountdownCtrl countdownCtrl;
     [SerializeField] EmailCtrl emailCtrl;
     [SerializeField] EndGameCtrl endGameCtrl;

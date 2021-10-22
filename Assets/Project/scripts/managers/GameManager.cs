@@ -105,6 +105,14 @@ public class GameManager : MonoBehaviour
 
 
     //////////////////////////////////////////
+    /// Show instructions
+    //////////////////////////////////////////
+    private void ShowInstructions(int videoNumber){
+        
+    }
+
+
+    //////////////////////////////////////////
     /// Start photo session
     //////////////////////////////////////////
     private void StartPhotoSession(int videoNumber)
