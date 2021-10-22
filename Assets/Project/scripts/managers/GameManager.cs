@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
 
     public bool printImage;
 
+    private int videoToLaunch;
+
     private void Awake()
     {
         if (instance != null) Destroy(instance);
@@ -100,28 +102,32 @@ public class GameManager : MonoBehaviour
     {
         STATE = GAMESTATE.GAME;
 
-        StartPhotoSession(videoNumber);
+        videoToLaunch = videoNumber;
+
+        /// play webcam earlier
+        webcamManager.Play();
+
+        /// show instructions
+        uiManager.ShowPanel(uiManager.instructions);
+
+
+        // StartPhotoSession(videoNumber);
     }
 
 
-    //////////////////////////////////////////
-    /// Show instructions
-    //////////////////////////////////////////
-    private void ShowInstructions(int videoNumber){
-        
-    }
+
 
 
     //////////////////////////////////////////
     /// Start photo session
     //////////////////////////////////////////
-    private void StartPhotoSession(int videoNumber)
+    public void StartPhotoSession()
     {
-        string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoNumber);
+        string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoToLaunch);
         if (videoUrl != null)
         {
-            /// play webcam
-            webcamManager.Play();
+            // /// play webcam
+            // webcamManager.Play();
 
             /// play video
             Debug.Log("LANCIO VIDEO: " + videoUrl);

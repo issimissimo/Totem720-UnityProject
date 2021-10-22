@@ -6,7 +6,7 @@ using System;
 public class UiManager : MonoBehaviour
 {
     [SerializeField] GameObject ui_panels_container;
-    [SerializeField] GameObject instructions;
+    public GameObject instructions;
     [SerializeField] CountdownCtrl countdownCtrl;
     [SerializeField] EmailCtrl emailCtrl;
     [SerializeField] EndGameCtrl endGameCtrl;
@@ -71,7 +71,6 @@ public class UiManager : MonoBehaviour
     public void ShowInitPanel()
     {
         ShowUiContainer();
-
         ShowPanel(main_panel);
     }
 
