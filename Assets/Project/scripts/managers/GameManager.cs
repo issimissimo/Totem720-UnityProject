@@ -21,7 +21,21 @@ public class GameManager : MonoBehaviour
 
     public bool printImage;
 
+
+
+
+
+    ///
+    /// private variables to use in game
+    ///
     private int videoToLaunch;
+    private string screenshotPath;
+    private byte[] returnedBytesFromScreenshot;
+    private int photoShootTrials = 0;
+
+
+
+
 
     private void Awake()
     {
@@ -123,11 +137,13 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void StartPhotoSession()
     {
+        photoShootTrials ++;
+        
         string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoToLaunch);
         if (videoUrl != null)
         {
-            // /// play webcam
-            // webcamManager.Play();
+            /// play webcam
+            webcamManager.Play();
 
             /// play video
             Debug.Log("LANCIO VIDEO: " + videoUrl);
@@ -139,28 +155,69 @@ public class GameManager : MonoBehaviour
                 /// wait for end of video
                 videoManager.WaitForEnd(() =>
                 {
-                    /// pause webcam
-                    webcamManager.Pause();
+                    // /// pause webcam
+                    // webcamManager.Pause();
 
                     /// take screenshot
                     System.DateTime now = System.DateTime.Now;
                     long fileCreationTime = now.ToFileTime();
-                    string screenshotPath = Path.Combine(Globals.screenshotFolder, fileCreationTime + ".jpg");
-                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, screenshotPath, (returnedBytesFromScreenshot) =>
+                    screenshotPath = Path.Combine(Globals.screenshotFolder, fileCreationTime + ".jpg");
+
+                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, screenshotPath, (_returnedBytesFromScreenshot) =>
                     {
-                        StartFinalSession(screenshotPath, returnedBytesFromScreenshot);
+                        returnedBytesFromScreenshot = _returnedBytesFromScreenshot;
+
+                        // StartFinalSession(screenshotPath, returnedBytesFromScreenshot);
+
+                        /// pause webcam
+                        webcamManager.Pause();
+
+                        /// show panel to ask if satisfied
+                        if (photoShootTrials < 2)
+                        {
+                            AskForSatified();
+                        }
+                        else
+                        {
+                            StartFinalSession();
+                        }
+
+
                     });
                 });
             });
         }
     }
 
+
+
+    //////////////////////////////////////////
+    /// Ask for satisfied
+    //////////////////////////////////////////
+    public void AskForSatified()
+    {
+        uiManager.ShowPanel(uiManager.satisfied);
+    }
+
+
+
     //////////////////////////////////////////
     /// Start final session
     //////////////////////////////////////////
-    private void StartFinalSession(string screenshotPath, byte[] returnedBytesFromScreenshot)
+    public void StartFinalSession()
     {
+        /// reset trials
+        photoShootTrials = 0;
+
+        /// stop webcam
+        webcamManager.Stop();
+
+
         /// payment request
+        ////
+        ////
+
+
 
 
         /// print image

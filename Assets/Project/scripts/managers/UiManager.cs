@@ -7,6 +7,7 @@ public class UiManager : MonoBehaviour
 {
     [SerializeField] GameObject ui_panels_container;
     public GameObject instructions;
+    public GameObject satisfied;
     [SerializeField] CountdownCtrl countdownCtrl;
     [SerializeField] EmailCtrl emailCtrl;
     [SerializeField] EndGameCtrl endGameCtrl;
@@ -41,8 +42,10 @@ public class UiManager : MonoBehaviour
 
     public void ShowPanel(GameObject panel)
     {
+        print("HIDE");
         HideAllUiPanels(() =>
         {
+            print("SHOW..." + panel.name);
             panel.SetActive(true);
         });
     }
@@ -90,7 +93,8 @@ public class UiManager : MonoBehaviour
 
     public void ShowGame(double videoDuration)
     {
-        HideUiContainer();
+        // HideUiContainer();
+        HideAllUiPanels();
 
         countdownCtrl.Play(videoDuration);
     }
@@ -98,6 +102,7 @@ public class UiManager : MonoBehaviour
 
     public void ShowEmail(string filePath, Action callback)
     {
+        HideAllUiPanels();
 
         Action _callback = callback;
 
