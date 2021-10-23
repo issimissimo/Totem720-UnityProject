@@ -15,7 +15,7 @@ public class ButtonShowPanel : ButtonBase
         
         /// If this button open "scenario" panel...
         else{
-            GameManager.instance.uiManager.ShowPanel(panelToShow);
+            GameManager.instance.ShowPanel(panelToShow);
         }
     }
 }

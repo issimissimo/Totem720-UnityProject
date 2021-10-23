@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
+using System;
 using System.IO;
+using System.Collections;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -9,15 +12,16 @@ public class GameManager : MonoBehaviour
     public VideoManager videoManager;
     public WebcamManager webcamManager;
     public ScreenshotHandler screenshotHandler;
-    public EmailHandler emailHandler;
     public PrinterHandler printerHandler;
 
     public enum GAMESTATE
     {
-        IDLE, GAME
+        INIT, IDLE, GAME, END
     }
 
     public static GAMESTATE STATE;
+
+    private Coroutine wait;
 
     public bool printImage;
 
@@ -26,13 +30,12 @@ public class GameManager : MonoBehaviour
 
 
     ///
-    /// private variables to use in game
+    /// variables to use in game
     ///
     private int videoToLaunch;
-    private string screenshotPath;
+    public static string screenshotPath;
     private byte[] returnedBytesFromScreenshot;
     private int photoShootTrials = 0;
-
 
 
 
@@ -41,7 +44,10 @@ public class GameManager : MonoBehaviour
     {
         if (instance != null) Destroy(instance);
         instance = this;
+
+        STATE = GAMESTATE.INIT;
     }
+
 
     void Start()
     {
@@ -75,8 +81,6 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void ShowInit()
     {
-        STATE = GAMESTATE.IDLE;
-
         if (Globals.scenarioIsDefined && Globals.squadraIsDefined)
         {
             uiManager.ShowPanelByType(Globals._SCENARIO, Globals._SQUADRA);
@@ -88,12 +92,25 @@ public class GameManager : MonoBehaviour
     }
 
 
+    public void ShowPanel(GameObject panel, float skipTime = 60)
+    {
+        uiManager.ShowPanel(panel);
+
+        if (STATE != GAMESTATE.INIT)
+        {
+            SkipAfterTime(skipTime);
+        }
+    }
+
+
     public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)
     {
         /// if inputs are different from the stored ones,
         /// (write them in the config.json)
         // if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA)
         // {
+
+        STATE = GAMESTATE.IDLE;
 
         /// set the new scenario
         Globals._SCENARIO = scenario;
@@ -114,36 +131,39 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void StartGame(int videoNumber)
     {
-        STATE = GAMESTATE.GAME;
+        print("StartGame");
+
+        // STATE = GAMESTATE.GAME;
 
         videoToLaunch = videoNumber;
 
+        /// show instructions
+        ShowPanel(uiManager.instructions);
+
         /// play webcam earlier
         webcamManager.Play();
-
-        /// show instructions
-        uiManager.ShowPanel(uiManager.instructions);
-
-
-        // StartPhotoSession(videoNumber);
     }
 
 
 
-
-
     //////////////////////////////////////////
-    /// Start photo session
+    /// PHOTO
     //////////////////////////////////////////
-    public void StartPhotoSession()
+    public void Session_PHOTO()
     {
-        photoShootTrials ++;
-        
+        STATE = GAMESTATE.GAME;
+
+        if (wait != null) StopCoroutine(wait);
+
+        photoShootTrials++;
+
         string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoToLaunch);
         if (videoUrl != null)
         {
-            /// play webcam
+            /// play webcam again (if we are taking a 2nd photo)
             webcamManager.Play();
+
+
 
             /// play video
             Debug.Log("LANCIO VIDEO: " + videoUrl);
@@ -151,6 +171,7 @@ public class GameManager : MonoBehaviour
             {
                 /// show game UI
                 uiManager.ShowGame(videoManager.videoDuration);
+
 
                 /// wait for end of video
                 videoManager.WaitForEnd(() =>
@@ -167,22 +188,18 @@ public class GameManager : MonoBehaviour
                     {
                         returnedBytesFromScreenshot = _returnedBytesFromScreenshot;
 
-                        // StartFinalSession(screenshotPath, returnedBytesFromScreenshot);
-
                         /// pause webcam
                         webcamManager.Pause();
 
                         /// show panel to ask if satisfied
                         if (photoShootTrials < 2)
                         {
-                            AskForSatified();
+                            ShowPanel(uiManager.satisfied);
                         }
                         else
                         {
-                            StartFinalSession();
+                            Session_PAYMENT();
                         }
-
-
                     });
                 });
             });
@@ -192,44 +209,146 @@ public class GameManager : MonoBehaviour
 
 
     //////////////////////////////////////////
-    /// Ask for satisfied
+    /// PAYMENT
     //////////////////////////////////////////
-    public void AskForSatified()
+    public void Session_PAYMENT()
     {
-        uiManager.ShowPanel(uiManager.satisfied);
+        if (wait != null) StopCoroutine(wait);
+
+        /// TO DO......
+
+
+        Session_PRINT();
+    }
+
+
+
+
+
+    //////////////////////////////////////////
+    /// PRINT
+    //////////////////////////////////////////
+    public void Session_PRINT()
+    {
+        if (printImage)
+            printerHandler.PrintBytes(returnedBytesFromScreenshot);
+
+        Session_ASKFOREMAIL();
+    }
+
+
+
+
+    // //////////////////////////////////////////
+    // /// Start final session
+    // //////////////////////////////////////////
+    // public void StartFinalSession()
+    // {
+    //     if (wait != null) StopCoroutine(wait);
+
+    //     /// reset trials
+    //     photoShootTrials = 0;
+
+    //     /// stop webcam
+    //     webcamManager.Stop();
+
+
+    //     /// payment request
+    //     ////
+    //     ////
+
+
+
+
+    //     /// print image
+    //     if (printImage)
+    //         printerHandler.PrintBytes(returnedBytesFromScreenshot);
+
+
+
+    //     /////////////////////////////////////////////////////
+    //     Session_ASKFOREMAIL();
+
+
+
+    //     /// send email (if liked)
+    //     uiManager.ShowEmail(screenshotPath, () =>
+    //     {
+    //         /// return to main UI
+    //         ShowInit();
+
+    //     });
+    // }
+
+
+
+    //////////////////////////////////////////
+    /// ASK FOR EMAIL
+    //////////////////////////////////////////
+    public void Session_ASKFOREMAIL()
+    {
+        STATE = GAMESTATE.END;
+        ShowPanel(uiManager.askForEmail);
     }
 
 
 
     //////////////////////////////////////////
-    /// Start final session
+    /// EMAIL
     //////////////////////////////////////////
-    public void StartFinalSession()
+    public void Session_EMAIL()
     {
+        ShowPanel(uiManager.email, 180);
+    }
+
+
+    //////////////////////////////////////////
+    /// END
+    //////////////////////////////////////////
+    public void Session_END()
+    {
+        SkipAfterTime(1);
+    }
+
+
+
+
+    public void ReturnToMain()
+    {
+        if (wait != null) StopCoroutine(wait);
+
         /// reset trials
         photoShootTrials = 0;
 
         /// stop webcam
         webcamManager.Stop();
 
-
-        /// payment request
-        ////
-        ////
-
+        /// return to main UI
+        ShowInit();
+    }
 
 
 
-        /// print image
-        if (printImage)
-            printerHandler.PrintBytes(returnedBytesFromScreenshot);
+    ///
+    /// Skip after time...
+    ///
+    public void SkipAfterTime(float time)
+    {
+        print("SkipAfterTime: " + time);
 
-        /// send email (if liked)
-        uiManager.ShowEmail(screenshotPath, () =>
-        {
-            /// return to main UI
-            ShowInit();
+        if (wait != null) StopCoroutine(wait);
+        wait = StartCoroutine(SkipAfterTimeCoroutine(time));
+    }
+    private IEnumerator SkipAfterTimeCoroutine(float time)
+    {
+        yield return new WaitForSeconds(time);
 
-        });
+        if (STATE == GAMESTATE.END) uiManager.ShowPanel(uiManager.endGame);
+        else uiManager.ShowPanel(uiManager.timeExpired);
+
+        yield return new WaitForSeconds(5);
+        ReturnToMain();
+
+        wait = null;
     }
 }

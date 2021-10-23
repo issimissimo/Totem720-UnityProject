@@ -8,7 +8,7 @@ public class WebcamManager : MonoBehaviour
     
     private WebCamTexture webcamTexture;
 
-    IEnumerator Start()
+    void Start()
     {
         Application.targetFrameRate = 60;
         
@@ -24,9 +24,9 @@ public class WebcamManager : MonoBehaviour
         webcamTexture.requestedWidth = 1920;
 
         // /// init webcam
-        Play();
-        yield return new WaitForSeconds(0.5f);
-        Pause();
+        // Play();
+        // yield return new WaitForSeconds(0.5f);
+        // Pause();
     }
 
     public void Play(){
