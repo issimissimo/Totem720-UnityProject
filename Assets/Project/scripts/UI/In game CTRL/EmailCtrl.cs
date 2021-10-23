@@ -29,7 +29,6 @@ public class EmailCtrl : MonoBehaviour
         emailHandler.Send(GameManager.screenshotPath, to);
 
         /// end
-        // GameManager.instance.Session_END();
         form.SetActive(false);
         sending.SetActive(true);
         GameManager.instance.SkipAfterTime(5);

@@ -97,7 +97,7 @@ public class FileManager : MonoBehaviour
                         Globals._SCENARIO = (Globals.Scenario)System.Enum.Parse(typeof(Globals.Scenario), Globals.data.scenario);
                         Globals._SQUADRA = (Globals.Squadra)System.Enum.Parse(typeof(Globals.Squadra), Globals.data.squadra);
 
-                        GameManager.instance.ShowInit();
+                        GameManager.instance.Session_INIT();
                     }
                     catch (Exception e)
                     {

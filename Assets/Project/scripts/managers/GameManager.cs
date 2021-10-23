@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System;
 using System.IO;
 using System.Collections;
 
@@ -64,7 +63,7 @@ public class GameManager : MonoBehaviour
                 InternetConnection.instance.Check(ErrorManager.TYPE.WARNING);
 
                 /// show main UI
-                ShowInit();
+                Session_INIT();
             }
         });
     }
@@ -77,9 +76,9 @@ public class GameManager : MonoBehaviour
 
 
     //////////////////////////////////////////
-    /// Init
+    /// INIT
     //////////////////////////////////////////
-    public void ShowInit()
+    public void Session_INIT()
     {
         if (Globals.scenarioIsDefined && Globals.squadraIsDefined)
         {
@@ -126,17 +125,23 @@ public class GameManager : MonoBehaviour
     }
 
 
+
     //////////////////////////////////////////
-    /// Start game
+    /// START
     //////////////////////////////////////////
-    public void StartGame(int videoNumber)
+    public void Session_START(int videoNumber)
     {
-        print("StartGame");
-
-        // STATE = GAMESTATE.GAME;
-
         videoToLaunch = videoNumber;
 
+        Session_INSTRUCTIONS();
+    }
+
+
+    //////////////////////////////////////////
+    /// INSTRUCTIONS
+    //////////////////////////////////////////
+    public void Session_INSTRUCTIONS()
+    {
         /// show instructions
         ShowPanel(uiManager.instructions);
 
@@ -160,11 +165,6 @@ public class GameManager : MonoBehaviour
         string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoToLaunch);
         if (videoUrl != null)
         {
-            /// play webcam again (if we are taking a 2nd photo)
-            webcamManager.Play();
-
-
-
             /// play video
             Debug.Log("LANCIO VIDEO: " + videoUrl);
             videoManager.Play(videoUrl, () =>
@@ -223,8 +223,6 @@ public class GameManager : MonoBehaviour
 
 
 
-
-
     //////////////////////////////////////////
     /// PRINT
     //////////////////////////////////////////
@@ -235,50 +233,6 @@ public class GameManager : MonoBehaviour
 
         Session_ASKFOREMAIL();
     }
-
-
-
-
-    // //////////////////////////////////////////
-    // /// Start final session
-    // //////////////////////////////////////////
-    // public void StartFinalSession()
-    // {
-    //     if (wait != null) StopCoroutine(wait);
-
-    //     /// reset trials
-    //     photoShootTrials = 0;
-
-    //     /// stop webcam
-    //     webcamManager.Stop();
-
-
-    //     /// payment request
-    //     ////
-    //     ////
-
-
-
-
-    //     /// print image
-    //     if (printImage)
-    //         printerHandler.PrintBytes(returnedBytesFromScreenshot);
-
-
-
-    //     /////////////////////////////////////////////////////
-    //     Session_ASKFOREMAIL();
-
-
-
-    //     /// send email (if liked)
-    //     uiManager.ShowEmail(screenshotPath, () =>
-    //     {
-    //         /// return to main UI
-    //         ShowInit();
-
-    //     });
-    // }
 
 
 
@@ -307,7 +261,7 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void Session_END()
     {
-        SkipAfterTime(1);
+        SkipAfterTime(0.2f);
     }
 
 
@@ -324,7 +278,7 @@ public class GameManager : MonoBehaviour
         webcamManager.Stop();
 
         /// return to main UI
-        ShowInit();
+        Session_INIT();
     }
 
 
