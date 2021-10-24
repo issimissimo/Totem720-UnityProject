@@ -233,6 +233,8 @@ public class FileManager : MonoBehaviour
         newFolderIsCreated = CreateDirectoryIfNotExist(Globals.data.videoFolder + "/" + Globals.Scenario.Calciatori.ToString() + "/" + Globals.Squadra.Milan.ToString());
         newFolderIsCreated = CreateDirectoryIfNotExist(Globals.data.videoFolder + "/" + Globals.Scenario.Calciatori.ToString() + "/" + Globals.Squadra.Inter_Milan.ToString());
 
+        newFolderIsCreated = CreateDirectoryIfNotExist(Globals.data.videoFolder + "/" + Globals.engagementVideoFolder);
+
         if (newFolderIsCreated)
         {
             ErrorManager.instance.ShowError(ErrorManager.TYPE.INFO, "Le cartelle sono state create\n Si prega di chiudere l'applicazione e caricare i video nelle cartelle specifiche");

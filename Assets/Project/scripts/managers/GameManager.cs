@@ -69,11 +69,6 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void Quit()
-    {
-        Application.Quit();
-    }
-
 
     //////////////////////////////////////////
     /// INIT
@@ -89,41 +84,6 @@ public class GameManager : MonoBehaviour
             uiManager.ShowInitPanel();
         }
     }
-
-
-    public void ShowPanel(GameObject panel, float skipTime = 60)
-    {
-        uiManager.ShowPanel(panel);
-
-        if (STATE != GAMESTATE.INIT)
-        {
-            SkipAfterTime(skipTime);
-        }
-    }
-
-
-    public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)
-    {
-        /// if inputs are different from the stored ones,
-        /// (write them in the config.json)
-        // if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA)
-        // {
-
-        STATE = GAMESTATE.IDLE;
-
-        /// set the new scenario
-        Globals._SCENARIO = scenario;
-
-        /// if the previuos "squadra" was NOT Inter_Milan,
-        /// set the new squadra
-        if (Globals._SQUADRA != Globals.Squadra.Inter_Milan)
-        {
-            Globals._SQUADRA = squadra;
-        }
-
-        uiManager.ShowPanelByType(scenario, squadra);
-    }
-
 
 
     //////////////////////////////////////////
@@ -167,7 +127,7 @@ public class GameManager : MonoBehaviour
         {
             /// play video
             Debug.Log("LANCIO VIDEO: " + videoUrl);
-            videoManager.Play(videoUrl, () =>
+            videoManager.Play(videoUrl, false, () =>
             {
                 /// show game UI
                 uiManager.ShowGame(videoManager.videoDuration);
@@ -267,7 +227,61 @@ public class GameManager : MonoBehaviour
 
 
 
-    public void ReturnToMain()
+    #region Functions
+
+    ///
+    /// Show Gameobject
+    ///
+    public void ShowPanel(GameObject panel, float skipTime = 60)
+    {
+        uiManager.ShowPanel(panel);
+
+        if (STATE != GAMESTATE.INIT)
+        {
+            SkipAfterTime(skipTime);
+        }
+    }
+
+    ///
+    /// Quit Panel by type
+    ///
+    public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)
+    {
+        /// if inputs are different from the stored ones,
+        /// (write them in the config.json)
+        // if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA)
+        // {
+
+        STATE = GAMESTATE.IDLE;
+
+        /// set the new scenario
+        Globals._SCENARIO = scenario;
+
+        /// if the previuos "squadra" was NOT Inter_Milan,
+        /// set the new squadra
+        if (Globals._SQUADRA != Globals.Squadra.Inter_Milan)
+        {
+            Globals._SQUADRA = squadra;
+        }
+
+        uiManager.ShowPanelByType(scenario, squadra);
+    }
+
+
+    ///
+    /// Quit application
+    ///
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+
+
+    ///
+    /// Return to INIT
+    ///
+    public void ReturnToInit()
     {
         if (wait != null) StopCoroutine(wait);
 
@@ -297,12 +311,25 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
 
-        if (STATE == GAMESTATE.END) uiManager.ShowPanel(uiManager.endGame);
-        else uiManager.ShowPanel(uiManager.timeExpired);
+        switch (STATE)
+        {
+            case GAMESTATE.IDLE:
+                uiManager.ShowPanel(uiManager.timeExpired);
+                break;
+            case GAMESTATE.GAME:
+                uiManager.ShowPanel(uiManager.timeExpired);
+                break;
+            case GAMESTATE.END:
+                uiManager.ShowPanel(uiManager.endGame);
+                break;
+        }
 
         yield return new WaitForSeconds(5);
-        ReturnToMain();
+        ReturnToInit();
 
         wait = null;
     }
+
+
+    #endregion
 }

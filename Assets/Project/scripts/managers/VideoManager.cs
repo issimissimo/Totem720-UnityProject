@@ -10,9 +10,13 @@ public class VideoManager : MonoBehaviour
 
     [HideInInspector] public double videoDuration;
 
-    public void Play(string fileUrl, Action callback = null)
+    public void Play(string fileUrl, bool loop = false, Action callback = null)
     {
-        StartCoroutine(_Play(fileUrl, callback));
+        StartCoroutine(_Play(fileUrl, loop, callback));
+    }
+
+    public void Stop(){
+        videoPlayer.Stop();
     }
 
     public void WaitForEnd(Action callback)
@@ -20,11 +24,23 @@ public class VideoManager : MonoBehaviour
         StartCoroutine(_WaitForEnd(callback));
     }
 
-    private IEnumerator _Play(string fileUrl, Action callback)
+    private IEnumerator _Play(string fileUrl, bool loop, Action callback)
     {
         if (videoPlayer.isPlaying)
         {
             videoPlayer.Stop();
+        }
+
+        videoPlayer.isLooping = loop;
+
+        try
+        {
+            videoPlayer.url = fileUrl;
+        }
+        catch (Exception e)
+        {
+            print("AAAAAAAAAAAAAAAAAAAAA!!!!!!");
+            ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, e.ToString());
         }
 
         videoPlayer.url = fileUrl;
