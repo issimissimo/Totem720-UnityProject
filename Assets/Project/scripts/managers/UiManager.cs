@@ -9,6 +9,7 @@ public class UiManager : MonoBehaviour
     public GameObject instructions;
     public GameObject satisfied;
     public GameObject timeExpired;
+    public GameObject payment;
     public GameObject askForEmail;
     public GameObject email;
     public GameObject endGame;

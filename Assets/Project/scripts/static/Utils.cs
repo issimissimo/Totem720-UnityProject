@@ -1,6 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using System.Globalization;
 using System;
+
 public static class Utils
 {
     public static bool ValidateString(string st)

@@ -176,7 +176,7 @@ public class GameManager : MonoBehaviour
         if (wait != null) StopCoroutine(wait);
 
         /// TO DO......
-
+        ShowPanel(uiManager.payment, 180);
 
         Session_PRINT();
     }
