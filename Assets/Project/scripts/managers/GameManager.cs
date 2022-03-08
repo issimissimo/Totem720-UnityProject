@@ -87,14 +87,29 @@ public class GameManager : MonoBehaviour
 
 
     //////////////////////////////////////////
-    /// START
+    /// START GAME ---> da qui inizia l'"Intefaccia di gioco"
     //////////////////////////////////////////
     public void Session_START(int videoNumber)
     {
         print("START");
         videoToLaunch = videoNumber;
 
-        Session_INSTRUCTIONS();
+        // Session_INSTRUCTIONS();
+        Session_PAYMENT();
+    }
+
+
+    //////////////////////////////////////////
+    /// PAYMENT
+    //////////////////////////////////////////
+    public void Session_PAYMENT()
+    {
+        if (wait != null) StopCoroutine(wait);
+
+        /// TO DO......
+        ShowPanel(uiManager.payment, 180);
+
+        // Session_PRINT();
     }
 
 
@@ -159,7 +174,8 @@ public class GameManager : MonoBehaviour
                         }
                         else
                         {
-                            Session_PAYMENT();
+                            // Session_PAYMENT();
+                            Session_PRINT();
                         }
                     });
                 });
@@ -169,18 +185,18 @@ public class GameManager : MonoBehaviour
 
 
 
-    //////////////////////////////////////////
-    /// PAYMENT
-    //////////////////////////////////////////
-    public void Session_PAYMENT()
-    {
-        if (wait != null) StopCoroutine(wait);
+    // //////////////////////////////////////////
+    // /// PAYMENT
+    // //////////////////////////////////////////
+    // public void Session_PAYMENT()
+    // {
+    //     if (wait != null) StopCoroutine(wait);
 
-        /// TO DO......
-        ShowPanel(uiManager.payment, 180);
+    //     /// TO DO......
+    //     ShowPanel(uiManager.payment, 180);
 
-        Session_PRINT();
-    }
+    //     Session_PRINT();
+    // }
 
 
 
@@ -325,6 +341,7 @@ public class GameManager : MonoBehaviour
                 break;
         }
 
+        /// Return to INIT
         yield return new WaitForSeconds(5);
         ReturnToInit();
 
