@@ -1,8 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonShowPanel : ButtonBase
 {
     [SerializeField] GameObject panelToShow;
+    [SerializeField] bool isEnabled = true;
+    
+    public override void Start(){
+        base.Start();
+
+        /// Set button enabled or not
+        if (!isEnabled){
+            Image img = GetComponent<Image>();
+            img.color = new Color(0.5f, 0.5f, 0.5f, 1);
+            button.interactable = false;
+        }
+    }
+    
     public override void onClick()
     {
         base.onClick();

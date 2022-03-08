@@ -91,6 +91,7 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void Session_START(int videoNumber)
     {
+        print("START");
         videoToLaunch = videoNumber;
 
         Session_INSTRUCTIONS();

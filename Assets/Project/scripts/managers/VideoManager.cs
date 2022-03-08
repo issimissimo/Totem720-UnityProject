@@ -15,8 +15,10 @@ public class VideoManager : MonoBehaviour
         StartCoroutine(_Play(fileUrl, loop, callback));
     }
 
-    public void Stop(){
-        videoPlayer.Stop();
+    public void Stop()
+    {
+        if (videoPlayer)
+            videoPlayer.Stop();
     }
 
     public void WaitForEnd(Action callback)

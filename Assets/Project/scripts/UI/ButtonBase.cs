@@ -4,14 +4,14 @@ using UnityEngine.UI;
 
 public class ButtonBase : MonoBehaviour
 {
-    private Button button;
+    protected Button button;
 
     private void Awake()
     {
         button = GetComponent<Button>();
     }
 
-    void Start()
+    public virtual void Start()
     {
         button.onClick.AddListener(onClick);
     }

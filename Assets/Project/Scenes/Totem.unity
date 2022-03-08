@@ -4626,6 +4626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 1103347321}
+  isEnabled: 1
 --- !u!114 &527100869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39805,6 +39806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 1930837284}
+  isEnabled: 1
 --- !u!114 &845940029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40811,6 +40813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 94500182}
+  isEnabled: 0
 --- !u!114 &959127414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41333,6 +41336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 175018737}
+  isEnabled: 1
 --- !u!114 &1010061468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41963,6 +41967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 38030967}
+  isEnabled: 1
 --- !u!114 &1057154183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42900,6 +42905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 1930837284}
+  isEnabled: 1
 --- !u!1 &1167724362
 GameObject:
   m_ObjectHideFlags: 0
@@ -42953,6 +42959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 1442527294}
+  isEnabled: 1
 --- !u!114 &1167724365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43247,6 +43254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 38030967}
+  isEnabled: 1
 --- !u!1 &1257833860
 GameObject:
   m_ObjectHideFlags: 0
@@ -44517,6 +44525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 710625260}
+  isEnabled: 1
 --- !u!114 &1420112912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44888,7 +44897,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1461487735}
   m_OnClick:
     m_PersistentCalls:
@@ -44906,7 +44915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
+  m_Color: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -44944,6 +44953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 1782503740}
+  isEnabled: 0
 --- !u!1 &1465486191
 GameObject:
   m_ObjectHideFlags: 0
@@ -44997,6 +45007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 794953839}
+  isEnabled: 1
 --- !u!114 &1465486194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45422,6 +45433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 466734819}
+  isEnabled: 1
 --- !u!1 &1517488404
 GameObject:
   m_ObjectHideFlags: 0
@@ -45747,6 +45759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 175018737}
+  isEnabled: 1
 --- !u!1 &1562914238
 GameObject:
   m_ObjectHideFlags: 0
@@ -48088,7 +48101,7 @@ MonoBehaviour:
   webcamManager: {fileID: 1804514267}
   screenshotHandler: {fileID: 963194229}
   printerHandler: {fileID: 178914686}
-  printImage: 0
+  printImage: 1
 --- !u!4 &1982431616
 Transform:
   m_ObjectHideFlags: 0
@@ -48630,6 +48643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 2005751144}
+  isEnabled: 0
 --- !u!114 &2021732429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49168,6 +49182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToShow: {fileID: 794953839}
+  isEnabled: 1
 --- !u!1 &2075947025
 GameObject:
   m_ObjectHideFlags: 0
