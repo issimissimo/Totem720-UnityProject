@@ -1,19 +1,35 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(CanvasGroup))]
 public class ButtonShowPanel : ButtonBase
 {
     [SerializeField] GameObject panelToShow;
     [SerializeField] bool isEnabled = true;
+
+    private CanvasGroup cv;
     
+
+    public override void Awake() {
+        base.Awake();
+        cv = GetComponent<CanvasGroup>();
+    }
+
     public override void Start(){
         base.Start();
 
         /// Set button enabled or not
         if (!isEnabled){
-            Image img = GetComponent<Image>();
-            img.color = new Color(0.5f, 0.5f, 0.5f, 1);
-            button.interactable = false;
+            // Image img = GetComponent<Image>();
+            // img.color = new Color(0.5f, 0.5f, 0.5f, 1);
+            // button.interactable = false;
+
+            cv.alpha = 0.3f;
+            cv.interactable = false;
+        }
+        else{
+            cv.alpha =1;
+            cv.interactable = true;
         }
     }
     

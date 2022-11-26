@@ -3,7 +3,7 @@ using System.IO;
 
 public class PlayVideoOnPanelEnabled : MonoBehaviour
 {
-    public string videoName;
+    public string videoPath;
     public GameManager gameManager;
 
     private void Awake()
@@ -13,16 +13,18 @@ public class PlayVideoOnPanelEnabled : MonoBehaviour
 
     private void OnEnable()
     {
-        if (!string.IsNullOrEmpty(videoName))
+        if (!string.IsNullOrEmpty(videoPath))
         {
-            string path = Path.Combine(Globals.data.videoFolder, Globals.engagementVideoFolder);
-            string videoUrl = Path.Combine(path, videoName);
+            string videoUrl = Path.Combine(Globals.data.videoFolder, videoPath);
+
+            print(videoUrl);
 
             if (File.Exists(videoUrl))
             {
                 gameManager.videoManager.Play(videoUrl, true);
             }
-            else{
+            else
+            {
                 ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Il video " + videoUrl + " non esiste");
             }
         }
@@ -30,6 +32,7 @@ public class PlayVideoOnPanelEnabled : MonoBehaviour
 
     private void OnDisable()
     {
-        gameManager.videoManager.Stop();
+        if (!string.IsNullOrEmpty(videoPath))
+            gameManager.videoManager.Stop();
     }
 }

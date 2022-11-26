@@ -1,26 +1,36 @@
-﻿using System.Collections;
+﻿using System.Net.Mime;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 public class UiManager : MonoBehaviour
 {
     [SerializeField] GameObject ui_panels_container;
+
+    public GameObject foreground;
+    public GameObject backgroundVideo;
     public GameObject instructions;
+    public GameObject photo;
     public GameObject satisfied;
     public GameObject timeExpired;
     public GameObject payment;
     public GameObject askForEmail;
     public GameObject email;
     public GameObject endGame;
-    [SerializeField] CountdownCtrl countdownCtrl;
+
+
+
     private List<GameObject> ui_panels = new List<GameObject>();
     private GameObject main_panel;
-
+    private Renderer backgroundMaterial;
 
 
     private void Awake()
     {
+        // backgroundMaterial = backgroundImage.GetComponent<Renderer>();
+
         foreach (Transform child in ui_panels_container.transform)
         {
             ui_panels.Add(child.gameObject);
@@ -30,10 +40,11 @@ public class UiManager : MonoBehaviour
         /// hide panels at start
         HideUiContainer();
 
-
+        foreground.SetActive(false);
     }
 
-    private void HideAllUiPanels(Action callback = null)
+
+    public void HideAllUiPanels(Action callback = null)
     {
         foreach (GameObject go in ui_panels)
         {
@@ -43,19 +54,54 @@ public class UiManager : MonoBehaviour
     }
 
 
+
     public void ShowPanel(GameObject panel)
     {
         HideAllUiPanels(() =>
         {
             panel.SetActive(true);
+
+            /// Show or hide the UI Video
+            backgroundVideo.SetActive(panel.GetComponent<PlayVideoOnPanelEnabled>() != null ? true : false);
+
+
+
+            // print(Globals._SQUADRA.ToString());
+
+            /// Set the foreground
+            if (panel.GetComponent<ForegroundSelection>() != null)
+            {
+                if (!foreground.activeSelf)
+                    foreground.SetActive(true);
+
+                Sprite foregroundSprite = null;
+                if (Globals._SQUADRA == Globals.Squadra.Milan) foregroundSprite = panel.GetComponent<ForegroundSelection>().foregroundMilan;
+                if (Globals._SQUADRA == Globals.Squadra.Inter) foregroundSprite = panel.GetComponent<ForegroundSelection>().foregroundInter;
+                if (Globals._SQUADRA == Globals.Squadra.Inter_Milan) foregroundSprite = panel.GetComponent<ForegroundSelection>().foregroundInterMilan;
+                if (foregroundSprite == null) Debug.LogError("Foreground not specified!");
+                foreground.GetComponent<Image>().sprite = foregroundSprite;
+            }
+
+            print("UiManager - Show Panel");
         });
     }
 
 
     public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)
     {
-        // print("ShowPanelByType: " + scenario.ToString() + " - " + squadra.ToString());
+        print("UIMAnagaer - ShowPanelByType: " + scenario.ToString() + " - " + squadra.ToString());
         ShowUiContainer();
+
+
+
+
+
+        // /// Set the background
+        // if (squadra == Globals.Squadra.Milan) backgroundMaterial.material = backgroundMaterial_Milan;
+        // if (squadra == Globals.Squadra.Inter) backgroundMaterial.material = backgroundMaterial_Inter;
+        // if (squadra == Globals.Squadra.Inter_Milan) backgroundMaterial.material = backgroundMaterial_InterMilan;
+
+
 
         foreach (GameObject panel in ui_panels)
         {
@@ -97,7 +143,7 @@ public class UiManager : MonoBehaviour
         // HideUiContainer();
         HideAllUiPanels();
 
-        countdownCtrl.Play(videoDuration);
+        // countdownCtrl.Play(videoDuration);
     }
 
 }

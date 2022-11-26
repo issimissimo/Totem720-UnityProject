@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
 using System.IO;
 using System.Collections;
+using System.Threading.Tasks;
 
 
 public class GameManager : MonoBehaviour
 {
+    
+
+
     public static GameManager instance;
     public FileManager fileManager;
     public UiManager uiManager;
@@ -34,7 +38,11 @@ public class GameManager : MonoBehaviour
     private int videoToLaunch;
     public static string screenshotPath;
     private byte[] returnedBytesFromScreenshot;
-    private int photoShootTrials = 0;
+
+    
+    
+    public int maxPhotoTrials = 3;
+    public int photoShootTrials { get; private set; }
 
 
 
@@ -75,6 +83,8 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void Session_INIT()
     {
+        print("Session_INIT");
+
         if (Globals.scenarioIsDefined && Globals.squadraIsDefined)
         {
             uiManager.ShowPanelByType(Globals._SCENARIO, Globals._SQUADRA);
@@ -82,6 +92,7 @@ public class GameManager : MonoBehaviour
         else
         {
             uiManager.ShowInitPanel();
+            print("Init Panel");
         }
     }
 
@@ -91,7 +102,7 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void Session_START(int videoNumber)
     {
-        print("START");
+        print("Session_START");
         videoToLaunch = videoNumber;
 
         // Session_INSTRUCTIONS();
@@ -120,9 +131,6 @@ public class GameManager : MonoBehaviour
     {
         /// show instructions
         ShowPanel(uiManager.instructions);
-
-        /// play webcam earlier
-        webcamManager.Play();
     }
 
 
@@ -130,11 +138,15 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     /// PHOTO
     //////////////////////////////////////////
-    public void Session_PHOTO()
+    public async void Session_PHOTO()
     {
         STATE = GAMESTATE.GAME;
 
-        if (wait != null) StopCoroutine(wait);
+        ShowPanel(uiManager.photo);
+
+        webcamManager.Play();
+
+        await Task.Delay(1000); /// let's wait a bit, just to have the webcam ready
 
         photoShootTrials++;
 
@@ -143,42 +155,68 @@ public class GameManager : MonoBehaviour
         {
             /// play video
             Debug.Log("LANCIO VIDEO: " + videoUrl);
-            videoManager.Play(videoUrl, false, () =>
+            videoManager.Play(videoUrl);
+
+
+
+
+
+            /// Wait for fixed time before to take the screenshot
+            int timeToTakePhoto = 4000;
+            await Task.Delay(timeToTakePhoto);
+
+
+
+
+
+
+            /// take screenshot
+            Debug.Log("SREENSHOT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            System.DateTime now = System.DateTime.Now;
+            long fileCreationTime = now.ToFileTime();
+            screenshotPath = Path.Combine(Globals.screenshotFolder, fileCreationTime + ".jpg");
+
+            screenshotHandler.TakeScreenshot(Screen.width, Screen.height, screenshotPath, (_returnedBytesFromScreenshot) =>
             {
-                /// show game UI
-                uiManager.ShowGame(videoManager.videoDuration);
+                returnedBytesFromScreenshot = _returnedBytesFromScreenshot;
+
+                // /// pause webcam
+                // webcamManager.Pause();
+
+                // /// show panel to ask if satisfied
+                // if (photoShootTrials < 2)
+                // {
+                //     ShowPanel(uiManager.satisfied);
+                // }
+                // else
+                // {
+                //     // Session_PAYMENT();
+                //     Session_PRINT();
+                // }
+            });
 
 
-                /// wait for end of video
-                videoManager.WaitForEnd(() =>
+
+
+            /// wait for end of video
+            videoManager.WaitForEnd(() =>
+            {
+
+
+                /// Stop webcam
+                webcamManager.Stop();
+
+                /// show panel to ask if satisfied
+                if (photoShootTrials < maxPhotoTrials)
                 {
-                    // /// pause webcam
-                    // webcamManager.Pause();
+                    ShowPanel(uiManager.satisfied);
+                }
+                else
+                {
+                    // Session_PAYMENT();
+                    Session_PRINT();
+                }
 
-                    /// take screenshot
-                    System.DateTime now = System.DateTime.Now;
-                    long fileCreationTime = now.ToFileTime();
-                    screenshotPath = Path.Combine(Globals.screenshotFolder, fileCreationTime + ".jpg");
-
-                    screenshotHandler.TakeScreenshot(Screen.width, Screen.height, screenshotPath, (_returnedBytesFromScreenshot) =>
-                    {
-                        returnedBytesFromScreenshot = _returnedBytesFromScreenshot;
-
-                        /// pause webcam
-                        webcamManager.Pause();
-
-                        /// show panel to ask if satisfied
-                        if (photoShootTrials < 2)
-                        {
-                            ShowPanel(uiManager.satisfied);
-                        }
-                        else
-                        {
-                            // Session_PAYMENT();
-                            Session_PRINT();
-                        }
-                    });
-                });
             });
         }
     }
@@ -268,6 +306,8 @@ public class GameManager : MonoBehaviour
         /// (write them in the config.json)
         // if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA)
         // {
+
+        print("GameManager - ShowPanelByType");
 
         STATE = GAMESTATE.IDLE;
 

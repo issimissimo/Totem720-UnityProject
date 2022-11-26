@@ -17,9 +17,15 @@ public class VideoManager : MonoBehaviour
 
     public void Stop()
     {
-        if (videoPlayer)
+        if (videoPlayer && videoPlayer.isPlaying)
             videoPlayer.Stop();
     }
+
+    public void Pause(){
+        if (videoPlayer)
+            videoPlayer.Pause();
+    }
+    
 
     public void WaitForEnd(Action callback)
     {
@@ -41,7 +47,6 @@ public class VideoManager : MonoBehaviour
         }
         catch (Exception e)
         {
-            print("AAAAAAAAAAAAAAAAAAAAA!!!!!!");
             ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, e.ToString());
         }
 

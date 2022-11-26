@@ -6,7 +6,7 @@ public class ButtonBase : MonoBehaviour
 {
     protected Button button;
 
-    private void Awake()
+    public virtual void Awake()
     {
         button = GetComponent<Button>();
     }

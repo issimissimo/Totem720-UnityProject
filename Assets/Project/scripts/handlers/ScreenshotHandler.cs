@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.IO;
 
 public class ScreenshotHandler : MonoBehaviour
-{
+{   
     private static ScreenshotHandler instance;
 
     private Camera myCamera;
@@ -30,6 +31,7 @@ public class ScreenshotHandler : MonoBehaviour
             Texture2D renderResult = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.ARGB32, false);
             Rect rect = new Rect(0, 0, renderTexture.width, renderTexture.height);
             renderResult.ReadPixels(rect, 0, 0);
+
 
             byte[] byteArray = renderResult.EncodeToJPG(100);
 

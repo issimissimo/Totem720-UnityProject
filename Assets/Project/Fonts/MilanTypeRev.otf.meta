@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: b9ef68f793c9f6c418242897a050a636
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - MilanTypeRev
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d8ca1937158d58844aa4bd05b575d641, type: 3}
+  - {fileID: 12800000, guid: 48e1751e652e6b1468b81c93e0a436dd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
