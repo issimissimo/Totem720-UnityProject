@@ -10,13 +10,13 @@ public class VideoManager : MonoBehaviour
 
     [HideInInspector] public double videoDuration;
 
-    public event Action OnTimeReached;
-    public event Action OnEnd;
+    // public event Action OnTimeReached;
+    // public event Action OnEnd;
 
-    public void Play(string fileUrl, bool loop = false, Action callback = null, bool useOnTimeReached = false)
+    public void Play(string fileUrl, bool loop = false, Action OnTimeReached = null, Action OnEnd = null)
     {
         StopAllCoroutines();
-        StartCoroutine(_Play(fileUrl, loop, callback, useOnTimeReached));
+        StartCoroutine(_Play(fileUrl, loop, OnTimeReached, OnEnd));
     }
 
     public void Stop()
@@ -32,12 +32,12 @@ public class VideoManager : MonoBehaviour
     }
 
 
-    public void WaitForEnd(Action callback)
-    {
-        StartCoroutine(_WaitForEnd(callback));
-    }
+    // public void WaitForEnd(Action callback)
+    // {
+    //     StartCoroutine(_WaitForEnd(callback));
+    // }
 
-    private IEnumerator _Play(string fileUrl, bool loop, Action callback, bool useOnTimeReached)
+    private IEnumerator _Play(string fileUrl, bool loop, Action OnTimeReached, Action OnEnd)
     {
         if (videoPlayer.isPlaying)
         {
@@ -60,7 +60,7 @@ public class VideoManager : MonoBehaviour
 
         while (!videoPlayer.isPrepared)
         {
-            yield return new WaitForEndOfFrame();
+            yield return null;
         }
 
         videoDuration = videoPlayer.length;
@@ -68,32 +68,39 @@ public class VideoManager : MonoBehaviour
         videoPlayer.frame = 0;
         videoPlayer.Play();
 
-        if (useOnTimeReached)
-            StartCoroutine(_WaitForTimeReached());
-
-        // yield return new WaitForSeconds(0.1f);
-
-        if (callback != null) callback();
-    }
-
-
-    private IEnumerator _WaitForTimeReached()
-    {
+        
         while (videoPlayer.frame < GameManager.instance.timeToTakePhoto * videoPlayer.frameRate)
         {
             yield return null;
         }
         if (OnTimeReached != null) OnTimeReached();
-    }
 
 
-    private IEnumerator _WaitForEnd(Action callback)
-    {
         while (videoPlayer.isPlaying)
         {
             yield return new WaitForEndOfFrame();
         }
-
-        callback();
+        if (OnEnd != null) OnEnd();
     }
+
+
+    // private IEnumerator _WaitForTimeReached()
+    // {
+    //     while (videoPlayer.frame < GameManager.instance.timeToTakePhoto * videoPlayer.frameRate)
+    //     {
+    //         yield return null;
+    //     }
+    //     if (OnTimeReached != null) OnTimeReached();
+    // }
+
+
+    // private IEnumerator _WaitForEnd(Action callback)
+    // {
+    //     while (videoPlayer.isPlaying)
+    //     {
+    //         yield return new WaitForEndOfFrame();
+    //     }
+
+    //     callback();
+    // }
 }

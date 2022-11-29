@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 public class GameManager : MonoBehaviour
 {
-    
+
 
 
     public static GameManager instance;
@@ -39,8 +39,8 @@ public class GameManager : MonoBehaviour
     public static string screenshotPath;
     private byte[] returnedBytesFromScreenshot;
 
-    
-    public int timeToTakePhoto = 4;
+
+    public float timeToTakePhoto = 4;
     public int maxPhotoTrials = 3;
     public int photoShootTrials { get; private set; }
 
@@ -144,97 +144,40 @@ public class GameManager : MonoBehaviour
 
         ShowPanel(uiManager.photo);
 
-        webcamManager.Play();
-
-        await Task.Delay(1000); /// let's wait a bit, just to have the webcam ready
-
         photoShootTrials++;
 
-        string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoToLaunch);
-        if (videoUrl != null)
+        webcamManager.Play(() =>
         {
-            /// play video
-            Debug.Log("LANCIO VIDEO: " + videoUrl);
-            videoManager.Play(videoUrl, false, null, true);
+            // string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoToLaunch);
+            // if (videoUrl != null)
+            // {
+            //     /// play video
+            //     Debug.Log("LANCIO VIDEO: " + videoUrl);
+            //     videoManager.Play(videoUrl, false, TakeScreenshot, () =>
+            //     {
+            //         /// Stop webcam
+            //         webcamManager.Stop();
 
-
-
-
-
-            /// Wait for fixed time before to take the screenshot
-            
-            await Task.Delay(timeToTakePhoto * 1000);
-
-
-
-
-
-
-            /// take screenshot
-            Debug.Log("SREENSHOT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            System.DateTime now = System.DateTime.Now;
-            long fileCreationTime = now.ToFileTime();
-            screenshotPath = Path.Combine(Globals.screenshotFolder, fileCreationTime + ".jpg");
-
-            screenshotHandler.TakeScreenshot(Screen.width, Screen.height, screenshotPath, (_returnedBytesFromScreenshot) =>
-            {
-                returnedBytesFromScreenshot = _returnedBytesFromScreenshot;
-
-                // /// pause webcam
-                // webcamManager.Pause();
-
-                // /// show panel to ask if satisfied
-                // if (photoShootTrials < 2)
-                // {
-                //     ShowPanel(uiManager.satisfied);
-                // }
-                // else
-                // {
-                //     // Session_PAYMENT();
-                //     Session_PRINT();
-                // }
-            });
-
-
-
-
-            /// wait for end of video
-            videoManager.WaitForEnd(() =>
-            {
-
-
-                /// Stop webcam
-                webcamManager.Stop();
-
-                /// show panel to ask if satisfied
-                if (photoShootTrials < maxPhotoTrials)
-                {
-                    ShowPanel(uiManager.satisfied);
-                }
-                else
-                {
-                    // Session_PAYMENT();
-                    Session_PRINT();
-                }
-
-            });
-        }
+            //         /// show panel to ask if satisfied
+            //         if (photoShootTrials < maxPhotoTrials)
+            //         {
+            //             ShowPanel(uiManager.satisfied);
+            //         }
+            //         else
+            //         {
+            //             // Session_PAYMENT();
+            //             Session_PRINT();
+            //         }
+            //     });
+            // }
+            // else
+            // {
+            //     ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Video is not defined!");
+            // }
+        });
     }
 
 
-
-    // //////////////////////////////////////////
-    // /// PAYMENT
-    // //////////////////////////////////////////
-    // public void Session_PAYMENT()
-    // {
-    //     if (wait != null) StopCoroutine(wait);
-
-    //     /// TO DO......
-    //     ShowPanel(uiManager.payment, 180);
-
-    //     Session_PRINT();
-    // }
 
 
 
@@ -283,6 +226,25 @@ public class GameManager : MonoBehaviour
 
 
     #region Functions
+
+
+    ///
+    /// Take Screenshot
+    ///
+    private void TakeScreenshot()
+    {
+        Debug.Log("SREENSHOT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        System.DateTime now = System.DateTime.Now;
+        long fileCreationTime = now.ToFileTime();
+        screenshotPath = Path.Combine(Globals.screenshotFolder, fileCreationTime + ".jpg");
+
+        screenshotHandler.TakeScreenshot(Screen.width, Screen.height, screenshotPath, (_returnedBytesFromScreenshot) =>
+        {
+            returnedBytesFromScreenshot = _returnedBytesFromScreenshot;
+        });
+    }
+
+
 
     ///
     /// Show Gameobject

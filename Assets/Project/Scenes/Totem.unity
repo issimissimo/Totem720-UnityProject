@@ -155,7 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefe9d41a60b1b7469f9acac7c16d90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPath: Istruzioni/Istruzioni_Milan.webm
+  videoPathInter: 
+  videoPathMilan: Istruzioni/Istruzioni_Milan.webm
+  videoPathInterMilan: 
   gameManager: {fileID: 1982431615}
 --- !u!114 &6437319
 MonoBehaviour:
@@ -355,7 +357,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefe9d41a60b1b7469f9acac7c16d90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPath: Pagamento/Pagamento_Milan.webm
+  videoPathInter: 
+  videoPathMilan: Pagamento/Pagamento_Milan.webm
+  videoPathInterMilan: 
   gameManager: {fileID: 1982431615}
 --- !u!114 &52593488
 MonoBehaviour:
@@ -548,7 +552,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefe9d41a60b1b7469f9acac7c16d90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPath: 
+  videoPathInter: 
+  videoPathMilan: 
+  videoPathInterMilan: 
   gameManager: {fileID: 1982431615}
 --- !u!114 &94500185
 MonoBehaviour:
@@ -4567,6 +4573,7 @@ GameObject:
   - component: {fileID: 533730468}
   - component: {fileID: 533730467}
   - component: {fileID: 533730465}
+  - component: {fileID: 533730466}
   m_Layer: 0
   m_Name: Background Video
   m_TagString: Untagged
@@ -4607,6 +4614,21 @@ VideoPlayer:
   m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &533730466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533730464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 628ae41d2ca1e484a8e67476d6e51c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swapHeightAndWidth: 0
+  flipVertical: 0
+  flipHorizontal: 0
 --- !u!23 &533730467
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39221,7 +39243,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefe9d41a60b1b7469f9acac7c16d90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPath: Engagement/Engagement_Milan.webm
+  videoPathInter: 
+  videoPathMilan: Engagement/Engagement_Milan.webm
+  videoPathInterMilan: 
   gameManager: {fileID: 1982431615}
 --- !u!114 &710625263
 MonoBehaviour:
@@ -39447,7 +39471,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefe9d41a60b1b7469f9acac7c16d90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPath: Invio/Invio_Milan.webm
+  videoPathInter: 
+  videoPathMilan: Invio/Invio_Milan.webm
+  videoPathInterMilan: 
   gameManager: {fileID: 1982431615}
 --- !u!222 &783876944
 CanvasRenderer:
@@ -40936,7 +40962,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefe9d41a60b1b7469f9acac7c16d90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPath: 
+  videoPathInter: 
+  videoPathMilan: 
+  videoPathInterMilan: 
   gameManager: {fileID: 0}
 --- !u!1 &1000234221
 GameObject:
@@ -46241,7 +46269,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefe9d41a60b1b7469f9acac7c16d90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPath: Grazie/Grazie_Milan.webm
+  videoPathInter: 
+  videoPathMilan: Grazie/Grazie_Milan.webm
+  videoPathInterMilan: 
   gameManager: {fileID: 1982431615}
 --- !u!1 &1575743840
 GameObject:
@@ -49866,7 +49896,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefe9d41a60b1b7469f9acac7c16d90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPath: Stampando/Stampando_Milan.webm
+  videoPathInter: 
+  videoPathMilan: Stampando/Stampando_Milan.webm
+  videoPathInterMilan: 
   gameManager: {fileID: 1982431615}
 --- !u!225 &2111694550
 CanvasGroup:
