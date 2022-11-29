@@ -10,9 +10,13 @@ public class VideoManager : MonoBehaviour
 
     [HideInInspector] public double videoDuration;
 
-    public void Play(string fileUrl, bool loop = false, Action callback = null)
+    public event Action OnTimeReached;
+    public event Action OnEnd;
+
+    public void Play(string fileUrl, bool loop = false, Action callback = null, bool useOnTimeReached = false)
     {
-        StartCoroutine(_Play(fileUrl, loop, callback));
+        StopAllCoroutines();
+        StartCoroutine(_Play(fileUrl, loop, callback, useOnTimeReached));
     }
 
     public void Stop()
@@ -21,18 +25,19 @@ public class VideoManager : MonoBehaviour
             videoPlayer.Stop();
     }
 
-    public void Pause(){
+    public void Pause()
+    {
         if (videoPlayer)
             videoPlayer.Pause();
     }
-    
+
 
     public void WaitForEnd(Action callback)
     {
         StartCoroutine(_WaitForEnd(callback));
     }
 
-    private IEnumerator _Play(string fileUrl, bool loop, Action callback)
+    private IEnumerator _Play(string fileUrl, bool loop, Action callback, bool useOnTimeReached)
     {
         if (videoPlayer.isPlaying)
         {
@@ -63,9 +68,22 @@ public class VideoManager : MonoBehaviour
         videoPlayer.frame = 0;
         videoPlayer.Play();
 
+        if (useOnTimeReached)
+            StartCoroutine(_WaitForTimeReached());
+
         // yield return new WaitForSeconds(0.1f);
 
         if (callback != null) callback();
+    }
+
+
+    private IEnumerator _WaitForTimeReached()
+    {
+        while (videoPlayer.frame < GameManager.instance.timeToTakePhoto * videoPlayer.frameRate)
+        {
+            yield return null;
+        }
+        if (OnTimeReached != null) OnTimeReached();
     }
 
 

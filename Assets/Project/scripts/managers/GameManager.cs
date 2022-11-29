@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     private byte[] returnedBytesFromScreenshot;
 
     
-    
+    public int timeToTakePhoto = 4;
     public int maxPhotoTrials = 3;
     public int photoShootTrials { get; private set; }
 
@@ -155,15 +155,15 @@ public class GameManager : MonoBehaviour
         {
             /// play video
             Debug.Log("LANCIO VIDEO: " + videoUrl);
-            videoManager.Play(videoUrl);
+            videoManager.Play(videoUrl, false, null, true);
 
 
 
 
 
             /// Wait for fixed time before to take the screenshot
-            int timeToTakePhoto = 4000;
-            await Task.Delay(timeToTakePhoto);
+            
+            await Task.Delay(timeToTakePhoto * 1000);
 
 
 
