@@ -10,8 +10,13 @@ public class VideoManager : MonoBehaviour
 
     [HideInInspector] public double videoDuration;
 
-    // public event Action OnTimeReached;
-    // public event Action OnEnd;
+
+    private Material videoMat;
+
+    void Awake()
+    {
+        videoMat = videoPlayer.GetComponent<Renderer>().material;
+    }
 
     public void Play(string fileUrl, bool loop = false, Action OnTimeReached = null, Action OnEnd = null)
     {
@@ -21,8 +26,10 @@ public class VideoManager : MonoBehaviour
 
     public void Stop()
     {
-        if (videoPlayer && videoPlayer.isPlaying)
+        if (videoPlayer && videoPlayer.isPlaying){
             videoPlayer.Stop();
+            videoMat.SetFloat("_Opacity", 0f);
+        }
     }
 
     public void Pause()
@@ -32,13 +39,10 @@ public class VideoManager : MonoBehaviour
     }
 
 
-    // public void WaitForEnd(Action callback)
-    // {
-    //     StartCoroutine(_WaitForEnd(callback));
-    // }
-
     private IEnumerator _Play(string fileUrl, bool loop, Action OnTimeReached, Action OnEnd)
     {
+        videoMat.SetFloat("_Opacity", 0f);
+        
         if (videoPlayer.isPlaying)
         {
             videoPlayer.Stop();
@@ -68,6 +72,11 @@ public class VideoManager : MonoBehaviour
         videoPlayer.frame = 0;
         videoPlayer.Play();
 
+        while (videoPlayer.frame <= 1)
+            yield return null;
+        
+        videoMat.SetFloat("_Opacity", 1f);
+
         
         while (videoPlayer.frame < GameManager.instance.timeToTakePhoto * videoPlayer.frameRate)
         {
@@ -82,25 +91,4 @@ public class VideoManager : MonoBehaviour
         }
         if (OnEnd != null) OnEnd();
     }
-
-
-    // private IEnumerator _WaitForTimeReached()
-    // {
-    //     while (videoPlayer.frame < GameManager.instance.timeToTakePhoto * videoPlayer.frameRate)
-    //     {
-    //         yield return null;
-    //     }
-    //     if (OnTimeReached != null) OnTimeReached();
-    // }
-
-
-    // private IEnumerator _WaitForEnd(Action callback)
-    // {
-    //     while (videoPlayer.isPlaying)
-    //     {
-    //         yield return new WaitForEndOfFrame();
-    //     }
-
-    //     callback();
-    // }
 }

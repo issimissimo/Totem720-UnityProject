@@ -53,7 +53,7 @@ public class WebcamManager : MonoBehaviour
             yield return null;
         
 
-        float timeToFade = 5f;
+        float timeToFade = GameManager.instance.timeToFadeWebcam;
         float t = 0;
         while (t < timeToFade)
         {

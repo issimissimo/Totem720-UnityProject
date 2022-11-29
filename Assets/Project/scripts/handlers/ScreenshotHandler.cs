@@ -49,7 +49,7 @@ public class ScreenshotHandler : MonoBehaviour
                 }
 
                 File.WriteAllBytes(filePath, byteArray);
-                Debug.Log("Saved: " + filePath);
+                Debug.Log("Screenshot saved to: " + filePath);
 
                 RenderTexture.ReleaseTemporary(renderTexture);
                 myCamera.targetTexture = null;

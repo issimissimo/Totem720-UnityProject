@@ -31,6 +31,9 @@ public class EmailCtrl : MonoBehaviour
         /// end
         form.SetActive(false);
         sending.SetActive(true);
+
+        GameManager.instance.uiManager.backgroundVideo.SetActive(true);
+
         GameManager.instance.SkipAfterTime(5);
     }
 

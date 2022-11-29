@@ -3,7 +3,6 @@ using System.IO;
 
 public class PlayVideoOnPanelEnabled : MonoBehaviour
 {
-    // public string videoPath;
     public string videoPathInter;
     public string videoPathMilan;
     public string videoPathInterMilan;
@@ -25,8 +24,6 @@ public class PlayVideoOnPanelEnabled : MonoBehaviour
         if (!string.IsNullOrEmpty(path))
         {
             string videoUrl = Path.Combine(Globals.data.videoFolder, path);
-
-            print(videoUrl);
 
             if (File.Exists(videoUrl))
             {

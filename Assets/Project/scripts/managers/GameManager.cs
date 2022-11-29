@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 public class GameManager : MonoBehaviour
 {
-
-
-
     public static GameManager instance;
     public FileManager fileManager;
     public UiManager uiManager;
@@ -40,6 +37,7 @@ public class GameManager : MonoBehaviour
     private byte[] returnedBytesFromScreenshot;
 
 
+    public float timeToFadeWebcam = 1;
     public float timeToTakePhoto = 4;
     public int maxPhotoTrials = 3;
     public int photoShootTrials { get; private set; }
@@ -83,8 +81,6 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void Session_INIT()
     {
-        print("Session_INIT");
-
         if (Globals.scenarioIsDefined && Globals.squadraIsDefined)
         {
             uiManager.ShowPanelByType(Globals._SCENARIO, Globals._SQUADRA);
@@ -92,7 +88,6 @@ public class GameManager : MonoBehaviour
         else
         {
             uiManager.ShowInitPanel();
-            print("Init Panel");
         }
     }
 
@@ -102,7 +97,6 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void Session_START(int videoNumber)
     {
-        print("Session_START");
         videoToLaunch = videoNumber;
 
         // Session_INSTRUCTIONS();
@@ -138,7 +132,7 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     /// PHOTO
     //////////////////////////////////////////
-    public async void Session_PHOTO()
+    public void Session_PHOTO()
     {
         STATE = GAMESTATE.GAME;
 
@@ -148,32 +142,31 @@ public class GameManager : MonoBehaviour
 
         webcamManager.Play(() =>
         {
-            // string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoToLaunch);
-            // if (videoUrl != null)
-            // {
-            //     /// play video
-            //     Debug.Log("LANCIO VIDEO: " + videoUrl);
-            //     videoManager.Play(videoUrl, false, TakeScreenshot, () =>
-            //     {
-            //         /// Stop webcam
-            //         webcamManager.Stop();
+            string videoUrl = fileManager.GetFile(Globals._SCENARIO, Globals._SQUADRA, videoToLaunch);
+            if (videoUrl != null)
+            {
+                /// play video
+                videoManager.Play(videoUrl, false, TakeScreenshot, () =>
+                {
+                    /// Stop webcam
+                    webcamManager.Stop();
 
-            //         /// show panel to ask if satisfied
-            //         if (photoShootTrials < maxPhotoTrials)
-            //         {
-            //             ShowPanel(uiManager.satisfied);
-            //         }
-            //         else
-            //         {
-            //             // Session_PAYMENT();
-            //             Session_PRINT();
-            //         }
-            //     });
-            // }
-            // else
-            // {
-            //     ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Video is not defined!");
-            // }
+                    /// show panel to ask if satisfied
+                    if (photoShootTrials < maxPhotoTrials)
+                    {
+                        ShowPanel(uiManager.satisfied);
+                    }
+                    else
+                    {
+                        // Session_PAYMENT();
+                        Session_PRINT();
+                    }
+                });
+            }
+            else
+            {
+                ErrorManager.instance.ShowError(ErrorManager.TYPE.ERROR, "Video is not defined!");
+            }
         });
     }
 
@@ -233,7 +226,6 @@ public class GameManager : MonoBehaviour
     ///
     private void TakeScreenshot()
     {
-        Debug.Log("SREENSHOT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         System.DateTime now = System.DateTime.Now;
         long fileCreationTime = now.ToFileTime();
         screenshotPath = Path.Combine(Globals.screenshotFolder, fileCreationTime + ".jpg");
@@ -264,13 +256,6 @@ public class GameManager : MonoBehaviour
     ///
     public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)
     {
-        /// if inputs are different from the stored ones,
-        /// (write them in the config.json)
-        // if (scenario != Globals._SCENARIO || squadra != Globals._SQUADRA)
-        // {
-
-        print("GameManager - ShowPanelByType");
-
         STATE = GAMESTATE.IDLE;
 
         /// set the new scenario
