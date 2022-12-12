@@ -18,6 +18,11 @@ public class VideoManager : MonoBehaviour
         videoMat = videoPlayer.GetComponent<Renderer>().material;
     }
 
+    void OnDisable()
+    {
+        StopAllCoroutines();
+    }
+
     public void Play(string fileUrl, bool loop = false, Action OnTimeReached = null, Action OnEnd = null)
     {
         StopAllCoroutines();

@@ -21,8 +21,9 @@ public class EmailCtrl : MonoBehaviour
         sending.SetActive(false);
         emailInputField.text = "";
 
-        if (GameManager.STATE == GameManager.GAMESTATE.GAME)
+        if (GameManager.STATE == GameManager.GAMESTATE.END)
             GameManager.instance.uiManager.SetForeground(form);
+
     }
 
     public void Send()
