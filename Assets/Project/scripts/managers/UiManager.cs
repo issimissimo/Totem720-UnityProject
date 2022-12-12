@@ -62,21 +62,28 @@ public class UiManager : MonoBehaviour
             /// Show or hide the UI Video
             backgroundVideo.SetActive(panel.GetComponent<PlayVideoOnPanelEnabled>() != null ? true : false);
 
-            /// Set the foreground
-            if (panel.GetComponent<ForegroundSelection>() != null)
-            {
-                if (!foreground.activeSelf)
-                    foreground.SetActive(true);
-
-                Sprite foregroundSprite = null;
-                if (Globals._SQUADRA == Globals.Squadra.Milan) foregroundSprite = panel.GetComponent<ForegroundSelection>().foregroundMilan;
-                if (Globals._SQUADRA == Globals.Squadra.Inter) foregroundSprite = panel.GetComponent<ForegroundSelection>().foregroundInter;
-                if (Globals._SQUADRA == Globals.Squadra.Inter_Milan) foregroundSprite = panel.GetComponent<ForegroundSelection>().foregroundInterMilan;
-                if (foregroundSprite == null) Debug.LogError("Foreground not specified!");
-                foreground.GetComponent<Image>().sprite = foregroundSprite;
-            }
+            SetForeground(panel);
         });
     }
+
+
+    public void SetForeground(GameObject panel)
+    {
+        /// Set the foreground
+        if (panel.GetComponent<ForegroundSelection>() != null)
+        {
+            if (!foreground.activeSelf)
+                foreground.SetActive(true);
+
+            Sprite foregroundSprite = null;
+            if (Globals._SQUADRA == Globals.Squadra.Milan) foregroundSprite = panel.GetComponent<ForegroundSelection>().foregroundMilan;
+            if (Globals._SQUADRA == Globals.Squadra.Inter) foregroundSprite = panel.GetComponent<ForegroundSelection>().foregroundInter;
+            if (Globals._SQUADRA == Globals.Squadra.Inter_Milan) foregroundSprite = panel.GetComponent<ForegroundSelection>().foregroundInterMilan;
+            if (foregroundSprite == null) Debug.LogError("Foreground not specified!");
+            foreground.GetComponent<Image>().sprite = foregroundSprite;
+        }
+    }
+
 
 
     public void ShowPanelByType(Globals.Scenario scenario, Globals.Squadra squadra)

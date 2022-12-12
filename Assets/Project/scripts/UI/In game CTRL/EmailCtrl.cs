@@ -20,6 +20,9 @@ public class EmailCtrl : MonoBehaviour
         form.SetActive(true);
         sending.SetActive(false);
         emailInputField.text = "";
+
+        if (GameManager.STATE == GameManager.GAMESTATE.GAME)
+            GameManager.instance.uiManager.SetForeground(form);
     }
 
     public void Send()
@@ -32,9 +35,11 @@ public class EmailCtrl : MonoBehaviour
         form.SetActive(false);
         sending.SetActive(true);
 
+        GameManager.instance.uiManager.SetForeground(sending);
+
         GameManager.instance.uiManager.backgroundVideo.SetActive(true);
 
-        GameManager.instance.SkipAfterTime(5);
+        GameManager.instance.SkipAfterTime(10);
     }
 
 

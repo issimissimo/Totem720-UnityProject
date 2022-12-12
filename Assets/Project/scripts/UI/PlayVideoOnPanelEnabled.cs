@@ -7,6 +7,7 @@ public class PlayVideoOnPanelEnabled : MonoBehaviour
     public string videoPathMilan;
     public string videoPathInterMilan;
     public GameManager gameManager;
+    public bool loop = true;
 
     string path = null;
 
@@ -27,7 +28,7 @@ public class PlayVideoOnPanelEnabled : MonoBehaviour
 
             if (File.Exists(videoUrl))
             {
-                gameManager.videoManager.Play(videoUrl, true);
+                gameManager.videoManager.Play(videoUrl, loop);
             }
             else
             {

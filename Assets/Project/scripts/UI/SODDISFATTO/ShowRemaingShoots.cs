@@ -10,6 +10,6 @@ public class ShowRemaingShoots : MonoBehaviour
     void OnEnable()
     {
         if (GameManager.instance == null) return;
-        text.text = "TENTATIVI RIMASTI: " + (GameManager.instance.maxPhotoTrials - GameManager.instance.photoShootTrials).ToString();
+        text.text = (GameManager.instance.maxPhotoTrials - GameManager.instance.photoShootTrials).ToString();
     }
 }
