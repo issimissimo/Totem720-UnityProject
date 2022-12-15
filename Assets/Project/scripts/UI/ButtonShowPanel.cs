@@ -20,10 +20,6 @@ public class ButtonShowPanel : ButtonBase
 
         /// Set button enabled or not
         if (!isEnabled){
-            // Image img = GetComponent<Image>();
-            // img.color = new Color(0.5f, 0.5f, 0.5f, 1);
-            // button.interactable = false;
-
             cv.alpha = 0.3f;
             cv.interactable = false;
         }

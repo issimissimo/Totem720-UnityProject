@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     public enum GAMESTATE
     {
-        INIT, IDLE, GAME, END
+        INIT, IDLE, INSTRUCTIONS, PHOTO, END
     }
 
     public static GAMESTATE STATE;
@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour
     public float timeToTakePhoto = 4;
     public int maxPhotoTrials = 3;
     public int photoShootTrials { get; private set; }
-
 
 
 
@@ -98,8 +97,7 @@ public class GameManager : MonoBehaviour
     public void Session_START(int videoNumber)
     {
         videoToLaunch = videoNumber;
-
-        // Session_INSTRUCTIONS();
+        
         Session_PAYMENT();
     }
 
@@ -123,7 +121,8 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void Session_INSTRUCTIONS()
     {
-        /// show instructions
+        STATE = GAMESTATE.INSTRUCTIONS;
+        
         ShowPanel(uiManager.instructions);
     }
 
@@ -134,7 +133,7 @@ public class GameManager : MonoBehaviour
     //////////////////////////////////////////
     public void Session_PHOTO()
     {
-        STATE = GAMESTATE.GAME;
+        STATE = GAMESTATE.PHOTO;
 
         ShowPanel(uiManager.photo);
 
@@ -320,8 +319,11 @@ public class GameManager : MonoBehaviour
             case GAMESTATE.IDLE:
                 uiManager.ShowPanel(uiManager.timeExpired);
                 break;
-            case GAMESTATE.GAME:
-                uiManager.ShowPanel(uiManager.timeExpired);
+            case GAMESTATE.INSTRUCTIONS:
+                Session_PHOTO();
+                break;
+            case GAMESTATE.PHOTO:
+                Session_PRINT();
                 break;
             case GAMESTATE.END:
                 uiManager.ShowPanel(uiManager.endGame);
